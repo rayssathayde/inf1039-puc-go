@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<!-- CABEÇALHO (não é visível) -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PUC-Go - Login</title>
+    <link rel="stylesheet" href="CSS\\style_geral.css">
+    <!-- IMPORTANDO FONTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<!-- CORPO -> todos os elementos que aparecem na tela-->
+<body>
+    <!-- CABEÇALHO DA PÁGINA-> tudo que tem antes da caixa de login (é visível) -->
+    <header class="navbar">
+        <div class="nav-content">
+            <button class="menu-btn">
+                <span class="menu-icon">☰</span>
+                <span class="name-text">PUC-Go</span>
+            </button>
+            <div class="search-wrapper">
+                <span class="search-icon">🔍︎</span>
+                <input type="text" class="search-bar" placeholder="Buscar localizações no campus...">
+            </div>
+            <div class="nav-right">
+                <button class="favorites-btn">♡</button>
+                <button class="register-btn">Cadastre-se</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class="container">
+        <!-- CAIXA DE LOGIN -> todos os elementos que tem dentro da caixa de login -->
+        <div class="login-box">
+            <h1>Entrar na Conta</h1>
+            <p class="subtitle">Acesse sua conta do PUC-Go</p>
+
+            <form class="login-form">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <div class="input-wrapper">
+                        <span class="input-icon">✉</span>
+                        <input type="email" id="email" placeholder="seu@email.com">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Senha</label>
+                    <div class="input-wrapper password-wrapper">
+                        <span class="input-icon">🔒</span>
+                        <input type="password" id="password" placeholder="Digite sua Senha">
+                        <button type="button" class="toggle-password">
+                            <span class="eye-icon">👁</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="form-options">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="remember">
+                        <span>Lembrar a senha</span>
+                    </label>
+                    <a href="#" class="forgot-password">Esqueceu a senha?</a>
+                </div>
+
+                <button type="submit" class="btn-primary">Entrar</button>
+
+                <div class="divider">
+                    <span>ou</span>
+                </div>
+
+                <button type="button" class="btn-social btn-google">
+                    <span class="social-icon">G</span>
+                    Continuar com Google
+                </button>
+
+                <button type="button" class="btn-social btn-microsoft">
+                    <span class="social-icon">⊞</span>
+                    Continuar com Microsoft
+                </button>
+
+                <p class="signup-text">
+                    Não tem uma conta? <a href="#" class="signup-link">Cadastre-se aqui</a>
+                </p>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
