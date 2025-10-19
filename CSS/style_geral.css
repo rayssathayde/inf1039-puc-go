@@ -1,0 +1,485 @@
+/* ==================== ESTILOS GLOBAIS ==================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Cabin, Proxima Nova, sans-serif;
+    background-color: #f3f5f6;
+    color: #4d5564;
+}
+
+/* ==================== NAVBAR ==================== */
+.navbar {
+    background-color: #fff;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 12px 24px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.menu-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: none;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 8px 12px;
+    color: #4d5564;
+    font-weight: 500;
+}
+
+.menu-icon {
+    font-size: 20px;
+}
+
+.name-text {
+    font-size: 14px;
+}
+
+.search-wrapper {
+    position: relative;
+    flex: 1;
+    max-width: 600px;
+}
+
+.search-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #999;
+}
+
+.search-bar {
+    width: 100%;
+    padding: 10px 16px 10px 40px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    font-size: 14px;
+    outline: none;
+    background-color: #f9f9f9;
+}
+
+.search-bar:focus {
+    background-color: #fff;
+    border-color: #999;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-left: auto;
+}
+
+.favorites-btn {
+    background: none;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+    color: #333;
+    padding: 8px;
+}
+
+.register-btn,
+.login-btn {
+    background: none;
+    border: none;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    color: #333;
+    padding: 8px 16px;
+}
+
+.login-btn:hover {
+    text-decoration: underline;
+}
+
+.auth-link {
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+}
+
+/* ==================== MAIN CONTAINER ==================== */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 60px);
+    padding: 40px 20px;
+}
+
+/* ==================== LOGIN & SIGNUP BOXES ==================== */
+.login-box,
+.signup-box {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 48px;
+    width: 100%;
+}
+
+.login-box {
+    max-width: 440px;
+}
+
+.signup-box {
+    max-width: 480px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.login-box h1,
+.signup-box h1 {
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 8px;
+    color: #111828;
+}
+
+.subtitle {
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 32px;
+}
+
+.signup-box .subtitle {
+    margin-bottom: 36px;
+    line-height: 1.5;
+}
+
+/* ==================== FORMS ==================== */
+.login-form,
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+}
+
+.signup-form .form-group label {
+    font-size: 13px;
+}
+
+/* Input padrão (cadastro) */
+.form-group input {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s;
+    background-color: #fafafa;
+}
+
+.form-group input:focus {
+    border-color: #999;
+    background-color: #fff;
+}
+
+.form-group input::placeholder {
+    color: #999;
+}
+
+/* Input com ícone (login) */
+.input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-icon {
+    position: absolute;
+    left: 12px;
+    font-size: 16px;
+    color: #999;
+}
+
+.input-wrapper input {
+    width: 100%;
+    padding: 12px 12px 12px 40px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s;
+    background-color: #fff;
+}
+
+.input-wrapper input:focus {
+    border-color: #666;
+}
+
+/* ==================== PASSWORD FIELDS ==================== */
+.password-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+/* Password no login (com ícone) */
+.password-wrapper .input-icon {
+    position: absolute;
+    left: 12px;
+    font-size: 16px;
+    color: #999;
+    z-index: 1;
+}
+
+.password-wrapper input {
+    width: 100%;
+    padding: 12px 45px 12px 40px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+/* Password no cadastro (sem ícone à esquerda) */
+.signup-form .password-wrapper input {
+    padding: 12px 45px 12px 14px;
+    background-color: #fafafa;
+}
+
+.password-wrapper input:focus {
+    border-color: #666;
+}
+
+.signup-form .password-wrapper input:focus {
+    border-color: #999;
+    background-color: #fff;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 12px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 6px;
+    color: #999;
+    z-index: 1;
+}
+
+.eye-icon {
+    font-size: 18px;
+}
+
+/* ==================== FORM OPTIONS (LOGIN) ==================== */
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    color: #666;
+}
+
+.checkbox-label input[type="checkbox"] {
+    cursor: pointer;
+}
+
+.forgot-password {
+    color: #1a73e8;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+/* ==================== TERMS (CADASTRO) ==================== */
+.terms-group {
+    margin-top: 4px;
+}
+
+.terms-group .checkbox-label {
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.terms-group .checkbox-label input[type="checkbox"] {
+    margin-top: 3px;
+    flex-shrink: 0;
+}
+
+.link {
+    color: #333;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.link:hover {
+    color: #000;
+}
+
+/* ==================== BUTTONS ==================== */
+.btn-primary {
+    background-color: #111828;
+    color: #fff;
+    border: none;
+    padding: 14px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.signup-form .btn-primary {
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 8px;
+}
+
+.btn-primary:hover {
+    background-color: #1a1a1a;
+}
+
+.btn-primary:active {
+    background-color: #4d5564;
+}
+
+/* ==================== DIVIDER (LOGIN) ==================== */
+.divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #999;
+    font-size: 14px;
+    margin: 8px 0;
+}
+
+.divider::before,
+.divider::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.divider span {
+    padding: 0 16px;
+}
+
+/* ==================== SOCIAL BUTTONS (LOGIN) ==================== */
+.btn-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+.btn-social:hover {
+    background-color: #f8f9fa;
+    border-color: #ccc;
+}
+
+.social-icon {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.btn-google .social-icon {
+    color: #4285f4;
+}
+
+.btn-microsoft .social-icon {
+    color: #00a4ef;
+}
+
+/* ==================== SIGNUP TEXT (LOGIN) ==================== */
+.signup-text {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    margin-top: 8px;
+}
+
+.signup-link {
+    color: #1a73e8;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.signup-link:hover {
+    text-decoration: underline;
+}
+
+/* ==================== RESPONSIVIDADE ==================== */
+@media (max-width: 768px) {
+    .search-wrapper {
+        display: none;
+    }
+    
+    .login-box,
+    .signup-box {
+        padding: 32px 24px;
+    }
+    
+    .nav-content {
+        gap: 12px;
+    }
+    
+    .menu-text {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .signup-box {
+        padding: 24px 20px;
+    }
+    
+    .signup-box h1 {
+        font-size: 24px;
+    }
+}

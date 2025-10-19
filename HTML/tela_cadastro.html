@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PUC-Go - Cadastro</title>
+    <link rel="stylesheet" href="CSS\\style_geral.css">
+    <!-- IMPORTANDO FONTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar">
+        <div class="nav-content">
+            <button class="menu-btn">
+                <span class="menu-icon">☰</span>
+                <span class="name-text">PUC-Go</span>
+            </button>
+            <div class="search-wrapper">
+                <span class="search-icon">🔍︎</span>
+                <input type="text" class="search-bar" placeholder="Buscar localizações no campus...">
+            </div>
+            <div class="nav-right">
+                <button class="favorites-btn">♡</button>
+                <button class="login-btn">Entrar</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="signup-box">
+            <h1>Criar Conta</h1>
+            <p class="subtitle">Cadastre-se para salvar suas localizações favoritas</p>
+
+            <form class="signup-form">
+                <div class="form-group">
+                    <label for="fullname">Nome Completo</label>
+                    <input type="text" id="fullname" placeholder="Digite seu nome completo">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="seu@email.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Senha</label>
+                    <div class="password-wrapper">
+                        <input type="password" id="password" placeholder="Digite sua senha">
+                        <button type="button" class="toggle-password">
+                            <span class="eye-icon">👁</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirm-password">Confirmar Senha</label>
+                    <div class="password-wrapper">
+                        <input type="password" id="confirm-password" placeholder="Confirme sua senha">
+                        <button type="button" class="toggle-password">
+                            <span class="eye-icon">👁</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="terms-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="terms">
+                        <span>Eu aceito os <a href="#" class="link">termos de uso</a> e a <a href="#" class="link">política de privacidade</a></span>
+                    </label>
+                </div>
+
+                <button type="submit" class="btn-primary">Criar Conta</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
