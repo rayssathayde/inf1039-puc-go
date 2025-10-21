@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<!-- CABEÇALHO (não é visível) -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PUC-Go - Prédios_locais_disponíveis</title>
+    <link rel="stylesheet" href="../CSS/style_geral.css">
+    <!-- IMPORTANDO FONTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <!-- ICONES -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+
+<body>
+    <header class="navbar">
+        <div class="nav-content">
+            <button class="menu-btn">
+                 <i data-lucide="arrow-left" class="icone_volta"></i>
+                <span class="name-text">Prédio X</span>
+            </button>
+            <div class="search-wrapper">
+                <span class="search-icon">🔍︎</span>
+                <input type="text" class="search-bar" placeholder="Buscar localizações no campus...">
+            </div>
+            <div class="nav-right">
+                <button class="favorites-btn">♡</button>
+                <button class="login-btn"> <a href="tela_login.html">Entrar/Cadastrar</a></button>
+            </div>
+        </div>
+    </header>
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class = "container">
+    <!--PRÉDIO X - LOCAIS DISPONÍVEIS -> Título e subtítulo-->
+<h1 class = "predio">Prédio X - Locais Disponíveis</h1>
+<p class = "descricao">Encontre salas, banheiros e restaurantes neste prédio</p>
+<nav class="tabs">
+            <button class="active">Todos</button>
+            <button>Salas</button>
+            <button>Banheiros</button>
+            <button>Restaurantes</button>
+        </nav>
+<section class = "place_cards">
+    <div class ="place_cards">
+        <div class="card-img">Sala 101</div>
+        <div class="card-body">
+            <h2 class = "salas">Sala 101</h2>
+            <p class = "inf_sala">1º andar, corredor princial, próximo ao elevador</p>
+            <button type="button" class="define_destination">Definir como destino</button>
+            <button type = "button" class = "favorite">♡ Adicionar aos favoritos</button>
+        </div>
+    </div>
+    <div class = "place_cards">
+        <div class = "card-img">Banheiro Masculino</div>
+        <div class = "card-body">
+            <h2 class = "banheiro_masculino">Banheiro Masculino</h2>
+            <p class = "inf_masculino">1º andar, final do corredor oeste, perto da escada</p>
+            <button type="button" class="define_destination">Definir como destino</button>
+            <button type = "button" class = "favorite">♡ Adicionar aos favoritos</button>
+        </div>
+    </div>
+    <div class = "place_cards">
+        <div class = "card-img">Restaurante Central</div>
+        <div class = "card-body">
+            <h2 class = "restaurante">Restaurante Central</h2>
+            <p class = "inf_restaurante">Térreo, área central do prédio, próximo à recepção</p>
+            <button type="button" class="define_destination">Definir como destino</button>
+            <button type = "button" class = "favorite">♡ Adicionar aos favoritos</button>
+        </div>
+    </div>
+    <div class = "place_cards">
+        <div class = "card-img">Sala 205</div>
+        <div class = "card-body">
+            <h2 class = "salas">Sala 205</h2>
+            <p class = "inf_sala">2º andar, corredor principal</p>
+            <button type="button" class="define_destination">Definir como destino</button>
+            <button type = "button" class = "favorite">♡ Adicionar aos favoritos</button>
+        </div>
+    </div>
+    <div class = "place_cards">
+        <div class = "card-img">Banheiro Feminino</div>
+        <div class = "card-body">
+            <h2 class = "banheiro_feminino">Banheiro feminino</h2>
+            <p class = "inf_feminino">2º andar, final do corredor</p>
+            <button type="button" class="define_destination">Definir como destino</button>
+            <button type = "button" class = "favorite">♡ Adicionar aos favoritos</button>
+        </div>
+    </div>
+    <div class = "place_cards">
+        <div class = "card-img">Biblioteca Central</div>
+        <div class = "card-body">
+             <h2 class = "biblioteca">Biblioteca Central</h2>
+             <p class = "inf_biblioteca">3º andar, à esquerda</p>
+            <button type="button" class="define_destination">Definir como destino</button>
+            <button type = "button" class = "favorite">♡ Adicionar aos favoritos</button>
+        </div>
+    </div>
+  </main>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
