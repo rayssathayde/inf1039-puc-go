@@ -16,22 +16,28 @@
 
 
 <body>
+    <!-- CABEÇALHO DA PÁGINA-> tudo que tem antes da caixa de login (é visível) -->
     <header class="navbar">
         <div class="nav-content">
             <button class="menu-btn">
-                 <i data-lucide="arrow-left" class="icone_volta"></i>
-                <span class="name-text">Prédio X</span>
+                <a href="#" class="menu-link">
+                    <i data-lucide="menu" class="menu-icon"></i>
+                </a>
+                <span class="name-text">PUC-Go</span>
             </button>
             <div class="search-wrapper">
                 <span class="search-icon">🔍︎</span>
                 <input type="text" class="search-bar" placeholder="Buscar localizações no campus...">
             </div>
             <div class="nav-right">
-                <button class="favorites-btn">♡</button>
-                <button class="login-btn"> <a href="tela_login.html">Entrar/Cadastrar</a></button>
+                <a href="#" class="favorites-link">
+                    <i data-lucide="heart" class="favorites-icon"></i>
+                </a>
+                <button class="register-btn"><a href="tela_login.html">Entrar/Cadastrar</a></button>
             </div>
         </div>
     </header>
+
     <!-- CONTEÚDO PRINCIPAL -->
     <main class = "container">
     <!--PRÉDIO X - LOCAIS DISPONÍVEIS -> Título e subtítulo-->

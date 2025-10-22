@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <!-- ICONES -->
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <!-- CORPO -> todos os elementos que aparecem na tela-->
 <body>
@@ -17,7 +19,9 @@
     <header class="navbar">
         <div class="nav-content">
             <button class="menu-btn">
-                <span class="menu-icon">☰</span>
+                <a href="#" class="menu-link">
+                    <i data-lucide="menu" class="menu-icon"></i>
+                </a>
                 <span class="name-text">PUC-Go</span>
             </button>
             <div class="search-wrapper">
@@ -25,7 +29,9 @@
                 <input type="text" class="search-bar" placeholder="Buscar localizações no campus...">
             </div>
             <div class="nav-right">
-                <button class="favorites-btn">♡</button>
+                <a href="#" class="favorites-link">
+                    <i data-lucide="heart" class="favorites-icon"></i>
+                </a>
                 <button class="register-btn"><a href="tela_cadastro.html">Cadastre-se</a></button>
             </div>
         </div>
@@ -42,7 +48,7 @@
                 <div class="form-group">
                     <label for="email">Email</label>
                     <div class="input-wrapper">
-                        <span class="input-icon">✉</span>
+                        <i data-lucide="mail" class="input-icon"></i>
                         <input type="email" id="email" placeholder="seu@email.com">
                     </div>
                 </div>
@@ -50,10 +56,10 @@
                 <div class="form-group">
                     <label for="password">Senha</label>
                     <div class="input-wrapper password-wrapper">
-                        <span class="input-icon">🔒</span>
+                        <i data-lucide="lock" class="input-icon"></i>
                         <input type="password" id="password" placeholder="Digite sua Senha">
                         <button type="button" class="toggle-password">
-                            <span class="eye-icon">👁</span>
+                            <i data-lucide="eye" class="eye-icon"></i>
                         </button>
                     </div>
                 </div>
@@ -88,5 +94,10 @@
             </form>
         </div>
     </main>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons();
+    </script>
 </body>
 </html>
