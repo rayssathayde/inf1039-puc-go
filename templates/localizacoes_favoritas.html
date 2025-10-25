@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+
+{% block title %}PUC-Go — Localizações Favoritas{% endblock %}
+
+{% block content %}
+
+
+
+
+    <main class="conteudo-principal">
+        <div class="container-secao-loc-favoritas">
+            <h2>Localizações Favoritas</h2>
+            <h3>Seus locais salvos no campus</h3>
+        </div>
+
+
+        <div class="container-cards-locais-favoritos">
+            <div class="card-localfav1">
+                <p class="titulo">Edifício Cardeal Leme</p>
+                <p class="subtitulo">Edifício Cardeal Leme</p>
+                <i data-lucide="heart" class="icone-coracao"></i>
+                <p class="descr">Localizado próximo à entrada da Av. Padre Leonel Franca. Após o bicicletário.</p>
+                <i data-lucide="map-pin" class="icone-pin"></i>
+                <p class="local">Edifício Cardeal Leme</p>
+                <button class="btn-marcar-destino">
+                    <span class="texto-marcar-destino">Marcar como destino</span>
+                </button>
+            </div>
+            <div class="card-localfav2">
+                <p class="titulo">Restaurante Universitário</p>
+                <p class="subtitulo">Restaurante Universitário</p>
+                <i data-lucide="heart" class="icone-coracao"></i>
+                <p class="descr">Localizado no subsolo do Edifício da Amizade - Ala Frings. Entrada alternativa pela Alameda Alceu Amoroso Lima, na Vila dos Diretórios. </p>
+                <i data-lucide="map-pin" class="icone-pin"></i>
+                <p class="local">Edifício da Amizade - Ala Frings - Subsolo</p>
+                <button class="btn-marcar-destino">
+                    <span class="texto-marcar-destino">Marcar como destino</span>
+                </button>
+            </div>
+            <div class="card-localfav3">
+                <p class="titulo">Biblioteca Central</p>
+                <p class="subtitulo">Biblioteca Central</p>
+                <i data-lucide="heart" class="icone-coracao"></i>
+                <p class="descr">Localizada no 3º andar do Edifício da Amizade - Ala Frings.</p>
+                <i data-lucide="map-pin" class="icone-pin"></i>
+                <p class="local">Edifício da Amizade - Ala Frings - 3º andar</p>
+                <button class="btn-marcar-destino">
+                    <span class="texto-marcar-destino">Marcar como destino</span>
+                </button>
+            </div>
+        </div>
+    </main>
+
+
+
+{% endblock %}

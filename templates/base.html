@@ -30,10 +30,12 @@
             </button>
             <div class="search-wrapper">
                 <span class="search-icon">🔍︎</span>
-                <input type="text" class="search-bar" placeholder="Buscar localizações no campus...">
+                <form action="{% url 'search_results' %}" method="get">
+                    <input type="text" name="q" class="search-bar" placeholder="Buscar localizações no campus...">
+                </form>
             </div>
             <div class="nav-right">
-                <a href="#" class="favorites-link">
+                <a href="{% url 'favorites' %}" class="favorites-link">
                     <i data-lucide="heart" class="favorites-icon"></i>
                 </a>
                 <button class="register-btn"><a href="{% url 'login' %}">Entrar</a></button> 
