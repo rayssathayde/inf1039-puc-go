@@ -1,0 +1,174 @@
+/* ==================== LOGIN & SIGNUP BOXES ==================== */
+.signup-box {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 48px;
+    width: 100%;
+    max-width: 480px;
+}
+
+.signup-box h1 {
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 8px;
+    color: #111828;
+}
+
+.subtitle {
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 36px;
+    line-height: 1.5;
+}
+
+/* ==================== FORMS ==================== */
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-size: 13px;
+    font-weight: 500;
+    color: #333;
+}
+
+/* Input padrão (cadastro) */
+.form-group input {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s;
+    background-color: #fafafa;
+}
+
+.form-group input:focus {
+    border-color: #999;
+    background-color: #fff;
+}
+
+.form-group input::placeholder {
+    color: #999;
+}
+
+
+/* ==================== PASSWORD FIELDS ==================== */
+.password-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+
+/* Password no cadastro (sem ícone à esquerda) */
+.signup-form .password-wrapper input {
+    padding: 12px 45px 12px 14px;
+    background-color: #fafafa;
+}
+
+.signup-form .password-wrapper input:focus {
+    border-color: #999;
+    background-color: #fff;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 12px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 6px;
+    color: #999;
+    z-index: 1;
+}
+
+.eye-icon {
+    font-size: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+/* ==================== TERMS (CADASTRO) ==================== */
+.terms-group {
+    margin-top: 4px;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    cursor: pointer;
+    font-size: 13px;
+    color: #666;
+    line-height: 1.5;
+}
+
+.checkbox-label input[type="checkbox"] {
+    margin-top: 3px;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.link {
+    color: #333;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.link:hover {
+    color: #000;
+}
+
+/* ==================== BUTTONS ==================== */
+.btn-primary {
+    background-color: #111828;
+    color: #fff;
+    border: none;
+    padding: 14px;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-primary:hover {
+    background-color: #1a1a1a;
+}
+
+.btn-primary:active {
+    background-color: #4d5564;
+}
+
+/* ==================== RESPONSIVIDADE ==================== */
+@media (max-width: 768px) {
+
+    .signup-box {
+        padding: 32px 24px;
+    }
+    
+}
+
+@media (max-width: 480px) {
+    .signup-box {
+        padding: 24px 20px;
+    }
+    
+    .signup-box h1 {
+        font-size: 24px;
+    }
+}
