@@ -11,5 +11,5 @@ def search_result(request):
     return render(request, 'resultado_pesquisa.html')
 
 def available_locations(request):
-    return render(request, 'locais_diponiveis.html')
+    return render(request, 'locais_disponiveis.html')
 

@@ -1,4 +1,8 @@
 {% extends 'base.html' %}
+{% load static %}
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'CSS/style_resultado_pesquisa.css' %}">
+{% endblock %}
 
 {% block title %}PUC-Go — Resultado de Pesquisa{% endblock %}
 
