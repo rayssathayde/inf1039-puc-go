@@ -14,12 +14,12 @@
             <h1>Entrar na Conta</h1>
             <p class="subtitle">Acesse sua conta do PUC-Go</p>
 
-            <form class="login-form">
+            <form class="login-form" method="post">{% csrf_token %}
                 <div class="form-group">
                     <label for="email">Email</label>
                     <div class="input-wrapper">
                         <i data-lucide="mail" class="input-icon"></i>
-                        <input type="email" id="email" placeholder="seu@email.com">
+                        <input type="email" id="email" name="email" placeholder="seu@email.com">
                     </div>
                 </div>
 
@@ -27,7 +27,7 @@
                     <label for="password">Senha</label>
                     <div class="input-wrapper password-wrapper">
                         <i data-lucide="lock" class="input-icon"></i>
-                        <input type="password" id="password" placeholder="Digite sua Senha">
+                        <input type="password" id="password" name="password" placeholder="Digite sua Senha">
                         <button type="button" class="toggle-password">
                             <i data-lucide="eye" class="eye-icon"></i>
                         </button>
