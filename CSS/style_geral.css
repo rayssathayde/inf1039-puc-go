@@ -155,7 +155,9 @@ font-size: large;
     background:none ;
     border: none;
     padding: 1px;
+    font-size: medium;
     font-weight: 500;
+    margin-left: 3rem;
     cursor: pointer;
     color: #333;
 }
@@ -167,10 +169,29 @@ font-size: large;
 .all_locations{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    
 }
-.localizacoes_card{
+.localizacoes_card1{
     margin-top: 2rem;
     margin-left: 15rem;
+    gap: 20px;
+    border: 1px solid #e0dada;
+    border-radius: 15px;
+   
+}
+.localizacoes_card2{
+    margin-top: 2rem;
+    margin-left: 8rem;
+    margin-right: 5rem;
+    gap: 20px;
+    border: 1px solid #e0dada;
+    border-radius: 15px;
+   
+}
+.localizacoes_card3{
+    margin-top: 2rem;
+    margin-left:5rem;
+    margin-right: 8rem;
     gap: 20px;
     border: 1px solid #e0dada;
     border-radius: 15px;
@@ -222,6 +243,7 @@ font-size: large;
     cursor: pointer;
     width: 100%;
 }
+
 
 /* ==================== LOGIN & SIGNUP BOXES ==================== */
 .login-box,
