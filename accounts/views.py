@@ -62,5 +62,9 @@ def register(request):
 
         messages.success(request, f"Usuário {username} cadastrado com sucesso!")
         return redirect('login')
+    
+#@login_required(login_url='login')
+def favorites(request):
+    return render(request, 'localizacoes_favoritas.html')
         
         
