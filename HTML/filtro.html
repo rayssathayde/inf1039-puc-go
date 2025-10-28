@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PUC-Go</title>
+    <link rel="stylesheet" href="../CSS/style_geral.css">
+    
+    <!-- IMPORTANDO FONTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    
+    <!-- ICONES -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+    <!-- CABEÇALHO DA PÁGINA-> tudo que tem antes da caixa de login (é visível) -->
+    <header class="navbar">
+        <div class="nav-content">
+            <button class="menu-btn">
+                <a href="#" class="menu-link">
+                    <i data-lucide="menu" class="menu-icon"></i>
+                </a>
+                <span class="name-text">PUC-Go</span>
+            </button>
+            <div class="search-wrapper">
+                <span class="search-icon">🔍︎</span>
+                <input type="text" class="search-bar" placeholder="Buscar localizações no campus...">
+            </div>
+            <!-- filtro -->
+            <div class = "filtro">
+                <h2>Filtros de Busca</h2>
+                <p>Categoria</p>
+                <select name="categorias" id="todas_categorias">
+                    <option value="all">Todas as categorias</option>
+                </select name="predio" id="select_predio">
+                <p>Prédio</p>
+                <select name="predios" id="todos_predios">
+                    <option value="all_predios">Todos os prédios</option>
+                </select>
+                <p>Acessibilidade</p>
+                    <input type="checkbox" id = "cadeirante" name="nomecadeirante">
+                    <label for ="cadeitante">Acesso para cadeirantes</label>
+                    <input type="checkbox" id = "elevador" name="elevadorprox">
+                    <label for="elevador">Próximo ao elevador</label>
+                <button class="clean">Limpar</button>
+                <button class="filter">Aplicar Filtros</button>
+                <div class="lugares">
+                    <i data-lucide="toilet" class="banheiro-icon"></i>
+                    <button class="banheiroA">Banheiro Prédio A - Térreo</button>
+                    <i data-lucide="book" class="biblioteca-icon"></i>
+                    <button class="biblioteca_central">Biblioteca Central</button>
+                    <i data-lucide="utensils" class="restaurante-icon"></i>
+                    <button class="cantina">Cantina Principal</button>
+                </div>
+            </div>
+            <!-- fim filtro -->
+            
+
+<script>
+        lucide.createIcons();
+    </script>
+    
+</body>
+</html>
