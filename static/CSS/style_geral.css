@@ -46,8 +46,8 @@ body {
     color:#000
 }
 
-.menu-icon {
-    font-size: 20px;
+.menu-icon svg{
+    width: 18px;
 }
 
 .name-text {
@@ -131,6 +131,10 @@ body {
     padding: 40px 20px;
 }
 
+main {
+    padding-bottom: 20px; /* adiciona espaço antes do footer */
+}
+
 /* ==================== RESPONSIVIDADE ==================== */
 @media (max-width: 768px) {
     .search-wrapper {
@@ -148,29 +152,96 @@ body {
 
 
 
+/* ===== MENU LATERAL ===== */
+.side-menu {
+    position: fixed;
+    top: 0;
+    left: -250px; 
+    width: 250px;
+    height: 100vh;
+    background-color: #fdfbfb;
+    color: rgb(3, 2, 2);
+    transition: left 0.3s ease;
+    z-index: 1000;
+    padding-top: 80px;
+}
+
+.side-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.side-menu ul li {
+    padding: 15px 20px;
+    border-bottom: 1px solid rgba(164, 142, 142, 0.1);
+}
+
+.side-menu ul li a {
+    color: rgb(12, 12, 12);
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+    transition: background 0.2s;
+}
+
+.side-menu ul li a:hover {
+    background: rgba(173, 157, 157, 0.1);
+}
+
+/* ===== MENU VISÍVEL ===== */
+.side-menu.active {
+    left: 0;
+}
 
 
 
+/* ==================== FOOTER ==================== */
+.footer {
+    background-color: #fff;
+    border-top: 1px solid #e0e0e0;
+    padding: 12px 24px;
+    color: #4d5564;
+    font-family: Cabin, Proxima Nova, sans-serif;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-bottom:15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-left {
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.footer-right a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #4d5564;
+    font-size: 14px;
+    transition: color 0.2s ease;
+}
 
 
+/* Responsividade */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 8px;
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    .footer-right a {
+        margin-left: 10px;
+    }
+}
 
