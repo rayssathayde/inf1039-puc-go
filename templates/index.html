@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'CSS/style_index.css' %}">
+{% endblock %}
+
+{% block title %}PUC-Go — Home{% endblock %}
+
+{% block content %}
+
+    <main class="conteudo-principal">
+        <div class="container-mapa">
+            <div class="card-mapa">
+                <i data-lucide="map" class="icone-mapa"></i>
+                <p class="titulo">Mapa Interativo do Campus</p>
+                <p class="subtitulo">Clique e navegue pelo campus universitário</p>
+                <button type="button" class="btn-mais">
+                    <i data-lucide="plus"></i>
+                </button>
+                <button type="button" class="btn-menos">
+                    <i data-lucide="minus"></i>
+                </button>
+                <button type="button" class="btn-localizacao">
+                    <i data-lucide="locate-fixed"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="container-secao-loc-sugeridas">
+            <h2>Localizações Sugeridas</h2>
+            <h3>Encontre rapidamente os locais mais procurados no campus</h3>
+        </div>
+
+        <div class="container-cards-locais">
+            <div class="card-localizacao1">
+                <i data-lucide="building" class="icone-predio"></i>
+                <p class="titulo">Edifício Cardeal Leme</p>
+            </div>
+            <div class="card-localizacao2">
+                <i data-lucide="utensils" class="icone-restaurante"></i>
+                <p class="titulo">Restaurante Universitário</p>
+            </div>
+            <div class="card-localizacao3">
+                <i data-lucide="book" class="icone-biblioteca"></i>
+                <p class="titulo">Biblioteca Central</p>
+            </div>
+        </div>
+    </main>
+
+{% endblock %}
+
+
+
+    

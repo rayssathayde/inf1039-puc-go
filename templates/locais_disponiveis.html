@@ -1,48 +1,15 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<!-- CABEÇALHO (não é visível) -->
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PUC-Go - Prédios_locais_disponíveis</title>
-    <link rel="stylesheet" href="../CSS/style_geral.css">
-    <!-- IMPORTANDO FONTES -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <!-- ICONES -->
-    <script src="https://unpkg.com/lucide@latest"></script>
-</head>
+{% extends 'base.html' %}
+{% load static %}
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'CSS/style_locais_disponiveis.css' %}">
+{% endblock %}
+
+{% block title %}PUC-Go — Locais Disponíveis{% endblock %}
+
+{% block content %}
 
 
-<body>
-    <!-- CABEÇALHO DA PÁGINA-> tudo que tem antes da caixa de login (é visível) -->
-    <header class="navbar">
-        <div class="nav-content">
-            <button class="menu-btn">
-                <a href="#" class="menu-link">
-                    <i data-lucide="menu" class="menu-icon"></i>
-                </a>
-                <span class="name-text">PUC-Go</span>
-            </button>
-            <div class="search-wrapper">
-                <span class="search-icon">🔍︎</span>
-                <input type="text" class="search-bar" placeholder="Buscar localizações no campus...">
-            </div>
-            <div class="nav-right">
-                 <a href="#" class="favorites-link">
-                    <i data-lucide="heart" class="favorite-btn"></i>
-                </a>
-                <button class="login-btn"> <a href="tela_login.html">Entrar/Cadastrar</a></button>
-                <a href="#" class="favorites-link">
-                    <i data-lucide="heart" class="favorites-icon"></i>
-                </a>
-                <button class="register-btn"><a href="tela_login.html">Entrar/Cadastrar</a></button>
-            </div>
-        </div>
-    </header>
 
-    <!-- CONTEÚDO PRINCIPAL -->
     <main class = "container-predio">
     <!--PRÉDIO X - LOCAIS DISPONÍVEIS -> Título e subtítulo-->
     <div class = "title">
@@ -113,9 +80,6 @@
         </div>
     </div>
   </main>
-  <script src="https://unpkg.com/lucide@latest"></script>
-  <script>
-    lucide.createIcons();
-  </script>
-</body>
-</html>
+
+
+{% endblock %}

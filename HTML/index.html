@@ -13,14 +13,30 @@
     
     <!-- ICONES -->
     <script src="https://unpkg.com/lucide@latest"></script>
+    
 </head>
 
 
 <body>
+    <!-- CABEÇALHO DA PÁGINA-> tudo que tem antes da caixa de login (é visível) -->
     <header class="navbar">
+
+        
+<nav class="side-menu" id="sideMenu">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="resultado-pesquisa.html">Prédios </a></li>
+        <li><a href="#">Chat</a></li>
+        <li><a href="#">Favoritos</a></li>
+        <li><a href="tela_login.html">Login/Cadastro</a></li>
+    </ul>
+</nav>
+
         <div class="nav-content">
             <button class="menu-btn">
-                <span class="menu-icon">☰</span>
+                <a href="#" class="menu-link">
+                    <i data-lucide="menu" class="menu-icon"></i>
+                </a>
                 <span class="name-text">PUC-Go</span>
             </button>
             <div class="search-wrapper">
@@ -28,8 +44,10 @@
                 <input type="text" class="search-bar" placeholder="Buscar localizações no campus...">
             </div>
             <div class="nav-right">
-                <button class="favorites-btn">♡</button>
-                <button class="login-btn"> <a href="tela_login.html">Entrar/Cadastrar</a></button>
+                <a href="#" class="favorites-link">
+                    <i data-lucide="heart" class="favorites-icon"></i>
+                </a>
+                <button class="register-btn"><a href="tela_login.html">Entrar/Cadastrar</a></button>
             </div>
         </div>
     </header>
@@ -72,10 +90,11 @@
             </div>
         </div>
     </main>
-
+    <script src="../javascript/script.js" defer></script>
     <script>
-        lucide.createIcons();
-    </script>
+    lucide.createIcons();
+</script>
+
     
 </body>
 </html>

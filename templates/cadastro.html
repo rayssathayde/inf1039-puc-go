@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'CSS/style_cadastro.css' %}">
+{% endblock %}
+
+{% block title %}PUC-Go — Cadastro{% endblock %}
+
+{% block content %}
+
+    <main class="container">
+        <div class="signup-box">
+            <h1>Criar Conta</h1>
+            <p class="subtitle">Cadastre-se para salvar suas localizações favoritas</p>
+
+            <form action="{% url 'register' %}" method="post" class="signup-form">{% csrf_token %}
+                <div class="form-group">
+                    <label for="username">Nome de Usuário</label>
+                    <input type="text" id="username" name="username" placeholder="Digite seu nome de usuário">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="seu@email.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Senha</label>
+                    <div class="password-wrapper">
+                        <input type="password" id="password" name="password" placeholder="Digite sua senha">
+                        <button type="button" class="toggle-password">
+                            <i data-lucide="eye" class="eye-icon"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirm-password">Confirmar Senha</label>
+                    <div class="password-wrapper">
+                        <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirme sua senha">
+                        <button type="button" class="toggle-password">
+                            <i data-lucide="eye" class="eye-icon"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="terms-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="terms" name="terms">
+                        <span>Eu aceito os <a href="#" class="link">termos de uso</a> e a <a href="#" class="link">política de privacidade</a></span>
+                    </label>
+                </div>
+
+                <button type="submit" class="btn-primary">Criar Conta</button>
+            </form>
+        </div>
+    </main>
+
+
+{% endblock %}

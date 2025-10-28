@@ -1,0 +1,280 @@
+/* ==================== LOGIN BOXES ==================== */
+.login-box
+{
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 48px;
+    width: 100%;
+    max-width: 440px;
+}
+
+.login-box h1
+{
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 8px;
+    color: #111828;
+}
+
+.subtitle {
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 32px;
+}
+
+/* ==================== FORMS ==================== */
+.login-form
+{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+}
+
+/* Input com ícone (login) */
+.input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-icon {
+    position: absolute;
+    left: 12px;
+    font-size: 10px;
+    width: 20px;
+    height: 20px;
+    color: #999;
+}
+
+.input-wrapper input {
+    width: 100%;
+    padding: 12px 12px 12px 40px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s;
+    background-color: #fff;
+}
+
+.input-wrapper input:focus {
+    border-color: #666;
+}
+
+/* ==================== PASSWORD FIELDS ==================== */
+.password-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+/* Password no login (com ícone) */
+.password-wrapper .input-icon {
+    position: absolute;
+    left: 10px;
+    width: 20px;
+    height: 20px;
+    font-size: 16px;
+    color: #999;
+    z-index: 1;
+}
+
+.password-wrapper input {
+    width: 100%;
+    padding: 12px 45px 12px 40px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.password-wrapper input:focus {
+    border-color: #666;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 12px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 6px;
+    color: #999;
+    z-index: 1;
+}
+
+.eye-icon {
+    font-size: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+/* ==================== FORM OPTIONS ==================== */
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    color: #666;
+}
+
+.checkbox-label input[type="checkbox"] {
+    cursor: pointer;
+}
+
+.forgot-password {
+    color: #1a73e8;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+
+/* ==================== BUTTONS ==================== */
+.btn-primary {
+    background-color: #111828;
+    color: #fff;
+    border: none;
+    padding: 14px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-primary:hover {
+    background-color: #1a1a1a;
+}
+
+.btn-primary:active {
+    background-color: #4d5564;
+}
+
+/* ==================== DIVIDER (LOGIN) ==================== */
+.divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #999;
+    font-size: 14px;
+    margin: 8px 0;
+}
+
+.divider::before,
+.divider::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.divider span {
+    padding: 0 16px;
+}
+
+/* ==================== SOCIAL BUTTONS ==================== */
+.btn-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+.btn-social:hover {
+    background-color: #f8f9fa;
+    border-color: #ccc;
+}
+
+.social-icon {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.btn-google .social-icon {
+    color: #4285f4;
+}
+
+.btn-microsoft .social-icon {
+    color: #00a4ef;
+}
+
+/* ==================== SIGNUP TEXT (LOGIN) ==================== */
+.signup-text {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    margin-top: 8px;
+}
+
+.signup-link {
+    color: #1a73e8;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.signup-link:hover {
+    text-decoration: underline;
+}
+
+/* ==================== RESPONSIVIDADE ==================== */
+@media (max-width: 768px) {
+    
+    .login-box
+    {
+        padding: 32px 24px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
