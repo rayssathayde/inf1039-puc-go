@@ -1,0 +1,195 @@
+/* ==================== INFORMAÇÕES DE AMBIENTES - PATH ==================== */
+
+.caminho-cont{
+    display: flex;
+    margin-left:150px;
+    margin-top:75px;
+    background: none;
+    gap: 8px;
+}
+
+.caminho-local{
+    background: none;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    color: #4d5564;
+    font-weight: 500;
+}
+
+.caminho-local2{
+    background: none;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    color: #000;
+    font-weight: 500;
+}
+
+
+/* ==================== CONTAINER PRINCIPAL - INFOS ==================== */
+
+.cont-principal{
+    display: flex;
+    margin-left:150px;
+    margin-top:15px;
+    background: none;
+    gap: 15px;
+}
+
+.cont-infos{
+    width:40%;
+    height:fit-content;
+    margin-bottom:100px;
+    display: grid;
+    background: none;
+    border: solid;
+    border-width: 1px;
+    border-color:#e2e5e9;
+    border-radius: 15px;
+    gap:10px;
+}
+
+.titulo-cont{
+    margin-top: 20px;
+    margin-left: 20px;
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: #000;
+    font-weight: 500;
+}
+
+.btn-favorite{
+    background: none;
+    border: none;
+    margin-top: 20px;
+    margin-right: 20px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    color: #333;
+}
+
+.divide-textos{
+    display: flex;
+    width: 100%;
+    justify-content:space-between;
+}
+    
+.divide-textos2{
+    display: flex;
+    width: 100%;
+    justify-content:start;
+    margin-bottom:10px;
+}
+
+.icone-texto{
+    width: 22px;
+    height: 22px;
+    color:#666;
+    margin-left:20px;
+}
+
+.subtit-cont{
+    background: none;
+    border: none;
+    font-size: 17px;
+    color: #666;
+    align-content:center;
+}
+
+.foto-local{
+    margin-left:20px;
+    margin-right:20px;
+    height:200px;
+    background-color:#4d5564;
+    border-radius:15px;
+    font-size:15px;
+    color:#e2e5e9;
+    align-content: center;
+    justify-items: center;
+}
+
+.divide-textos3{
+    display: grid;
+    border:none;
+    width: auto;
+    margin-left:20px;
+    margin-right:20px;
+    margin-top:5px;
+    gap:10px;
+}
+
+.icone-texto2{
+    width: 22px;
+    height: 22px;
+    color:#666;
+}
+
+
+/* ==================== CONTAINER PRINCIPAL - EXTRAS ==================== */
+
+.cont-extras{
+    width: 40%;
+    display: grid;
+    height:fit-content;
+    background: none;
+    border: solid;
+    border-width: 1px;
+    border-color:#e2e5e9;
+    border-radius:15px;
+    gap:10px;
+    margin-bottom:100px;
+}
+
+.titulo-extras{
+    margin:20px;
+    margin-bottom:1px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: #000;
+    font-weight: 500;
+    align-content:center;
+}
+
+.mapa{
+    margin-left:20px;
+    margin-right:20px;
+    height:450px;
+    background-color:#4d5564;
+    border-radius:15px;
+    font-size:15px;
+    color:#e2e5e9;
+    align-content: center;
+    justify-items: center;
+}
+
+.local-prox{
+    display:flex;
+    justify-content:start;
+    margin-left:20px;
+    margin-bottom:20px;
+    gap:8px;
+}
+
+.icone-prox{
+    display:flex;
+    height:50px;
+    width:50px;
+    background-color:#4d5564;
+    border-radius:5px;
+    font-size:15px;
+    color:#e2e5e9;
+    align-items: center;
+    justify-content: center;
+}
+
+.divide-textos4{
+    display: grid;
+    border:none;
+    width: auto;
+    gap:3px;
+    align-content:center;
+}

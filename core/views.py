@@ -11,3 +11,8 @@ def search_result(request):
 def available_locations(request):
     return render(request, 'locais_disponiveis.html')
 
+def info_ambientes(request):
+    return render(request, 'info_ambientes.html')
+
+def mapa(request):
+    return render(request, 'mapa.html')

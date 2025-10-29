@@ -2,24 +2,27 @@ from django.shortcuts import render, redirect
 from django.contrib import messages
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate, login as auth_login
+from django.core.validators import validate_email
+from django.core.exceptions import ValidationError
 
 # Create your views here.
 def login(request):
     if request.method == "GET":
         return render(request, 'login.html')
     else:
-        email = request.POST.get('email')
+        email = request.POST.get('email', '').strip().lower()
         senha = request.POST.get('password')
 
-        try:
-            user_obj = User.objects.get(email=email)
+
+        user_obj = User.objects.filter(email=email).first()
+        if user_obj:
             user = authenticate(request, username=user_obj.username, password=senha)
-        except User.DoesNotExist:
+        else:
             user = None 
 
         if user:
             auth_login(request, user)
-            messages.success(request, f"Bem-vindo, {user.username}!")
+            messages.success(request, f"Bem-vindo(a), {user.username}!")
 
             next_page = request.GET.get('next', 'home')
             return redirect(next_page)
@@ -33,8 +36,8 @@ def register(request):
     if request.method == "GET":
         return render(request, 'cadastro.html')
     else:
-        username = request.POST.get('username')
-        email = request.POST.get('email')
+        username = request.POST.get('username', '').strip()
+        email = request.POST.get('email', '').strip().lower()
         senha = request.POST.get('password')
         confirm = request.POST.get('confirm-password')
         terms = request.POST.get('terms')
@@ -54,13 +57,26 @@ def register(request):
         if User.objects.filter(username=username).exists():
             messages.error(request, "Já existe um usuário com esse nome.")
             return redirect('register')
-    
+        
+        if User.objects.filter(email=email).exists():
+            messages.error(request, "Esse email já está cadastrado")
+            return redirect('register')
+        
+        try:
+            validate_email(email)
+        except ValidationError:
+            messages.error(request, "Digite um email válido 'nome@dominio.com'")
+            return redirect('register')
+
+        if len(senha) < 8:
+            messages.error(request, "A senha deve ter pelo menos 8 caracteres")
+            return redirect('register')   
 
         user = User.objects.create_user(username=username, email=email, password=senha)
 
         user.save()
 
-        messages.success(request, f"Usuário {username} cadastrado com sucesso!")
+        messages.success(request, f"{username}, sua conta foi criada com sucesso! Faça login para continuar.")
         return redirect('login')
     
 #@login_required(login_url='login')

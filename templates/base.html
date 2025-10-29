@@ -22,6 +22,17 @@
 
     <!-- HEADER (fixo em todas as páginas) -->
     <header class="navbar">
+        <nav class="side-menu" id="sideMenu">
+            <ul>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'available_locations' %}">Prédios </a></li>
+                <li><a href="#">Chat</a></li>
+                <li><a href="{% url 'favorites' %}">Favoritos</a></li>
+                <li><a href="{% url 'login' %}">Login/Cadastro</a></li>
+            </ul>
+        </nav>
+
+
         <div class="nav-content">
             <button class="menu-btn">
                 <a href="{% url 'home' %}" class="menu-link">
@@ -29,12 +40,43 @@
                 </a>
                 <span class="name-text">PUC-Go</span>
             </button>
+
             <div class="search-wrapper">
                 <span class="search-icon">🔍︎</span>
                 <form action="{% url 'search_results' %}" method="get">
                     <input type="text" name="q" class="search-bar" placeholder="Buscar localizações no campus...">
                 </form>
             </div>
+
+            <!-- filtro 
+            <div class = "filtro">
+                <h2>Filtros de Busca</h2>
+                <p>Categoria</p>
+                <select name="categorias" id="todas_categorias">
+                    <option value="all">Todas as categorias</option>
+                </select name="predio" id="select_predio">
+                <p>Prédio</p>
+                <select name="predios" id="todos_predios">
+                    <option value="all_predios">Todos os prédios</option>
+                </select>
+                <p>Acessibilidade</p>
+                    <input type="checkbox" id = "cadeirante" name="nomecadeirante">
+                    <label for ="cadeitante">Acesso para cadeirantes</label>
+                    <input type="checkbox" id = "elevador" name="elevadorprox">
+                    <label for="elevador">Próximo ao elevador</label>
+                <button class="clean">Limpar</button>
+                <button class="filter">Aplicar Filtros</button>
+                <div class="lugares">
+                    <i data-lucide="toilet" class="banheiro-icon"></i>
+                    <button class="banheiroA">Banheiro Prédio A - Térreo</button>
+                    <i data-lucide="book" class="biblioteca-icon"></i>
+                    <button class="biblioteca_central">Biblioteca Central</button>
+                    <i data-lucide="utensils" class="restaurante-icon"></i>
+                    <button class="cantina">Cantina Principal</button>
+                </div>
+            </div>
+             fim filtro -->
+
             <div class="nav-right">
                 <a href="{% url 'favorites' %}" class="favorites-link">
                     <i data-lucide="heart" class="favorites-icon"></i>
@@ -44,6 +86,16 @@
         </div>
     </header>
 
+    {% if messages %}   
+    <div class="messages-container">
+        {% for message in messages %}
+        <div class="alert {{ message.tags }}">
+            {{ message }}
+        </div>
+        {% endfor %}
+    </div> 
+    {% endif %}
+
     <!-- CONTEÚDO VARIÁVEL DAS PÁGINAS -->
     <main>
         {% block content %}
@@ -51,10 +103,20 @@
     </main>
 
     <!-- FOOTER -->
-     <!-- criar footer aqui -->
+     <footer class="footer">
+        <div class="footer-content">
+            <span class="footer-left">PUC-Go</span>
+                <div class="footer-right">
+                    <a href="#">Sobre</a>
+                    <a href="#">Ajuda</a>
+                    <a href="#">Contato</a>
+                </div>
+        </div>
+    </footer>
 
-    <script>
-        lucide.createIcons();
-    </script>
+
+    <script>lucide.createIcons();</script>
+    <script src="{% static 'JS/base.js' %}"></script>
+    {% block extra_js %}{% endblock %}
 </body>
 </html>
