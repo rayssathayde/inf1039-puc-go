@@ -7,7 +7,6 @@ barra.addEventListener("focus", () => {
   filtro.classList.add("show");
 });
 
-
 document.addEventListener("click", (e) => {
   if (!barra.contains(e.target) && !filtro.contains(e.target)) {
     filtro.classList.remove("show");
