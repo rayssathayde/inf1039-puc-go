@@ -150,7 +150,113 @@ main {
     }
 }
 
+/* ==================== Filtro ==================== */
 
+.filtro {
+    display:none;
+    position: absolute;
+    top: 60px;
+    left: 355px;
+    background: #fff;
+    border-radius: 12px;
+    border: 1px solid #f9f9f9;
+    padding: 16px;
+    width: 600px;
+    z-index: 100;
+}
+
+.filtro.show {
+  display: block; 
+}
+
+.filtro h2
+{
+    font-size:18px;
+}
+.predioCategoria {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column; 
+ 
+}
+
+.campo p {
+  margin-top: 20px; 
+}
+
+.campo select {
+  padding: 5px;
+  width: 250px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+.tituloAcessibilidade{
+    margin-top: 20px;
+}
+.acessibilidade {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.lugar1 button {
+      padding: 8px 4px;
+      text-align: left;
+      margin-left: 5px;
+      border: 0;
+      background: #f7f7f7;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+.lugar2 button {
+    padding: 8px 4px;
+    text-align: left;
+    margin-left: 5px;
+    border: 0;
+    background: #f7f7f7;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.lugar3 button {
+      padding: 8px 4px;
+      text-align: left;
+      margin-left: 5px;
+      border: 0;
+      background: #f7f7f7;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+.botoes-filtro {
+  display: flex;
+  justify-content: flex-end; 
+  gap: 10px; 
+  margin-top: 10px; 
+}
+.clean{
+    padding: 8px 10px;
+    text-align: left;
+    border: 0;
+    background: #ffffff;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.filter{
+    padding: 8px 10px;
+    text-align: left;
+    border: 0;
+    color:#fff;
+    background: #000000;
+    border-radius: 3px;
+    cursor: pointer;
+    justify-content: flex-end;
+    
+}
 
 /* ===== MENU LATERAL ===== */
 .side-menu {
