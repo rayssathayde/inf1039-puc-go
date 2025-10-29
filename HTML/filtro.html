@@ -27,38 +27,53 @@
             </button>
             <div class="search-wrapper">
                 <span class="search-icon">🔍︎</span>
-                <input type="text" class="search-bar" placeholder="Buscar localizações no campus...">
+                <input type="text" id ="barraPesquisa" class="search-bar" placeholder="Buscar localizações no campus...">
             </div>
             <!-- filtro -->
             <div class = "filtro">
                 <h2>Filtros de Busca</h2>
-                <p>Categoria</p>
-                <select name="categorias" id="todas_categorias">
-                    <option value="all">Todas as categorias</option>
-                </select name="predio" id="select_predio">
-                <p>Prédio</p>
-                <select name="predios" id="todos_predios">
-                    <option value="all_predios">Todos os prédios</option>
-                </select>
-                <p>Acessibilidade</p>
+                <div class="predioCategoria">
+                    <div class="campo">
+                        <p>Categoria</p>
+                        <select name="categorias" id="todas_categorias">
+                        <option value="all">Todas as categorias</option>
+                        </select>
+                    </div>
+
+                    <div class="campo">
+                        <p>Prédio</p>
+                        <select name="predios" id="todos_predios">
+                        <option value="all_predios">Todos os prédios</option>
+                        </select>
+                    </div>
+                </div>
+                <p class = "tituloAcessibilidade">Acessibilidade</p>
+                <div class= "acessibilidade">
                     <input type="checkbox" id = "cadeirante" name="nomecadeirante">
-                    <label for ="cadeitante">Acesso para cadeirantes</label>
+                    <label for ="cadeirante">Acesso para cadeirantes</label>
                     <input type="checkbox" id = "elevador" name="elevadorprox">
                     <label for="elevador">Próximo ao elevador</label>
-                <button class="clean">Limpar</button>
-                <button class="filter">Aplicar Filtros</button>
-                <div class="lugares">
+                </div>
+                <div class ="botoes-filtro">
+                    <button class="clean">Limpar</button>
+                    <button class="filter">Aplicar Filtros</button>
+                </div>
+                <div class="lugar1">
                     <i data-lucide="toilet" class="banheiro-icon"></i>
                     <button class="banheiroA">Banheiro Prédio A - Térreo</button>
+                    </div>
+                    <div class ="lugar2">
                     <i data-lucide="book" class="biblioteca-icon"></i>
                     <button class="biblioteca_central">Biblioteca Central</button>
+                    </div>
+                    <div class ="lugar3">
                     <i data-lucide="utensils" class="restaurante-icon"></i>
                     <button class="cantina">Cantina Principal</button>
                 </div>
             </div>
             <!-- fim filtro -->
             
-
+<script src="../javascript/filtrar.js" defer></script>
 <script>
         lucide.createIcons();
     </script>
