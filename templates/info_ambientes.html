@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'CSS/style_info_ambientes.css' %}">
+{% endblock %}
+
+{% block title %}PUC-Go — Informações{% endblock %}
+
+{% block content %}
+
+<div class="caminho-cont">
+    <button class="caminho-local">Início ></button>
+    <button class="caminho-local">Banheiros ></button>
+    <button class="caminho-local2">Banheiro - Bloco A</button>
+</div>
+
+<div class="cont-principal">
+    <div class="cont-infos">
+        <div class="divide-textos">
+            <p class="titulo-cont">Banheiro - Bloco A</p>
+            <button class="btn-favorite"><i data-lucide="heart" class="favorites-icon"></i></button>
+        </div>  
+        <div class="divide-textos2">
+            <i data-lucide="map-pin" class="icone-texto"></i>
+            <p class="subtit-cont">1º Andar, Bloco A - Próximo à Sala 101</p>
+        </div>
+        <div class="foto-local">
+            <p>Foto do Local</p>
+        </div>
+        <div class="divide-textos3">
+            <b class="subtit-cont">Descrição:</b>
+            <p class="subtit-cont">Banheiro masculino e feminino localizados no primeiro andar do bloco A, próximo ás salas de aula. Facilmente acessível através das escadas principais ou elevadores.</p>
+            <b class="subtit-cont">Horário de Funcionamento:</b>
+            <p class="subtit-cont">24 horas por dia</p>
+            <b class="subtit-cont">Acessibilidade:</b>
+            <div class="divide-textos2">
+                <i data-lucide="accessibility" class="icone-texto2"></i>
+                <p class="subtit-cont">Acessível para cadeirantes</p>
+            </div>
+        </div>
+    </div>
+    <div class="cont-extras">
+        <p class="titulo-extras">Localização no Mapa</p>
+        <div class="mapa">
+            <p>Mapa do Campus - Localização Destacada</p>
+        </div>
+        <p class="titulo-extras">Locais Próximos</p>
+        <div class="local-prox">
+            <div class="icone-prox">
+                <i data-lucide="utensils"></i>
+            </div>
+            <div class="divide-textos4">
+                <b class="subtit-cont">Cantina Bloco A</b>
+                <p class="subtit-cont">50m - Térreo</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
