@@ -1,13 +1,10 @@
-{% load static %}
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}PUC-Go{% endblock %}</title>
-
-    <link rel="stylesheet" href="{% static 'CSS/style_geral.css' %}">
-    {% block extra_css %}{% endblock %}
+    <title>PUC-Go</title>
+    <link rel="stylesheet" href="../CSS/style_geral.css">
     
     <!-- IMPORTANDO FONTES -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,36 +16,20 @@
 </head>
 
 <body>
-
-    <!-- HEADER (fixo em todas as páginas) -->
+    <!-- CABEÇALHO DA PÁGINA-> tudo que tem antes da caixa de login (é visível) -->
     <header class="navbar">
-        <nav class="side-menu" id="sideMenu">
-            <ul>
-                <li><a href="{% url 'home' %}">Home</a></li>
-                <li><a href="{% url 'available_locations' %}">Prédios </a></li>
-                <li><a href="#">Chat</a></li>
-                <li><a href="{% url 'favorites' %}">Favoritos</a></li>
-                <li><a href="{% url 'login' %}">Login/Cadastro</a></li>
-            </ul>
-        </nav>
-
-
         <div class="nav-content">
             <button class="menu-btn">
-                <a href="{% url 'home' %}" class="menu-link">
+                <a href="#" class="menu-link">
                     <i data-lucide="menu" class="menu-icon"></i>
                 </a>
                 <span class="name-text">PUC-Go</span>
             </button>
-
             <div class="search-wrapper">
                 <span class="search-icon">🔍︎</span>
-                <form action="{% url 'search_results' %}" method="get">
-                    <input type="text" name="q" class="search-bar" placeholder="Buscar localizações no campus...">
-                </form>
+                <input type="text" class="search-bar" placeholder="Buscar localizações no campus...">
             </div>
-
-            <!-- filtro 
+            <!-- filtro -->
             <div class = "filtro">
                 <h2>Filtros de Busca</h2>
                 <p>Categoria</p>
@@ -75,38 +56,12 @@
                     <button class="cantina">Cantina Principal</button>
                 </div>
             </div>
-             fim filtro -->
+            <!-- fim filtro -->
+            
 
-            <div class="nav-right">
-                <a href="{% url 'favorites' %}" class="favorites-link">
-                    <i data-lucide="heart" class="favorites-icon"></i>
-                </a>
-                <button class="register-btn"><a href="{% url 'login' %}">Entrar</a></button> 
-            </div>
-        </div>
-    </header>
-
-    <!-- CONTEÚDO VARIÁVEL DAS PÁGINAS -->
-    <main>
-        {% block content %}
-        {% endblock %}
-    </main>
-
-    <!-- FOOTER -->
-     <footer class="footer">
-        <div class="footer-content">
-            <span class="footer-left">PUC-Go</span>
-                <div class="footer-right">
-                    <a href="#">Sobre</a>
-                    <a href="#">Ajuda</a>
-                    <a href="#">Contato</a>
-                </div>
-        </div>
-    </footer>
-
-
-    <script>lucide.createIcons();</script>
-    <script src="{% static 'JS/base.js' %}"></script>
-    {% block extra_js %}{% endblock %}
+<script>
+        lucide.createIcons();
+    </script>
+    
 </body>
 </html>
