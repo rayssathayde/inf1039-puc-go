@@ -11,6 +11,22 @@ body {
     color: #4d5564;
 }
 
+.container-principal {
+  min-height: 100vh;           
+  display: flex;
+  flex-direction: column;      
+}
+
+.container-principal > main {
+  flex: 1 0 auto;              
+  padding-bottom: 40px;        
+}
+
+.footer {
+  flex-shrink: 0;              
+}
+
+
 /* ==================== NAVBAR ==================== */
 .navbar {
     background-color: #fff;

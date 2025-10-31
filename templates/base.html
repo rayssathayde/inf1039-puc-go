@@ -20,114 +20,115 @@
 
 <body>
 
-    <!-- HEADER (fixo em todas as páginas) -->
-    <header class="navbar">
-        <nav class="side-menu" id="sideMenu">
-            <ul>
-                <li><a href="{% url 'home' %}">Home</a></li>
-                <li><a href="{% url 'available_locations' %}">Prédios </a></li>
-                <li><a href="#">Chat</a></li>
-                <li><a href="{% url 'favorites' %}">Favoritos</a></li>
-                <li><a href="{% url 'login' %}">Login/Cadastro</a></li>
-            </ul>
-        </nav>
+    <div class="container-principal">
+        <!-- HEADER (fixo em todas as páginas) -->
+        <header class="navbar">
+            <nav class="side-menu" id="sideMenu">
+                <ul>
+                    <li><a href="{% url 'home' %}">Home</a></li>
+                    <li><a href="{% url 'available_locations' %}">Prédios </a></li>
+                    <li><a href="#">Chat</a></li>
+                    <li><a href="{% url 'favorites' %}">Favoritos</a></li>
+                    <li><a href="{% url 'login' %}">Login/Cadastro</a></li>
+                </ul>
+            </nav>
 
 
-        <div class="nav-content">
-            <button class="menu-btn">
-                <a href="{% url 'home' %}" class="menu-link">
-                    <i data-lucide="menu" class="menu-icon"></i>
-                </a>
-                <span class="name-text">PUC-Go</span>
-            </button>
+            <div class="nav-content">
+                <button class="menu-btn">
+                    <a href="{% url 'home' %}" class="menu-link">
+                        <i data-lucide="menu" class="menu-icon"></i>
+                    </a>
+                    <span class="name-text">PUC-Go</span>
+                </button>
 
-            <div class="search-wrapper">
-                <span class="search-icon">🔍︎</span>
-                <form action="{% url 'search_results' %}" method="get">
-                    <input type="text" id="barraPesquisa" class="search-bar" placeholder="Buscar localizações no campus...">
-                </form>
+                <div class="search-wrapper">
+                    <span class="search-icon">🔍︎</span>
+                    <form action="{% url 'search_results' %}" method="get">
+                        <input type="text" id="barraPesquisa" class="search-bar" placeholder="Buscar localizações no campus...">
+                    </form>
+                </div>
+
+                <div class = "filtro">
+                    <h2>Filtros de Busca</h2>
+                    <div class="predioCategoria">
+                        <div class="campo">
+                            <p>Categoria</p>
+                            <select name="categorias" id="todas_categorias">
+                            <option value="all">Todas as categorias</option>
+                            </select>
+                        </div>
+
+                        <div class="campo">
+                            <p>Prédio</p>
+                            <select name="predios" id="todos_predios">
+                            <option value="all_predios">Todos os prédios</option>
+                            </select>
+                        </div>
+                    </div>
+                    <p class = "tituloAcessibilidade">Acessibilidade</p>
+                    <div class= "acessibilidade">
+                        <input type="checkbox" id = "cadeirante" name="nomecadeirante">
+                        <label for ="cadeirante">Acesso para cadeirantes</label>
+                        <input type="checkbox" id = "elevador" name="elevadorprox">
+                        <label for="elevador">Próximo ao elevador</label>
+                    </div>
+                    <div class ="botoes-filtro">
+                        <button class="clean">Limpar</button>
+                        <button class="filter">Aplicar Filtros</button>
+                    </div>
+                    <div class="lugar1">
+                        <i data-lucide="toilet" class="banheiro-icon"></i>
+                        <button class="banheiroA">Banheiro Prédio A - Térreo</button>
+                        </div>
+                        <div class ="lugar2">
+                        <i data-lucide="book" class="biblioteca-icon"></i>
+                        <button class="biblioteca_central">Biblioteca Central</button>
+                        </div>
+                        <div class ="lugar3">
+                        <i data-lucide="utensils" class="restaurante-icon"></i>
+                        <button class="cantina">Cantina Principal</button>
+                    </div>
+                </div>
+                
+
+                <div class="nav-right">
+                    <a href="{% url 'favorites' %}" class="favorites-link">
+                        <i data-lucide="heart" class="favorites-icon"></i>
+                    </a>
+                    <button class="register-btn"><a href="{% url 'login' %}">Entrar</a></button> 
+                </div>
             </div>
+        </header>
 
-            <div class = "filtro">
-                <h2>Filtros de Busca</h2>
-                <div class="predioCategoria">
-                    <div class="campo">
-                        <p>Categoria</p>
-                        <select name="categorias" id="todas_categorias">
-                        <option value="all">Todas as categorias</option>
-                        </select>
-                    </div>
-
-                    <div class="campo">
-                        <p>Prédio</p>
-                        <select name="predios" id="todos_predios">
-                        <option value="all_predios">Todos os prédios</option>
-                        </select>
-                    </div>
-                </div>
-                <p class = "tituloAcessibilidade">Acessibilidade</p>
-                <div class= "acessibilidade">
-                    <input type="checkbox" id = "cadeirante" name="nomecadeirante">
-                    <label for ="cadeirante">Acesso para cadeirantes</label>
-                    <input type="checkbox" id = "elevador" name="elevadorprox">
-                    <label for="elevador">Próximo ao elevador</label>
-                </div>
-                <div class ="botoes-filtro">
-                    <button class="clean">Limpar</button>
-                    <button class="filter">Aplicar Filtros</button>
-                </div>
-                <div class="lugar1">
-                    <i data-lucide="toilet" class="banheiro-icon"></i>
-                    <button class="banheiroA">Banheiro Prédio A - Térreo</button>
-                    </div>
-                    <div class ="lugar2">
-                    <i data-lucide="book" class="biblioteca-icon"></i>
-                    <button class="biblioteca_central">Biblioteca Central</button>
-                    </div>
-                    <div class ="lugar3">
-                    <i data-lucide="utensils" class="restaurante-icon"></i>
-                    <button class="cantina">Cantina Principal</button>
-                </div>
+        {% if messages %}   
+        <div class="messages-container">
+            {% for message in messages %}
+            <div class="alert {{ message.tags }}">
+                {{ message }}
             </div>
-            
+            {% endfor %}
+        </div> 
+        {% endif %}
 
-            <div class="nav-right">
-                <a href="{% url 'favorites' %}" class="favorites-link">
-                    <i data-lucide="heart" class="favorites-icon"></i>
-                </a>
-                <button class="register-btn"><a href="{% url 'login' %}">Entrar</a></button> 
+        <!-- CONTEÚDO VARIÁVEL DAS PÁGINAS -->
+        <main>
+            {% block content %}
+            {% endblock %}
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="footer-content">
+                <span class="footer-left">PUC-Go</span>
+                    <div class="footer-right">
+                        <a href="#">Sobre</a>
+                        <a href="#">Ajuda</a>
+                        <a href="#">Contato</a>
+                    </div>
             </div>
-        </div>
-    </header>
-
-    {% if messages %}   
-    <div class="messages-container">
-        {% for message in messages %}
-        <div class="alert {{ message.tags }}">
-            {{ message }}
-        </div>
-        {% endfor %}
-    </div> 
-    {% endif %}
-
-    <!-- CONTEÚDO VARIÁVEL DAS PÁGINAS -->
-    <main>
-        {% block content %}
-        {% endblock %}
-    </main>
-
-    <!-- FOOTER -->
-     <footer class="footer">
-        <div class="footer-content">
-            <span class="footer-left">PUC-Go</span>
-                <div class="footer-right">
-                    <a href="#">Sobre</a>
-                    <a href="#">Ajuda</a>
-                    <a href="#">Contato</a>
-                </div>
-        </div>
-    </footer>
-
+        </footer>
+    </div>
 
     <script>lucide.createIcons();</script>
     {% block extra_js %}{% endblock %}
