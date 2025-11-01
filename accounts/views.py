@@ -21,6 +21,10 @@ def login(request):
         else:
             user = None 
 
+        if not email or not senha:
+            messages.error(request, "Preencha todos os campos")
+            return redirect('login')
+        
         if user:
             auth_login(request, user)
             messages.success(request, f"Bem-vindo(a), {user.username}!")
@@ -56,7 +60,7 @@ def register(request):
             return redirect('register')
 
         if User.objects.filter(username=username).exists():
-            messages.error(request, "Já existe um usuário com esse nome.")
+            messages.error(request, "Já existe um usuário com esse nome")
             return redirect('register')
         
         if User.objects.filter(email=email).exists():
@@ -77,7 +81,7 @@ def register(request):
 
         user.save()
 
-        messages.success(request, f"{username}, sua conta foi criada com sucesso! Faça login para continuar.")
+        messages.success(request, f"{username}, sua conta foi criada com sucesso! Faça login para continuar")
         return redirect('login')
     
 #@login_required(login_url='login')
