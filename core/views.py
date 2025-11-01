@@ -14,5 +14,4 @@ def available_locations(request):
 def info_ambientes(request):
     return render(request, 'info_ambientes.html')
 
-def mapa(request):
-    return render(request, 'mapa.html')
+
