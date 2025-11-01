@@ -96,7 +96,16 @@
                     <a href="{% url 'favorites' %}" class="favorites-link">
                         <i data-lucide="heart" class="favorites-icon"></i>
                     </a>
-                    <button class="register-btn"><a href="{% url 'login' %}">Entrar</a></button> 
+                    {% if user.is_authenticated %}
+                        <span class="welcome">Olá, {{ user.username }}!</span>
+                        <button class="register-btn">
+                            <a href="{% url 'logout' %}">Sair</a>
+                        </button>
+                    {% else %}
+                        <button class="register-btn">
+                            <a href="{% url 'login' %}">Entrar</a>
+                        </button>
+                    {% endif %} 
                 </div>
             </div>
         </header>
