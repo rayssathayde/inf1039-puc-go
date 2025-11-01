@@ -40,3 +40,6 @@ def listar_predios(request):
         })
     
     return JsonResponse(dados, safe=False)
+
+def mapas(request):
+    return render(request, 'mapa.html')
