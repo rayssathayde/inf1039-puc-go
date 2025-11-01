@@ -4,6 +4,7 @@ from django.contrib.auth.models import User
 from django.contrib.auth import authenticate, login as auth_login
 from django.core.validators import validate_email
 from django.core.exceptions import ValidationError
+from django.contrib.auth import logout
 
 # Create your views here.
 def login(request):
@@ -83,4 +84,10 @@ def register(request):
 def favorites(request):
     return render(request, 'localizacoes_favoritas.html')
         
-        
+
+def user_logout(request):
+    logout(request)
+    messages.success(request, "Você saiu da sua conta.")
+    return redirect('home')
+
+
