@@ -4,6 +4,7 @@ from django.contrib.auth.models import User
 from django.contrib.auth import authenticate, login as auth_login
 from django.core.validators import validate_email
 from django.core.exceptions import ValidationError
+from django.contrib.auth import logout
 
 # Create your views here.
 def login(request):
@@ -20,6 +21,10 @@ def login(request):
         else:
             user = None 
 
+        if not email or not senha:
+            messages.error(request, "Preencha todos os campos")
+            return redirect('login')
+        
         if user:
             auth_login(request, user)
             messages.success(request, f"Bem-vindo(a), {user.username}!")
@@ -55,7 +60,7 @@ def register(request):
             return redirect('register')
 
         if User.objects.filter(username=username).exists():
-            messages.error(request, "Já existe um usuário com esse nome.")
+            messages.error(request, "Já existe um usuário com esse nome")
             return redirect('register')
         
         if User.objects.filter(email=email).exists():
@@ -76,11 +81,17 @@ def register(request):
 
         user.save()
 
-        messages.success(request, f"{username}, sua conta foi criada com sucesso! Faça login para continuar.")
+        messages.success(request, f"{username}, sua conta foi criada com sucesso! Faça login para continuar")
         return redirect('login')
     
 #@login_required(login_url='login')
 def favorites(request):
     return render(request, 'localizacoes_favoritas.html')
         
-        
+
+def user_logout(request):
+    logout(request)
+    messages.success(request, "Você saiu da sua conta.")
+    return redirect('home')
+
+
