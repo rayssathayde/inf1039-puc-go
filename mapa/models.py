@@ -17,7 +17,7 @@ class Local(models.Model):
         ('banheiro', 'Banheiro'),
         ('restaurante', 'Restaurante'),
         ('biblioteca', 'Biblioteca'),
-        ('departamento', 'Departamento'),
+        ('administrativo', 'Administrativo'),
         ('laboratório', 'Laboratório'),
         ('outro', 'Outro'),
     ]
