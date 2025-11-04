@@ -27,7 +27,7 @@ class Local(models.Model):
     descricao = models.TextField()
     predio = models.ForeignKey(Predio, on_delete=models.CASCADE, related_name='locais')
     andar = models.CharField(max_length=50)
-    localizacao_detalhada = models.TextField()
+    localizacao_detalhada = models.TextField(null=True, blank=True)
     coordenadas = models.JSONField(null=True, blank=True)
     informacoes_extras = models.JSONField(null=True, blank=True)
     ativo = models.BooleanField(default=True)
