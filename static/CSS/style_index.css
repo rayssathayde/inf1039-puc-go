@@ -24,34 +24,6 @@
 }
 
 
-.btn-mais {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    display: flex;
-    align-items: center;
-    background-color: #f3f5f6;
-    color: #4d5564;
-    border: none;
-    padding: 8px 8px;
-    border-radius: 8px;
-    cursor: pointer;
-}
-
-.btn-menos {
-    position: absolute;
-    top: 70px;
-    right: 20px;
-    display: flex;
-    align-items: center;
-    background-color: #f3f5f6;
-    color: #4d5564;
-    border: none;
-    padding: 8px 8px;
-    border-radius: 8px;
-    cursor: pointer;
-}
-
 .btn-localizacao {
     position: absolute;
     top: 120px;

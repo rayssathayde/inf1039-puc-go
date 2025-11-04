@@ -10,8 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const marker = L.marker([lat, lon]).addTo(map);
 
-  const btnMais = document.querySelector(".btn-mais");
-  const btnMenos = document.querySelector(".btn-menos");
+  
   const btnLocalizacao = document.querySelector(".btn-localizacao");
 
   if (btnMais) btnMais.addEventListener("click", () => map.zoomIn());
@@ -19,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   if (btnLocalizacao) {
     btnLocalizacao.addEventListener("click", () => {
-      map.locate({ setView: true, maxZoom: 16 });
+      map.locate({ setView: true, maxZoom: 20 });
     });
 
     map.on("locationfound", function (e) {
