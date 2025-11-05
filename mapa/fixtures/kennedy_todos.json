@@ -1,0 +1,962 @@
+[
+{
+  "model": "mapa.local",
+  "pk": 40,
+  "fields": {
+    "nome": "K101",
+    "tipo": "sala de aula",
+    "descricao": "Sala de aula - K101",
+    "predio": 3,
+    "andar": "1",
+    "localizacao_detalhada": "null",
+    "coordenadas": null,
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 41,
+  "fields": {
+    "nome": "K102",
+    "tipo": "outro",
+    "descricao": "Audit�rio - K102",
+    "predio": 3,
+    "andar": "1",
+    "localizacao_detalhada": "null",
+    "coordenadas": null,
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 42,
+  "fields": {
+    "nome": "K103",
+    "tipo": "sala de aula",
+    "descricao": "Sala de aula - K103",
+    "predio": 3,
+    "andar": "1",
+    "localizacao_detalhada": "null",
+    "coordenadas": null,
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 43,
+  "fields": {
+    "nome": "Banheiro Femenino",
+    "tipo": "banheiro",
+    "descricao": "Banheiro Femenino",
+    "predio": 3,
+    "andar": "1",
+    "localizacao_detalhada": "null",
+    "coordenadas": null,
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 44,
+  "fields": {
+    "nome": "K104",
+    "tipo": "sala de aula",
+    "descricao": "Sala de aula - K104",
+    "predio": 3,
+    "andar": "1",
+    "localizacao_detalhada": "null",
+    "coordenadas": null,
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 45,
+  "fields": {
+    "nome": "K105",
+    "tipo": "sala de aula",
+    "descricao": "Sala de aula - K105",
+    "predio": 3,
+    "andar": "1",
+    "localizacao_detalhada": "null",
+    "coordenadas": null,
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 46,
+  "fields": {
+    "nome": "K106",
+    "tipo": "sala de aula",
+    "descricao": "Sala de aula - K106",
+    "predio": 3,
+    "andar": "1",
+    "localizacao_detalhada": "null",
+    "coordenadas": null,
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 47,
+  "fields": {
+    "nome": "K107",
+    "tipo": "sala de aula",
+    "descricao": "Sala de aula K107",
+    "predio": 3,
+    "andar": "1",
+    "localizacao_detalhada": "null",
+    "coordenadas": null,
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 48,
+  "fields": {
+    "nome": "K108",
+    "tipo": "sala de aula",
+    "descricao": "Sala de aula - K108",
+    "predio": 3,
+    "andar": "1",
+    "localizacao_detalhada": "null",
+    "coordenadas": null,
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 49,
+  "fields": {
+    "nome": "K109",
+    "tipo": "sala de aula",
+    "descricao": "Sala de aula - K109",
+    "predio": 3,
+    "andar": "1",
+    "localizacao_detalhada": "null",
+    "coordenadas": null,
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 50,
+  "fields": {
+    "nome": "K110",
+    "tipo": "sala de aula",
+    "descricao": "Sala de aula - K110",
+    "predio": 3,
+    "andar": "1",
+    "localizacao_detalhada": "null",
+    "coordenadas": null,
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 51,
+  "fields": {
+    "nome": "K111",
+    "tipo": "sala de aula",
+    "descricao": "Sala de aula - K111",
+    "predio": 3,
+    "andar": "1",
+    "localizacao_detalhada": "null",
+    "coordenadas": null,
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 52,
+  "fields": {
+    "nome": "K112",
+    "tipo": "sala de aula",
+    "descricao": "Sala de aula - K112",
+    "predio": 3,
+    "andar": "1",
+    "localizacao_detalhada": "null",
+    "coordenadas": null,
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 53,
+  "fields": {
+    "nome": "K113",
+    "tipo": "sala de aula",
+    "descricao": "Sala de aula - K113, Departamento de Comunica��o Social",
+    "predio": 3,
+    "andar": "1",
+    "localizacao_detalhada": "null",
+    "coordenadas": null,
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 54,
+  "fields": {
+    "nome": "K114",
+    "tipo": "sala de aula",
+    "descricao": "Sala de aula - K114",
+    "predio": 3,
+    "andar": "1",
+    "localizacao_detalhada": "null",
+    "coordenadas": null,
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 55,
+  "fields": {
+    "nome": "K115",
+    "tipo": "sala de aula",
+    "descricao": "Sala de aula - K115",
+    "predio": 3,
+    "andar": "1",
+    "localizacao_detalhada": "null",
+    "coordenadas": null,
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 56,
+  "fields": {
+    "nome": "K116",
+    "tipo": "sala de aula",
+    "descricao": "Sala de aula - K116",
+    "predio": 3,
+    "andar": "1",
+    "localizacao_detalhada": "null",
+    "coordenadas": null,
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 57,
+  "fields": {
+    "nome": "K117",
+    "tipo": "sala de aula",
+    "descricao": "Sala de aula - K117",
+    "predio": 3,
+    "andar": "1",
+    "localizacao_detalhada": "null",
+    "coordenadas": null,
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 58,
+  "fields": {
+    "nome": "K118",
+    "tipo": "sala de aula",
+    "descricao": "Sala de aula - K118",
+    "predio": 3,
+    "andar": "1",
+    "localizacao_detalhada": "null",
+    "coordenadas": null,
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 59,
+  "fields": {
+    "nome": "K119",
+    "tipo": "sala de aula",
+    "descricao": "Sala de aula - K119",
+    "predio": 3,
+    "andar": "1",
+    "localizacao_detalhada": "null",
+    "coordenadas": null,
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 60,
+  "fields": {
+    "nome": "K120",
+    "tipo": "sala de aula",
+    "descricao": "Sala de aula - K120, Sala trancada",
+    "predio": 3,
+    "andar": "1",
+    "localizacao_detalhada": "null",
+    "coordenadas": null,
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 61,
+  "fields": {
+    "nome": "K121",
+    "tipo": "laborat�rio",
+    "descricao": "Laborat�rio de psicolingu�stica e aquisi��o da linguagem",
+    "predio": 3,
+    "andar": "1",
+    "localizacao_detalhada": "null",
+    "coordenadas": null,
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 62,
+  "fields": {
+    "nome": "K122",
+    "tipo": "sala de aula",
+    "descricao": "Sala de aula - K122",
+    "predio": 3,
+    "andar": "1",
+    "localizacao_detalhada": "null",
+    "coordenadas": null,
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 63,
+  "fields": {
+    "nome": "K123",
+    "tipo": "sala de aula",
+    "descricao": "Sala de aula - K123",
+    "predio": 3,
+    "andar": "1",
+    "localizacao_detalhada": "null",
+    "coordenadas": null,
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 64,
+  "fields": {
+    "nome": "K124",
+    "tipo": "sala de aula",
+    "descricao": "Sala de aula - K124",
+    "predio": 3,
+    "andar": "1",
+    "localizacao_detalhada": "null",
+    "coordenadas": null,
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 65,
+  "fields": {
+    "nome": "K125",
+    "tipo": "sala de aula",
+    "descricao": "Sala de aula - K125",
+    "predio": 3,
+    "andar": "1",
+    "localizacao_detalhada": "null",
+    "coordenadas": null,
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 66,
+  "fields": {
+    "nome": "K126",
+    "tipo": "sala de aula",
+    "descricao": "Sala de aula - K126",
+    "predio": 3,
+    "andar": "1",
+    "localizacao_detalhada": "null",
+    "coordenadas": null,
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 67,
+  "fields": {
+    "nome": "K127",
+    "tipo": "sala de aula",
+    "descricao": "Sala de aula - K127",
+    "predio": 3,
+    "andar": "1",
+    "localizacao_detalhada": "null",
+    "coordenadas": null,
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 68,
+  "fields": {
+    "nome": "K128",
+    "tipo": "sala de aula",
+    "descricao": "Sala de aula - K128",
+    "predio": 3,
+    "andar": "1",
+    "localizacao_detalhada": "null",
+    "coordenadas": null,
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 69,
+  "fields": {
+    "nome": "Banheiro Masculino",
+    "tipo": "banheiro",
+    "descricao": "Banheiro Masculino",
+    "predio": 3,
+    "andar": "1",
+    "localizacao_detalhada": "null",
+    "coordenadas": null,
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 70,
+  "fields": {
+    "nome": "Banheiro Femenino",
+    "tipo": "banheiro",
+    "descricao": "Banheiro Femenino",
+    "predio": 3,
+    "andar": "3",
+    "localizacao_detalhada": "null",
+    "coordenadas": null,
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 71,
+  "fields": {
+    "nome": "Sala de reuni�o Myriam Alonso",
+    "tipo": "outro",
+    "descricao": "Sala de reuni�o",
+    "predio": 3,
+    "andar": "3",
+    "localizacao_detalhada": "null",
+    "coordenadas": null,
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 72,
+  "fields": {
+    "nome": "K404",
+    "tipo": "sala de aula",
+    "descricao": "Sala trancada",
+    "predio": 3,
+    "andar": "4",
+    "localizacao_detalhada": "null",
+    "coordenadas": null,
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 73,
+  "fields": {
+    "nome": "K403",
+    "tipo": "outro",
+    "descricao": "Ilha de edi��o Comunicar",
+    "predio": 3,
+    "andar": "4",
+    "localizacao_detalhada": "null",
+    "coordenadas": null,
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 74,
+  "fields": {
+    "nome": "K401",
+    "tipo": "outro",
+    "descricao": "Comunicar",
+    "predio": 3,
+    "andar": "4",
+    "localizacao_detalhada": "null",
+    "coordenadas": null,
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 75,
+  "fields": {
+    "nome": "Reitoria/Vice-Reitoria/Vice-Reitoria De Desenvolvimento/Assessoria Jur�dica",
+    "tipo": "administrativo",
+    "descricao": "Sala � esquerda: Reitoria, Vice-Reitoria, Vice-Reitoria De Desenvolvimento, Assessoria Jur�dica",
+    "predio": 3,
+    "andar": "2",
+    "localizacao_detalhada": "null",
+    "coordenadas": null,
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 76,
+  "fields": {
+    "nome": "Vice-Reitoria Acad�mica (VRAC)/Vice-Reitoria de Extens�o e Estrat�gia Pedag�gica(VREEP)",
+    "tipo": "administrativo",
+    "descricao": "Sala � direita: Vice-Reitoria Acad�mica (VRAC), Vice-Reitoria de Extens�o e Estrat�gia Pedag�gica(VREEP)",
+    "predio": 3,
+    "andar": "2",
+    "localizacao_detalhada": "null",
+    "coordenadas": null,
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 77,
+  "fields": {
+    "nome": "Copa",
+    "tipo": "outro",
+    "descricao": "Restrito - Apenas para funcion�rios",
+    "predio": 3,
+    "andar": "4",
+    "localizacao_detalhada": "null",
+    "coordenadas": null,
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 78,
+  "fields": {
+    "nome": "K503",
+    "tipo": "outro",
+    "descricao": "Setor t�cnico comunica��o",
+    "predio": 3,
+    "andar": "5",
+    "localizacao_detalhada": "null",
+    "coordenadas": null,
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 79,
+  "fields": {
+    "nome": "K506",
+    "tipo": "outro",
+    "descricao": "Est�dio de TV - Sala trancada",
+    "predio": 3,
+    "andar": "5",
+    "localizacao_detalhada": "null",
+    "coordenadas": null,
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 80,
+  "fields": {
+    "nome": "K507",
+    "tipo": "laborat�rio",
+    "descricao": "Laborat�rio de Comunica��o - Estudos de M�dia",
+    "predio": 3,
+    "andar": "5",
+    "localizacao_detalhada": "null",
+    "coordenadas": null,
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 81,
+  "fields": {
+    "nome": "K510",
+    "tipo": "laborat�rio",
+    "descricao": "Laborat�rio de �udio",
+    "predio": 3,
+    "andar": "5",
+    "localizacao_detalhada": "null",
+    "coordenadas": null,
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 82,
+  "fields": {
+    "nome": "Banheiro Femenino",
+    "tipo": "banheiro",
+    "descricao": "Banheiro Femenino",
+    "predio": 3,
+    "andar": "5",
+    "localizacao_detalhada": "null",
+    "coordenadas": null,
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 83,
+  "fields": {
+    "nome": "K512",
+    "tipo": "laborat�rio",
+    "descricao": "Laborat�rio de Edi��o",
+    "predio": 3,
+    "andar": "5",
+    "localizacao_detalhada": "null",
+    "coordenadas": null,
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 84,
+  "fields": {
+    "nome": "K514",
+    "tipo": "laborat�rio",
+    "descricao": "Laborat�rio de Edi��o",
+    "predio": 3,
+    "andar": "5",
+    "localizacao_detalhada": "null",
+    "coordenadas": null,
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 85,
+  "fields": {
+    "nome": "K511",
+    "tipo": "outro",
+    "descricao": "Sala trancada",
+    "predio": 3,
+    "andar": "5",
+    "localizacao_detalhada": "null",
+    "coordenadas": null,
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 86,
+  "fields": {
+    "nome": "K516",
+    "tipo": "laborat�rio",
+    "descricao": "Laborat�rio de Comunica��o - cria��o e produ��o",
+    "predio": 3,
+    "andar": "5",
+    "localizacao_detalhada": "null",
+    "coordenadas": null,
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 87,
+  "fields": {
+    "nome": "K517",
+    "tipo": "outro",
+    "descricao": "Sala trancada",
+    "predio": 3,
+    "andar": "5",
+    "localizacao_detalhada": "null",
+    "coordenadas": null,
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 88,
+  "fields": {
+    "nome": "K515",
+    "tipo": "administrativo",
+    "descricao": "Apoio � Gradua��o",
+    "predio": 3,
+    "andar": "5",
+    "localizacao_detalhada": "null",
+    "coordenadas": null,
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 89,
+  "fields": {
+    "nome": "606",
+    "tipo": "administrativo",
+    "descricao": "Departamento de comunica��o social professores e funcion�rios",
+    "predio": 3,
+    "andar": "6",
+    "localizacao_detalhada": "null",
+    "coordenadas": null,
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 90,
+  "fields": {
+    "nome": "Banheiro Masculino",
+    "tipo": "banheiro",
+    "descricao": "Banheiro Masculino",
+    "predio": 3,
+    "andar": "6",
+    "localizacao_detalhada": "null",
+    "coordenadas": null,
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 91,
+  "fields": {
+    "nome": "K611",
+    "tipo": "sala de aula",
+    "descricao": "Sala de aula - K611",
+    "predio": 3,
+    "andar": "6",
+    "localizacao_detalhada": "null",
+    "coordenadas": null,
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 92,
+  "fields": {
+    "nome": "K615",
+    "tipo": "sala de aula",
+    "descricao": "Sala de aula - K615",
+    "predio": 3,
+    "andar": "6",
+    "localizacao_detalhada": "null",
+    "coordenadas": null,
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 93,
+  "fields": {
+    "nome": "K618",
+    "tipo": "sala de aula",
+    "descricao": "Sala de aula - K618",
+    "predio": 3,
+    "andar": "6",
+    "localizacao_detalhada": "null",
+    "coordenadas": null,
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 94,
+  "fields": {
+    "nome": "K612",
+    "tipo": "laborat�rio",
+    "descricao": "Laborat�rio",
+    "predio": 3,
+    "andar": "6",
+    "localizacao_detalhada": "null",
+    "coordenadas": null,
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 95,
+  "fields": {
+    "nome": "K614",
+    "tipo": "laborat�rio",
+    "descricao": "Laborat�rio",
+    "predio": 3,
+    "andar": "6",
+    "localizacao_detalhada": "null",
+    "coordenadas": null,
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 96,
+  "fields": {
+    "nome": "K616",
+    "tipo": "laborat�rio",
+    "descricao": "Laborat�rio",
+    "predio": 3,
+    "andar": "6",
+    "localizacao_detalhada": "null",
+    "coordenadas": null,
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 97,
+  "fields": {
+    "nome": "Departamento de comunica��o social",
+    "tipo": "administrativo",
+    "descricao": "Departamento de comunica��o social \r\nAtendimento 09h-12h 13h-17h\r\nTel. +55 (21) 3527-1144",
+    "predio": 3,
+    "andar": "6",
+    "localizacao_detalhada": "null",
+    "coordenadas": null,
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 98,
+  "fields": {
+    "nome": "K613",
+    "tipo": "administrativo",
+    "descricao": "Departamento de Comunica��o Social",
+    "predio": 3,
+    "andar": "6",
+    "localizacao_detalhada": "null",
+    "coordenadas": null,
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 99,
+  "fields": {
+    "nome": "K610",
+    "tipo": "administrativo",
+    "descricao": "N�cleo de tecnologia da comunica��o - NUTEC\r\nEmail: nutec@puc-rio.br",
+    "predio": 3,
+    "andar": "6",
+    "localizacao_detalhada": "null",
+    "coordenadas": null,
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 100,
+  "fields": {
+    "nome": "K617",
+    "tipo": "administrativo",
+    "descricao": "P�s-gradua��o em Comunica��o",
+    "predio": 3,
+    "andar": "6",
+    "localizacao_detalhada": "null",
+    "coordenadas": null,
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 101,
+  "fields": {
+    "nome": "Centro de estudos em telecomunica��es - CETUC",
+    "tipo": "outro",
+    "descricao": "Em obra",
+    "predio": 3,
+    "andar": "7",
+    "localizacao_detalhada": "null",
+    "coordenadas": null,
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 102,
+  "fields": {
+    "nome": "Conselho Universit�rio",
+    "tipo": "administrativo",
+    "descricao": "Conselho Universit�rio",
+    "predio": 3,
+    "andar": "2",
+    "localizacao_detalhada": "null",
+    "coordenadas": null,
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 103,
+  "fields": {
+    "nome": "Programa de integridade ouvidoria",
+    "tipo": "outro",
+    "descricao": "Programa de integridade ouvidoria",
+    "predio": 3,
+    "andar": "3",
+    "localizacao_detalhada": "null",
+    "coordenadas": null,
+    "informacoes_extras": null,
+    "ativo": true
+  }
+}
+]
