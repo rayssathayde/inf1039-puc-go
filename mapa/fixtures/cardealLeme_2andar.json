@@ -1,0 +1,884 @@
+[
+{
+  "model": "mapa.local",
+  "pk": 93,
+  "fields": {
+    "nome": "Sala L201",
+    "tipo": "administrativo",
+    "descricao": "Salas administrativas do Departamento de Psicologia - PSI\r\nPós Graduação:\r\nCoordenador: Breno Sanvicente Vieira\r\nTels: (21) 3527-1185 / 3736-1185\r\nE-mail: psipos@puc-rio.br \r\nhttps://www.psi.puc-rio.br/site/",
+    "predio": 1,
+    "andar": "2",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 94,
+  "fields": {
+    "nome": "Sala L203",
+    "tipo": "administrativo",
+    "descricao": "Sala da Direção - Departamento de Psicologia\r\nDiretora: Profª. Luciana Fontes Pessoa \r\nTels: (21) 3527-1186 / 3736-1186\r\nE-mail: psidir@puc-rio.br",
+    "predio": 1,
+    "andar": "2",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 95,
+  "fields": {
+    "nome": "Sala L204",
+    "tipo": "laboratório",
+    "descricao": "Laboratório Multifuncional \r\nDepartamento de Psicologia",
+    "predio": 1,
+    "andar": "2",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 96,
+  "fields": {
+    "nome": "Sala L205",
+    "tipo": "laboratório",
+    "descricao": "Laboratório de Pesquisa em Psicologia Social - L2PS\r\nDepartamento de Psicologia\r\nCoordenador: Prof. Dr. Jean Carlos Natividade\r\nO L2PS tem como meta produzir conhecimento na área de Psicologia Social por meio da realização e divulgação de estudos de elevado rigor metodológico. Uma das características do laboratório é a disponibilização de um ambiente padronizado de coleta de dados via computadores. Esse tipo de coleta de dados, além de se mostrar uma substituição ecológica às tradicionais coletas de lápis-papel, permite uma série de inovações metodológicas e avanços teóricos dificilmente alcançados sem o emprego dessa tecnologia.\r\nTel: +55 21 3527-2080\r\nE-mail: jeannatividade@puc-rio.br \r\nhttps://www.l2ps.org/",
+    "predio": 1,
+    "andar": "2",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 97,
+  "fields": {
+    "nome": "Sala L213",
+    "tipo": "laboratório",
+    "descricao": "Laboratório de Análise de Dados - LAND\r\nDepartamento de Psicologia\r\nPrograma de Pós-Graduação em Metrologia\r\nResponsável: Prof. J. Landeira-Fernandez\r\nTrabalha com a validação de instrumentos psicológicos que buscam quantificar estados emocionais e habilidades cognitivas. O procedimento de validação envolve a coleta de dados com crianças, adolescentes e adultos saudáveis ou com algum tipo de disfunção. O laboratório emprega diversas técnicas estatísticas para a análise destes resultados (correlação, sensibilidade e especificidade, análise fatorial exploratória e confirmatória, bem como todo o espectro das análises de variância). Estas análises permitem avaliar a qualidade psicométrica destes instrumentos empregados no processo da avaliação psicológica. O LAND também desenvolve análises estatísticas de sistemas governamentais empregados para avaliar o ensino de psicologia no país.\r\nhttps://www.soupro.com.br/nnce/index.php/laboratorios/land",
+    "predio": 1,
+    "andar": "2",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 98,
+  "fields": {
+    "nome": "Sala L215",
+    "tipo": "administrativo",
+    "descricao": "Coordenação da Graduação (Psicologia e Neurociências)\r\nDepartamento de Psicologia\r\n- Prof. J. Landeira-Fernandez (Psicologia) \r\nTels: (21) 3527-1183 / 3527-1184 / 3736-1183 / 3736-1184 \r\nE-mail: psigra@puc-rio.br \r\n- Prof. Thomas Eichenberg Krahe (Neurociências)\r\nTels: (21) 3527-1183 / 3527-1184 / 3736-1183 / 3736-1184 \r\nE-mail: neuro@puc-rio.br",
+    "predio": 1,
+    "andar": "2",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 99,
+  "fields": {
+    "nome": "Sala L217",
+    "tipo": "administrativo",
+    "descricao": "Secretaria de Graduação - Departamento de Psicologia\r\nTels: (21) 3527-1183 / 3527-1184 / 3736-1183 / 3736-1184 \r\nE-mail: psigra@puc-rio.br",
+    "predio": 1,
+    "andar": "2",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 100,
+  "fields": {
+    "nome": "Sala L219",
+    "tipo": "laboratório",
+    "descricao": "Laboratório de Neuropsicologia Clínica - NEUROPSICLIN\r\nDepartamento de Psicologia\r\nCoordenadora: Profª. Drª. Helenice Charchat Fichman\r\nDesde sua fundação, o NEUROPSICLIN tem o compromisso de gerar conhecimento teórico, técnico e científico, buscando o desenvolvimento da Neuropsicologia Clínica, e disseminando a sua importância e aplicabilidade.\r\nTel: (21)99478-2997\r\nE-mail: labneuropsiclin@gmail.com \r\nhttps://www.instagram.com/labneuropsiclin/",
+    "predio": 1,
+    "andar": "2",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 101,
+  "fields": {
+    "nome": "Sala L227",
+    "tipo": "outro",
+    "descricao": "Sala de Professores\r\nDepartamento de Arquitetura e Urbanismo",
+    "predio": 1,
+    "andar": "2",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 102,
+  "fields": {
+    "nome": "Sala 4",
+    "tipo": "outro",
+    "descricao": "Sala de estudos: Pós-Graduação / PIBIC\r\nDepartamento de Psicologia",
+    "predio": 1,
+    "andar": "2",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 103,
+  "fields": {
+    "nome": "Sala L229",
+    "tipo": "outro",
+    "descricao": "Sala de Professores\r\nDepartamento de Arquitetura e Urbanismo",
+    "predio": 1,
+    "andar": "2",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 104,
+  "fields": {
+    "nome": "Sala L231",
+    "tipo": "administrativo",
+    "descricao": "Coordenação de Pós-Graduação - Departamento de Arquitetura e Urbanismo\r\nCoordenador: Fernando Espósito Galarce\r\nTels: +55 (21) 3527-2628 \r\nE-mail: fernando.esposito@puc-rio.br",
+    "predio": 1,
+    "andar": "2",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 105,
+  "fields": {
+    "nome": "Sala L233",
+    "tipo": "administrativo",
+    "descricao": "Coordenação do Ciclo Profissional das Engenharias - CCPE\r\nCoordenador: Marcos Machnuck\r\nTels: (55 21) 3736-1001 / 3527-1001\r\nhttps://ccpe.ctc.puc-rio.br/",
+    "predio": 1,
+    "andar": "2",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 106,
+  "fields": {
+    "nome": "Sala L237",
+    "tipo": "outro",
+    "descricao": "SPE (Society of Petroleum Engineers) - Capítulo Estudantil\r\nO Capítulo Estudantil é a representação da SPE nas universidades e tem entre seus objetivos a divulgação científica e tecnológica da engenharia de petróleo. Somos uma associação sem fins lucrativos formada por estudantes de engenharia de petróleo da PUC-Rio. Ao longo dos anos o Capítulo Estudantil tem como meta estabelecer um intercâmbio de conhecimento entre os estudantes e a indústria do petróleo, fazendo com que os estudantes aumentem suas respectivas competências técnicas e profissionais.\r\nhttps://www.linkedin.com/in/spepucrio/?originalSubdomain=br",
+    "predio": 1,
+    "andar": "2",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 107,
+  "fields": {
+    "nome": "Sala L246",
+    "tipo": "laboratório",
+    "descricao": "Laboratório do Ciclo Básico - CTC\r\nSala com computadores.\r\nAcesso restrito",
+    "predio": 1,
+    "andar": "2",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 108,
+  "fields": {
+    "nome": "Sala L252",
+    "tipo": "laboratório",
+    "descricao": "Laboratório do Ciclo Básico - CTC\r\nSala com computadores.\r\nAcesso restrito",
+    "predio": 1,
+    "andar": "2",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 109,
+  "fields": {
+    "nome": "Sala L258",
+    "tipo": "laboratório",
+    "descricao": "Laboratório do Ciclo Básico - CTC\r\nSala com computadores.\r\nAcesso restrito",
+    "predio": 1,
+    "andar": "2",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 110,
+  "fields": {
+    "nome": "Sala L270",
+    "tipo": "laboratório",
+    "descricao": "Laboratório do Ciclo Básico - CTC\r\nSala com computadores.\r\nAcesso restrito",
+    "predio": 1,
+    "andar": "2",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 111,
+  "fields": {
+    "nome": "Sala L274",
+    "tipo": "laboratório",
+    "descricao": "Laboratório do Ciclo Básico - CTC\r\nSala com computadores.\r\nAcesso restrito",
+    "predio": 1,
+    "andar": "2",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 112,
+  "fields": {
+    "nome": "Sala L251",
+    "tipo": "administrativo",
+    "descricao": "Secretaria do Ciclo Básico - CTC\r\nCoordenadora: Débora Mondaini\r\nTels: (55 21) 3736-1001 / 3527-1001\r\nhttps://www.cbctc.puc-rio.br/",
+    "predio": 1,
+    "andar": "2",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 113,
+  "fields": {
+    "nome": "Sala L261",
+    "tipo": "outro",
+    "descricao": "Projeto de Teologia à Distância\r\nDepartamento de Teologia\r\nProjeto de Extensão \r\nCursos à distância de Iniciação Teológica, Mariologia e Patrologia",
+    "predio": 1,
+    "andar": "2",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 114,
+  "fields": {
+    "nome": "Sala L263",
+    "tipo": "outro",
+    "descricao": "Núcleo de Memória da PUC-Rio \r\nSala Arquivo\r\nDiretor: Marco Antonio Villela Pamplona\r\nNúcleo acadêmico interdisciplinar dedicado à pesquisa e formação de pesquisadores no campo de Estudos da Memória e à construção e divulgação de acervo sobre a história da PUC-Rio.\r\nhttp://nucleodememoria.vrac.puc-rio.br/",
+    "predio": 1,
+    "andar": "2",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 115,
+  "fields": {
+    "nome": "Sala L271",
+    "tipo": "laboratório",
+    "descricao": "Laboratório de Caracterização das Águas - LAB-ÁGUAS \r\nDepartamento de Química\r\nCoordenador: Prof. José Marcus Godoy\r\nO Laboratório de Caracterização de Águas foi criado em 1997 como produto de um projeto anterior, desenvolvido nos anos 1995-1996, voltado ao estudo da radioatividade nas águas minerais brasileiras. Nesses anos de existência, o laboratório cresceu incorporando novas técnicas analíticas e aumentando seu campo de atuação, passando a atender outras matrizes ambientais como plantas, solo e sedimento.\r\nTels: +55 21 3527-1802 / +55 21 2527-1814 / +55 21 99379-7281\r\nE-mail: labaguas@puc-rio.br \r\nhttps://www.labaguas.com/",
+    "predio": 1,
+    "andar": "2",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 116,
+  "fields": {
+    "nome": "Sala L273",
+    "tipo": "laboratório",
+    "descricao": "Laboratório de Química de Coordenação e Biomateriais - LQCBio\r\nDepartamento de Química\r\nCoordenador: Prof. Renan Lira de Farias\r\nO LQCBio atua no planejamento, síntese, caracterização e avaliação das propriedades farmacológicas de compostos de coordenação, estruturalmente específicos. Até o momento, as patologias de interesse são câncer e chagas. Além disso, o grupo de pesquisa tem desenvolvido biomateriais com potenciais aplicações biomédicas (ex. liberação controlada de fármacos) e tecnológica (ex. substratos para dispositivos optoeletrônicos).\r\nTel: (21) 3527-1319\r\nE-mail: renan.farias@puc-rio.br \r\nhttps://www.instagram.com/labqcbio/",
+    "predio": 1,
+    "andar": "2",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 117,
+  "fields": {
+    "nome": "Sala L279",
+    "tipo": "laboratório",
+    "descricao": "Laboratório de Química de Coordenação e Biomateriais - LQCBio\r\nDepartamento de Química\r\nCoordenador: Prof. Renan Lira de Farias\r\nO LQCBio atua no planejamento, síntese, caracterização e avaliação das propriedades farmacológicas de compostos de coordenação, estruturalmente específicos. Até o momento, as patologias de interesse são câncer e chagas. Além disso, o grupo de pesquisa tem desenvolvido biomateriais com potenciais aplicações biomédicas (ex. liberação controlada de fármacos) e tecnológica (ex. substratos para dispositivos optoeletrônicos).\r\nTel: (21) 3527-1319\r\nE-mail: renan.farias@puc-rio.br \r\nhttps://www.instagram.com/labqcbio/",
+    "predio": 1,
+    "andar": "2",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 118,
+  "fields": {
+    "nome": "Sala L281",
+    "tipo": "laboratório",
+    "descricao": "Laboratório de Química de Coordenação e Biomateriais - LQCBio\r\nDepartamento de Química\r\nCoordenador: Prof. Renan Lira de Farias\r\nO LQCBio atua no planejamento, síntese, caracterização e avaliação das propriedades farmacológicas de compostos de coordenação, estruturalmente específicos. Até o momento, as patologias de interesse são câncer e chagas. Além disso, o grupo de pesquisa tem desenvolvido biomateriais com potenciais aplicações biomédicas (ex. liberação controlada de fármacos) e tecnológica (ex. substratos para dispositivos optoeletrônicos).\r\nTel: (21) 3527-1319\r\nE-mail: renan.farias@puc-rio.br \r\nhttps://www.instagram.com/labqcbio/",
+    "predio": 1,
+    "andar": "2",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 119,
+  "fields": {
+    "nome": "Sala L278",
+    "tipo": "laboratório",
+    "descricao": "Laboratório de Síntese Orgânica e Química de Coordenação Aplicada a Sistemas Biológicos - LABSO-BIO \r\nDepartamento de Química\r\nCoordenador: Prof. Nicolás A. Rey\r\nDedicado ao desenvolvimento e síntese de ligantes orgânicos bioativos e, a partir destes, de complexos metálicos com potencial farmacológico. Esses compostos são caracterizados através de técnicas gravimétricas, espectroscópicas e eletroquímicas. Ensaios biológicos também são realizados. As principais doenças em foco são as desordens neurodegenerativas (Alzheimer, Parkinson) e o câncer.\r\nTel: (21) 3527-1813\r\nE-mail: nicoarey@puc-rio.br \r\nhttps://www.instagram.com/labsobio/",
+    "predio": 1,
+    "andar": "2",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 120,
+  "fields": {
+    "nome": "Sala L278A",
+    "tipo": "laboratório",
+    "descricao": "Laboratório de Síntese Orgânica e Química de Coordenação Aplicada a Sistemas Biológicos - LABSO-BIO \r\nDepartamento de Química\r\nCoordenador: Prof. Nicolás A. Rey\r\nDedicado ao desenvolvimento e síntese de ligantes orgânicos bioativos e, a partir destes, de complexos metálicos com potencial farmacológico. Esses compostos são caracterizados através de técnicas gravimétricas, espectroscópicas e eletroquímicas. Ensaios biológicos também são realizados. As principais doenças em foco são as desordens neurodegenerativas (Alzheimer, Parkinson) e o câncer.\r\nTel: (21) 3527-1813\r\nE-mail: nicoarey@puc-rio.br \r\nhttps://www.instagram.com/labsobio/",
+    "predio": 1,
+    "andar": "2",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 121,
+  "fields": {
+    "nome": "Sala L280",
+    "tipo": "laboratório",
+    "descricao": "Laboratório de Eletroanalítica, Espectroanalítica e Análise Elementar Aplicada - LEEA\r\nDepartamento de Química\r\nCoordenador: Prof. Ricardo Queiroz Aucélio\r\nEspecializado no desenvolvimento de métodos espectroanalíticos e eletroanalíticos associados ou não a métodos de separação para a determinação de fármacos, agrotóxicos e substâncias de interesse da indústria do petróleo e biocombustíveis. Metrologia Química e aplicação de nanomateriais em Química Analítica.\r\nTel: (21) 3527-1819 \r\nE-mail: aucelior@puc-rio.br \r\nhttps://soulscience.com.br/nao-localizado/laboratorio-de-eletroanalitica-espectroanalitica-e-analise-elementar-aplicada-leea/",
+    "predio": 1,
+    "andar": "2",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 122,
+  "fields": {
+    "nome": "Sala L206",
+    "tipo": "sala de aula",
+    "descricao": "Sala de aula",
+    "predio": 1,
+    "andar": "2",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 123,
+  "fields": {
+    "nome": "Sala L208",
+    "tipo": "sala de aula",
+    "descricao": "Sala de aula",
+    "predio": 1,
+    "andar": "2",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 124,
+  "fields": {
+    "nome": "Sala L210",
+    "tipo": "sala de aula",
+    "descricao": "Sala de aula",
+    "predio": 1,
+    "andar": "2",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 125,
+  "fields": {
+    "nome": "Sala L212",
+    "tipo": "sala de aula",
+    "descricao": "Sala de aula",
+    "predio": 1,
+    "andar": "2",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 126,
+  "fields": {
+    "nome": "Sala L214",
+    "tipo": "sala de aula",
+    "descricao": "Sala de aula",
+    "predio": 1,
+    "andar": "2",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 127,
+  "fields": {
+    "nome": "Sala L216",
+    "tipo": "sala de aula",
+    "descricao": "Sala de aula",
+    "predio": 1,
+    "andar": "2",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 128,
+  "fields": {
+    "nome": "Sala L218",
+    "tipo": "sala de aula",
+    "descricao": "Sala de aula",
+    "predio": 1,
+    "andar": "2",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 129,
+  "fields": {
+    "nome": "Sala L220",
+    "tipo": "sala de aula",
+    "descricao": "Sala de aula",
+    "predio": 1,
+    "andar": "2",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 130,
+  "fields": {
+    "nome": "Sala L222",
+    "tipo": "sala de aula",
+    "descricao": "Sala de aula",
+    "predio": 1,
+    "andar": "2",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 131,
+  "fields": {
+    "nome": "Sala L224",
+    "tipo": "sala de aula",
+    "descricao": "Sala de aula",
+    "predio": 1,
+    "andar": "2",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 132,
+  "fields": {
+    "nome": "Sala L228",
+    "tipo": "sala de aula",
+    "descricao": "Sala de aula",
+    "predio": 1,
+    "andar": "2",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 133,
+  "fields": {
+    "nome": "Sala L232",
+    "tipo": "sala de aula",
+    "descricao": "Sala de aula",
+    "predio": 1,
+    "andar": "2",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 134,
+  "fields": {
+    "nome": "Sala L234",
+    "tipo": "sala de aula",
+    "descricao": "Sala de aula",
+    "predio": 1,
+    "andar": "2",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 135,
+  "fields": {
+    "nome": "Sala L236",
+    "tipo": "sala de aula",
+    "descricao": "Sala de aula",
+    "predio": 1,
+    "andar": "2",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 136,
+  "fields": {
+    "nome": "Sala L238",
+    "tipo": "sala de aula",
+    "descricao": "Sala de aula",
+    "predio": 1,
+    "andar": "2",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 137,
+  "fields": {
+    "nome": "Sala L240",
+    "tipo": "sala de aula",
+    "descricao": "Sala de aula",
+    "predio": 1,
+    "andar": "2",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 138,
+  "fields": {
+    "nome": "Sala L242",
+    "tipo": "sala de aula",
+    "descricao": "Sala de aula",
+    "predio": 1,
+    "andar": "2",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 139,
+  "fields": {
+    "nome": "Sala L244",
+    "tipo": "sala de aula",
+    "descricao": "Sala de aula",
+    "predio": 1,
+    "andar": "2",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 140,
+  "fields": {
+    "nome": "Sala L250",
+    "tipo": "sala de aula",
+    "descricao": "Sala de aula",
+    "predio": 1,
+    "andar": "2",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 141,
+  "fields": {
+    "nome": "Sala L260",
+    "tipo": "sala de aula",
+    "descricao": "Sala de aula",
+    "predio": 1,
+    "andar": "2",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+}
+]

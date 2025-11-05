@@ -46,5 +46,65 @@
       -43.23186547048217
     ]
   }
+},
+{
+  "model": "mapa.predio",
+  "pk": 5,
+  "fields": {
+    "nome": "Rio Datacentro - RDC",
+    "descricao": "",
+    "coordenadas": [
+      -22.9806433,
+      -43.2336178
+    ]
+  }
+},
+{
+  "model": "mapa.predio",
+  "pk": 6,
+  "fields": {
+    "nome": "Laboratório de Graduação (LAB-GRAD)",
+    "descricao": "",
+    "coordenadas": [
+      -22.9809708,
+      -43.2340983
+    ]
+  }
+},
+{
+  "model": "mapa.predio",
+  "pk": 7,
+  "fields": {
+    "nome": "Igreja do Sagrado Coração de Jesus",
+    "descricao": "",
+    "coordenadas": [
+      -22.97938700202643,
+      -43.233768422377814
+    ]
+  }
+},
+{
+  "model": "mapa.predio",
+  "pk": 8,
+  "fields": {
+    "nome": "Pastoral Universitária Anchieta",
+    "descricao": "",
+    "coordenadas": [
+      -22.97960324497389,
+      -43.23360761942245
+    ]
+  }
+},
+{
+  "model": "mapa.predio",
+  "pk": 9,
+  "fields": {
+    "nome": "Ginásio",
+    "descricao": "",
+    "coordenadas": [
+      -22.977726609663314,
+      -43.232079259311824
+    ]
+  }
 }
 ]
