@@ -2,6 +2,8 @@
 {% load static %}
 {% block extra_css %}
 <link rel="stylesheet" href="{% static 'CSS/style_index.css' %}">
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+<link rel="stylesheet" href="{% static 'CSS/mapa.css' %}">
 {% endblock %}
 
 {% block title %}PUC-Go — Home{% endblock %}
@@ -11,9 +13,7 @@
     <main class="conteudo-principal">
         <div class="container-mapa">
             <div class="card-mapa">
-                <i data-lucide="map" class="icone-mapa"></i>
-                <p class="titulo">Mapa Interativo do Campus</p>
-                <p class="subtitulo">Clique e navegue pelo campus universitário</p>
+               <div id="map"></div>
                 <button type="button" class="btn-mais">
                     <i data-lucide="plus"></i>
                 </button>
@@ -49,6 +49,9 @@
 
 {% endblock %}
 
-
+{% block extra_js %}
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="{% static 'JS/leafletmapa.js' %}"></script>
+{% endblock %}
 
     

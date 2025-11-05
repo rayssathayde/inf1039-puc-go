@@ -10,8 +10,8 @@
     "andar": "Térreo",
     "localizacao_detalhada": "Próximo ao NAI",
     "coordenadas": [
-      -22.979542266503312,
-      -43.2319915345736
+      -22.97962579077317,
+      -43.23206533553239
     ],
     "informacoes_extras": null,
     "ativo": true
@@ -27,7 +27,10 @@
     "predio": 1,
     "andar": "Térreo",
     "localizacao_detalhada": "Próximo ao NAI",
-    "coordenadas": null,
+    "coordenadas": [
+      -22.97962579077317,
+      -43.23206533553239
+    ],
     "informacoes_extras": null,
     "ativo": true
   }
@@ -42,7 +45,10 @@
     "predio": 1,
     "andar": "Térreo",
     "localizacao_detalhada": "Próximo ao NAI",
-    "coordenadas": null,
+    "coordenadas": [
+      -22.97962579077317,
+      -43.23206533553239
+    ],
     "informacoes_extras": null,
     "ativo": true
   }
@@ -57,7 +63,10 @@
     "predio": 1,
     "andar": "Térreo",
     "localizacao_detalhada": "Próximo ao NAI",
-    "coordenadas": null,
+    "coordenadas": [
+      -22.97962579077317,
+      -43.23206533553239
+    ],
     "informacoes_extras": null,
     "ativo": true
   }
@@ -72,7 +81,10 @@
     "predio": 1,
     "andar": "Térreo",
     "localizacao_detalhada": "Próximo ao Auditório Padre José de Anchieta",
-    "coordenadas": null,
+    "coordenadas": [
+      -22.97985680311869,
+      -43.232495686877
+    ],
     "informacoes_extras": null,
     "ativo": true
   }
@@ -87,7 +99,10 @@
     "predio": 1,
     "andar": "Térreo",
     "localizacao_detalhada": "Em frente ao BioDesign Lab",
-    "coordenadas": null,
+    "coordenadas": [
+      -22.97985680311869,
+      -43.232495686877
+    ],
     "informacoes_extras": null,
     "ativo": true
   }
@@ -102,7 +117,10 @@
     "predio": 1,
     "andar": "Térreo",
     "localizacao_detalhada": "Em frente ao BioDesign Lab",
-    "coordenadas": null,
+    "coordenadas": [
+      -22.980061341426854,
+      -43.23274141506229
+    ],
     "informacoes_extras": null,
     "ativo": true
   }
@@ -117,7 +135,10 @@
     "predio": 1,
     "andar": "Térreo",
     "localizacao_detalhada": "Em frente ao LAMAQ",
-    "coordenadas": null,
+    "coordenadas": [
+      -22.980061341426854,
+      -43.23274141506229
+    ],
     "informacoes_extras": null,
     "ativo": true
   }
@@ -132,7 +153,10 @@
     "predio": 1,
     "andar": "Térreo",
     "localizacao_detalhada": "Em frente ao LAMAQ",
-    "coordenadas": null,
+    "coordenadas": [
+      -22.980061341426854,
+      -43.23274141506229
+    ],
     "informacoes_extras": null,
     "ativo": true
   }
@@ -147,7 +171,10 @@
     "predio": 1,
     "andar": "Térreo",
     "localizacao_detalhada": "Em frente ao Laboratório de Microscopia Eletrônica",
-    "coordenadas": null,
+    "coordenadas": [
+      -22.980061341426854,
+      -43.23274141506229
+    ],
     "informacoes_extras": null,
     "ativo": true
   }
@@ -162,7 +189,10 @@
     "predio": 1,
     "andar": "Térreo",
     "localizacao_detalhada": "Em frente ao Laboratório de Microscopia Eletrônica",
-    "coordenadas": null,
+    "coordenadas": [
+      -22.980167346536895,
+      -43.2329072204389
+    ],
     "informacoes_extras": null,
     "ativo": true
   }
@@ -177,7 +207,10 @@
     "predio": 1,
     "andar": "Térreo",
     "localizacao_detalhada": "Em frente ao Laboratório de Estruturas e Materiais - LEM",
-    "coordenadas": null,
+    "coordenadas": [
+      -22.980352705141197,
+      -43.23312304034305
+    ],
     "informacoes_extras": null,
     "ativo": true
   }
@@ -192,7 +225,10 @@
     "predio": 1,
     "andar": "Térreo",
     "localizacao_detalhada": "Em frente ao Laboratório de Estruturas e Materiais - LEM",
-    "coordenadas": null,
+    "coordenadas": [
+      -22.980352705141197,
+      -43.23312304034305
+    ],
     "informacoes_extras": null,
     "ativo": true
   }
@@ -207,7 +243,10 @@
     "predio": 1,
     "andar": "Térreo",
     "localizacao_detalhada": "Em frente ao Laboratório de Estruturas e Materiais - LEM",
-    "coordenadas": null,
+    "coordenadas": [
+      -22.980352705141197,
+      -43.23312304034305
+    ],
     "informacoes_extras": null,
     "ativo": true
   }
@@ -222,7 +261,10 @@
     "predio": 1,
     "andar": "Térreo",
     "localizacao_detalhada": "Próximo ao NAI",
-    "coordenadas": null,
+    "coordenadas": [
+      -22.97962579077317,
+      -43.23206533553239
+    ],
     "informacoes_extras": null,
     "ativo": true
   }
@@ -237,7 +279,10 @@
     "predio": 1,
     "andar": "Térreo",
     "localizacao_detalhada": "Próximo ao NAI",
-    "coordenadas": null,
+    "coordenadas": [
+      -22.97962579077317,
+      -43.23206533553239
+    ],
     "informacoes_extras": null,
     "ativo": true
   }
@@ -252,7 +297,10 @@
     "predio": 1,
     "andar": "Térreo",
     "localizacao_detalhada": "Próximo ao NAI",
-    "coordenadas": null,
+    "coordenadas": [
+      -22.97962579077317,
+      -43.23206533553239
+    ],
     "informacoes_extras": null,
     "ativo": true
   }
@@ -267,7 +315,10 @@
     "predio": 1,
     "andar": "Térreo",
     "localizacao_detalhada": "Próximo ao NAI",
-    "coordenadas": null,
+    "coordenadas": [
+      -22.97985680311869,
+      -43.232495686877
+    ],
     "informacoes_extras": null,
     "ativo": true
   }
@@ -281,8 +332,11 @@
     "descricao": "Laboratório de Introdução à Engenharia - LIENG",
     "predio": 1,
     "andar": "Térreo",
-    "localizacao_detalhada": "Próximo ao NAI",
-    "coordenadas": null,
+    "localizacao_detalhada": "Próximo ao Bar das Freiras",
+    "coordenadas": [
+      -22.97985680311869,
+      -43.232495686877
+    ],
     "informacoes_extras": null,
     "ativo": true
   }
@@ -297,7 +351,10 @@
     "predio": 1,
     "andar": "Térreo",
     "localizacao_detalhada": "Em frente ao LeMax",
-    "coordenadas": null,
+    "coordenadas": [
+      -22.97985680311869,
+      -43.232495686877
+    ],
     "informacoes_extras": null,
     "ativo": true
   }
@@ -312,7 +369,10 @@
     "predio": 1,
     "andar": "Térreo",
     "localizacao_detalhada": "Em frente ao LeMax",
-    "coordenadas": null,
+    "coordenadas": [
+      -22.97985680311869,
+      -43.232495686877
+    ],
     "informacoes_extras": null,
     "ativo": true
   }
@@ -327,7 +387,10 @@
     "predio": 1,
     "andar": "Térreo",
     "localizacao_detalhada": "Em frente ao Bar das Freiras",
-    "coordenadas": null,
+    "coordenadas": [
+      -22.97985680311869,
+      -43.232495686877
+    ],
     "informacoes_extras": null,
     "ativo": true
   }
@@ -342,7 +405,10 @@
     "predio": 1,
     "andar": "Térreo",
     "localizacao_detalhada": "Em frente ao Bar das Freiras",
-    "coordenadas": null,
+    "coordenadas": [
+      -22.97985680311869,
+      -43.232495686877
+    ],
     "informacoes_extras": null,
     "ativo": true
   }
@@ -357,7 +423,10 @@
     "predio": 1,
     "andar": "Térreo",
     "localizacao_detalhada": "Em frente ao Bar das Freiras",
-    "coordenadas": null,
+    "coordenadas": [
+      -22.97985680311869,
+      -43.232495686877
+    ],
     "informacoes_extras": null,
     "ativo": true
   }
@@ -372,7 +441,10 @@
     "predio": 1,
     "andar": "Térreo",
     "localizacao_detalhada": "Em frente à arquibancada com tomadas",
-    "coordenadas": null,
+    "coordenadas": [
+      -22.980061341426854,
+      -43.23274141506229
+    ],
     "informacoes_extras": null,
     "ativo": true
   }
@@ -387,7 +459,10 @@
     "predio": 1,
     "andar": "Térreo",
     "localizacao_detalhada": "Próximo ao Bar das Freiras",
-    "coordenadas": null,
+    "coordenadas": [
+      -22.980061341426854,
+      -43.23274141506229
+    ],
     "informacoes_extras": null,
     "ativo": true
   }
@@ -402,7 +477,10 @@
     "predio": 1,
     "andar": "Térreo",
     "localizacao_detalhada": "Próximo ao Rei do Mate",
-    "coordenadas": null,
+    "coordenadas": [
+      -22.980061341426854,
+      -43.23274141506229
+    ],
     "informacoes_extras": null,
     "ativo": true
   }
@@ -417,7 +495,10 @@
     "predio": 1,
     "andar": "Térreo",
     "localizacao_detalhada": "Próximo ao Rei do Mate",
-    "coordenadas": null,
+    "coordenadas": [
+      -22.980061341426854,
+      -43.23274141506229
+    ],
     "informacoes_extras": null,
     "ativo": true
   }
@@ -432,7 +513,10 @@
     "predio": 1,
     "andar": "Térreo",
     "localizacao_detalhada": "Próximo ao Rei do Mate",
-    "coordenadas": null,
+    "coordenadas": [
+      -22.980061341426854,
+      -43.23274141506229
+    ],
     "informacoes_extras": null,
     "ativo": true
   }
@@ -447,7 +531,10 @@
     "predio": 1,
     "andar": "Térreo",
     "localizacao_detalhada": "Próximo ao Geneal",
-    "coordenadas": null,
+    "coordenadas": [
+      -22.980061341426854,
+      -43.23274141506229
+    ],
     "informacoes_extras": null,
     "ativo": true
   }
@@ -462,7 +549,10 @@
     "predio": 1,
     "andar": "Térreo",
     "localizacao_detalhada": "Próximo ao Geneal",
-    "coordenadas": null,
+    "coordenadas": [
+      -22.980167346536895,
+      -43.2329072204389
+    ],
     "informacoes_extras": null,
     "ativo": true
   }
@@ -477,7 +567,10 @@
     "predio": 1,
     "andar": "Térreo",
     "localizacao_detalhada": "Próximo ao Geneal",
-    "coordenadas": null,
+    "coordenadas": [
+      -22.980167346536895,
+      -43.2329072204389
+    ],
     "informacoes_extras": null,
     "ativo": true
   }
@@ -492,7 +585,10 @@
     "predio": 1,
     "andar": "Térreo",
     "localizacao_detalhada": "Próximo ao Geneal",
-    "coordenadas": null,
+    "coordenadas": [
+      -22.980167346536895,
+      -43.2329072204389
+    ],
     "informacoes_extras": null,
     "ativo": true
   }
@@ -507,7 +603,10 @@
     "predio": 1,
     "andar": "Térreo",
     "localizacao_detalhada": "Próximo ao Geneal",
-    "coordenadas": null,
+    "coordenadas": [
+      -22.980352705141197,
+      -43.23312304034305
+    ],
     "informacoes_extras": null,
     "ativo": true
   }
@@ -522,7 +621,10 @@
     "predio": 1,
     "andar": "Térreo",
     "localizacao_detalhada": "Próximo ao Geneal",
-    "coordenadas": null,
+    "coordenadas": [
+      -22.980167346536895,
+      -43.2329072204389
+    ],
     "informacoes_extras": null,
     "ativo": true
   }
@@ -537,7 +639,10 @@
     "predio": 1,
     "andar": "Térreo",
     "localizacao_detalhada": "Próximo ao California Coffee",
-    "coordenadas": null,
+    "coordenadas": [
+      -22.980352705141197,
+      -43.23312304034305
+    ],
     "informacoes_extras": null,
     "ativo": true
   }
@@ -552,7 +657,10 @@
     "predio": 1,
     "andar": "Térreo",
     "localizacao_detalhada": "Nos fundos do prédio, antes do RDC",
-    "coordenadas": null,
+    "coordenadas": [
+      -22.980352705141197,
+      -43.23312304034305
+    ],
     "informacoes_extras": null,
     "ativo": true
   }
@@ -567,7 +675,10 @@
     "predio": 1,
     "andar": "Térreo",
     "localizacao_detalhada": "Próximo ao Porto do Sabor",
-    "coordenadas": null,
+    "coordenadas": [
+      -22.97962579077317,
+      -43.23206533553239
+    ],
     "informacoes_extras": null,
     "ativo": true
   }
@@ -582,7 +693,10 @@
     "predio": 1,
     "andar": "Térreo",
     "localizacao_detalhada": "Próximo ao NAI",
-    "coordenadas": null,
+    "coordenadas": [
+      -22.97962579077317,
+      -43.23206533553239
+    ],
     "informacoes_extras": null,
     "ativo": true
   }
