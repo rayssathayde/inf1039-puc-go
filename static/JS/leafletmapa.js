@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const lat = -22.9796128;
-  const lon = -43.2302568;
-  const map = L.map("map").setView([lat, lon], 15);
+  const lat = -22.979279047516552; 
+  const lon =  -43.23199899901637;
+  const map = L.map("map").setView([lat, lon], 17);
 
   L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
     attribution:
@@ -9,12 +9,10 @@ document.addEventListener("DOMContentLoaded", function () {
   }).addTo(map);
 
   const marker = L.marker([lat, lon]).addTo(map);
-
+  map.panTo([lat, lon]);
   
   const btnLocalizacao = document.querySelector(".btn-localizacao");
 
-  if (btnMais) btnMais.addEventListener("click", () => map.zoomIn());
-  if (btnMenos) btnMenos.addEventListener("click", () => map.zoomOut());
 
   if (btnLocalizacao) {
     btnLocalizacao.addEventListener("click", () => {
