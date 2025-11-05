@@ -1,0 +1,309 @@
+[
+    {
+      "model": "mapa.local",
+      "pk": 158,
+      "fields": {
+        "nome": "Sala L401",
+        "tipo": "administrativo",
+        "descricao": "Salas administrativas do Departamento de Engenharia Elétrica - ELE\r\nDiretor: Delberis A. Lima\r\nTels: (+55 21) 3527-1203 (Graduação) / (+55 21) 3527-1202 (Pós-Graduação)\r\nE-mail graduação: graduacao@ele.puc-rio.br \r\nE-mail pós-graduação: pos@ele.puc-rio.br \r\nhttps://www.ele.puc-rio.br/ ",
+        "predio": 1,
+        "andar": "4",
+        "localizacao_detalhada": "",
+        "coordenadas": [
+          -22.979706480238132,
+          -43.23249310735959
+        ],
+        "informacoes_extras": null,
+        "ativo": true
+      }
+    },
+    {
+      "model": "mapa.local",
+      "pk": 159,
+      "fields": {
+        "nome": "Sala L413",
+        "tipo": "outro",
+        "descricao": "Comissão Própria de Avaliação (CPA)\r\nNa PUC-Rio, a coordenação do processo de avaliação interna é conduzida pela Comissão Própria de Avaliação – CPA, criada em 2004 (Portaria Interna 67/2004) para atender as normas e os procedimentos definidos na Lei nº 10.861/04: SINAES. Em 2012 a Portaria Interna 07/2012 estabeleceu novas normas e procedimentos para a CPA e revogou a Portaria Interna 67/2004.\r\nhttps://www.puc-rio.br/sobrepuc/cpa/index.html ",
+        "predio": 1,
+        "andar": "4",
+        "localizacao_detalhada": "",
+        "coordenadas": [
+          -22.979706480238132,
+          -43.23249310735959
+        ],
+        "informacoes_extras": null,
+        "ativo": true
+      }
+    },
+    {
+      "model": "mapa.local",
+      "pk": 160,
+      "fields": {
+        "nome": "Sala L415, L417, L419",
+        "tipo": "laboratório",
+        "descricao": "Laboratório de Automação de Museus, Bibliotecas Digitais e Arquivos - LAMBDA\r\nCoordenadora: Ana Maria Beltran Pavani (sala L415)O LAMBDA é um laboratório cujo foco é o uso da TIC – Tecnologia de Informação e Comunicação em educação, cultura e na disseminação da informação acadêmica/científica. O LAMBDA é o desenvolvedor e operador do Sistema Maxwell que é o repositório institucional da PUC-Rio, abrigando teses e dissertações, projetos de graduação, periódicos, monografias e farto material educacional.\r\nhttps://www.ele.puc-rio.br/posgraduacao/laboratorios/lambda/ ",
+        "predio": 1,
+        "andar": "4",
+        "localizacao_detalhada": "",
+        "coordenadas": [
+          -22.979706480238132,
+          -43.23249310735959
+        ],
+        "informacoes_extras": null,
+        "ativo": true
+      }
+    },
+    {
+      "model": "mapa.local",
+      "pk": 161,
+      "fields": {
+        "nome": "Sala L314, L316, L318",
+        "tipo": "laboratório",
+        "descricao": "Laboratório de Programação - LPG/1\r\nDepartamento de Engenharia Elétrica",
+        "predio": 1,
+        "andar": "4",
+        "localizacao_detalhada": "",
+        "coordenadas": [
+          -22.979706480238132,
+          -43.23249310735959
+        ],
+        "informacoes_extras": null,
+        "ativo": true
+      }
+    },
+    {
+      "model": "mapa.local",
+      "pk": 162,
+      "fields": {
+        "nome": "Sala L431",
+        "tipo": "administrativo",
+        "descricao": "Coordenação de Ensino de Empreendedorismo e Inovação - CEMP\r\nDepartamento de Administração\r\nTel: (21)99453-5928\r\nEmail: cemp@puc-rio.br \r\nhttps://www.instagram.com/cemppucrio/ \r\nhttps://www.cemp.iag.puc-rio.br/ \r\n",
+        "predio": 1,
+        "andar": "4",
+        "localizacao_detalhada": "",
+        "coordenadas": [
+          -22.979706480238132,
+          -43.23249310735959
+        ],
+        "informacoes_extras": null,
+        "ativo": true
+      }
+    },
+    {
+      "model": "mapa.local",
+      "pk": 163,
+      "fields": {
+        "nome": "Sala L434, L436",
+        "tipo": "laboratório",
+        "descricao": "Laboratório de Programação - LPG/2\r\nDepartamento de Engenharia Elétrica",
+        "predio": 1,
+        "andar": "4",
+        "localizacao_detalhada": "",
+        "coordenadas": [
+          -22.979706480238132,
+          -43.23249310735959
+        ],
+        "informacoes_extras": null,
+        "ativo": true
+      }
+    },
+    {
+      "model": "mapa.local",
+      "pk": 164,
+      "fields": {
+        "nome": "Sala  L435",
+        "tipo": "laboratório",
+        "descricao": "Laboratory of Applied Mathematical Programming and Statistics - LAMPS\r\nDepartamento de Engenharia Elétrica e Engenharia Industrial\r\nEquipe: Alexandre Street, Bruno Fanzeres, Álvaro Veiga, Davi Michel Valladão, Cristiano Augusto Coelho Fernandes\r\nO LAMPS é um laboratório de pesquisa e desenvolvimento que utiliza técnicas de programação matemática (otimização) e estatística para criar novos conhecimentos, testar hipóteses e desenvolver ferramentas e soluções para problemas relevantes da indústria e da sociedade, especialmente dos setores energético e financeiro.\r\nTel: + 55 21 3527-1222\r\nE-mail: street@ele.puc-rio.br \r\nhttps://www.lamps.ind.puc-rio.br/ ",
+        "predio": 1,
+        "andar": "4",
+        "localizacao_detalhada": "",
+        "coordenadas": [
+          -22.979706480238132,
+          -43.23249310735959
+        ],
+        "informacoes_extras": null,
+        "ativo": true
+      }
+    },
+    {
+      "model": "mapa.local",
+      "pk": 165,
+      "fields": {
+        "nome": "Sala L443",
+        "tipo": "outro",
+        "descricao": "Sala de Suporte\r\nDepartamento de Engenharia Elétrica",
+        "predio": 1,
+        "andar": "4",
+        "localizacao_detalhada": "",
+        "coordenadas": [
+          -22.979706480238132,
+          -43.23249310735959
+        ],
+        "informacoes_extras": null,
+        "ativo": true
+      }
+    },
+    {
+      "model": "mapa.local",
+      "pk": 166,
+      "fields": {
+        "nome": "Sala  L447",
+        "tipo": "laboratório",
+        "descricao": "Laboratório de Sistemas de Energia - LSE\r\nDepartamento de Engenharia Elétrica\r\nResponsável: Delberis A. Lima\r\nO Laboratório de Sistemas de Energia Elétrica da PUC-Rio dedica-se à pesquisa e ao desenvolvimento nas áreas de simulação computacional de problemas associados à operação e ao planejamento de sistemas elétricos de potência. Sua missão é criar ferramentas de software que auxiliem a compreensão dos fenômenos, a análise dos problemas e o desenvolvimento de aplicativos. Sua competência inclui o desenvolvimento de ferramentas computacionais aplicáveis nos diversos segmentos do setor elétrico.\r\nTel: (+55 21) 3527-1228\r\nhttps://www.ele.puc-rio.br/posgraduacao/laboratorios/lse/ ",
+        "predio": 1,
+        "andar": "4",
+        "localizacao_detalhada": "",
+        "coordenadas": [
+          -22.979706480238132,
+          -43.23249310735959
+        ],
+        "informacoes_extras": null,
+        "ativo": true
+      }
+    },
+    {
+      "model": "mapa.local",
+      "pk": 167,
+      "fields": {
+        "nome": "Sala L449",
+        "tipo": "outro",
+        "descricao": "Sala de professores\r\nDepartamento de Matemática",
+        "predio": 1,
+        "andar": "4",
+        "localizacao_detalhada": "",
+        "coordenadas": [
+          -22.979706480238132,
+          -43.23249310735959
+        ],
+        "informacoes_extras": null,
+        "ativo": true
+      }
+    },
+    {
+      "model": "mapa.local",
+      "pk": 168,
+      "fields": {
+        "nome": "Sala L461",
+        "tipo": "outro",
+        "descricao": "Sala de alunos de Graduação\r\nDepartamento de Física",
+        "predio": 1,
+        "andar": "4",
+        "localizacao_detalhada": "",
+        "coordenadas": [
+          -22.979706480238132,
+          -43.23249310735959
+        ],
+        "informacoes_extras": null,
+        "ativo": true
+      }
+    },
+    
+    {
+      "model": "mapa.local",
+      "pk": 169,
+      "fields": {
+        "nome": "Sala   L463",
+        "tipo": "outro",
+        "descricao": "Sala do professor: \r\nJosé Alberto dos Reis Parise\r\nDepartamento de Engenharia Mecânica",
+        "predio": 1,
+        "andar": "4",
+        "localizacao_detalhada": "",
+        "coordenadas": [
+          -22.979706480238132,
+          -43.23249310735959
+        ],
+        "informacoes_extras": null,
+        "ativo": true
+      }
+    },
+    {
+      "model": "mapa.local",
+      "pk": 170,
+      "fields": {
+        "nome": "Sala L470",
+        "tipo": "outro",
+        "descricao": "Sala do professor: \r\nJosé Alberto dos Reis Parise\r\nDepartamento de Engenharia Mecânica",
+        "predio": 1,
+        "andar": "4",
+        "localizacao_detalhada": "",
+        "coordenadas": [
+          -22.979706480238132,
+          -43.23249310735959
+        ],
+        "informacoes_extras": null,
+        "ativo": true
+      }
+    },
+    {
+      "model": "mapa.local",
+      "pk": 171,
+      "fields": {
+        "nome": "Sala L470",
+        "tipo": "laboratório",
+        "descricao": "Laboratório de Adsorventes para Análise Química, Proteção de Ambiente e Biomedicina - LAQAPAB\r\nDepartamento de Química\r\nCoordenador: Prof. Volodymyr Zaitse\r\nO LAQAPAB realiza pesquisas em química de materiais organo-minerais para aplicação em análises químicas, nanomedicina e catálise. Desenvolve novos adsorventes para cromatografia, extração seletiva em fase sólida e pré-concentração de metais. Prepara nano materiais para o sistema de liberação de fármacos e tratamento do câncer, bio- e quimiossensores.\r\nTel: (21) 3527-2617\r\nE-mail: vnzaitsev@puc-rio.br \r\nhttps://soulscience.com.br/rj/laboratorio-de-adsorventes-para-analise-quimica-protecao-de-ambiente-e-biomedicina-laqapab/ ",
+        "predio": 1,
+        "andar": "4",
+        "localizacao_detalhada": "",
+        "coordenadas": [
+          -22.979706480238132,
+          -43.23249310735959
+        ],
+        "informacoes_extras": null,
+        "ativo": true
+      }
+    },
+    {
+      "model": "mapa.local",
+      "pk": 172,
+      "fields": {
+        "nome": "Sala L471",
+        "tipo": "outro",
+        "descricao": "Sala das professoras: \r\nCarmem Lucia Porto da Silveira\r\nAdriana Gioda  \r\nTatiana D. Saint Pierre\r\nDepartamento de Química",
+        "predio": 1,
+        "andar": "4",
+        "localizacao_detalhada": "",
+        "coordenadas": [
+          -22.979706480238132,
+          -43.23249310735959
+        ],
+        "informacoes_extras": null,
+        "ativo": true
+      }
+    },
+    {
+      "model": "mapa.local",
+      "pk": 173,
+      "fields": {
+        "nome": "Sala L473",
+        "tipo": "outro",
+        "descricao": "Sala do professor: rnDr. Nicolás A. Rey\r\nDepartamento de Química",
+        "predio": 1,
+        "andar": "4",
+        "localizacao_detalhada": "",
+        "coordenadas": [
+          -22.979706480238132,
+          -43.23249310735959
+        ],
+        "informacoes_extras": null,
+        "ativo": true
+      }
+    },
+    {
+      "model": "mapa.local",
+      "pk": 174,
+      "fields": {
+        "nome": "Sala L481",
+        "tipo": "outro",
+        "descricao": "Sala do professor: \r\nVolodymyr Zaitse\r\nDepartamento de Química",
+        "predio": 1,
+        "andar": "4",
+        "localizacao_detalhada": "",
+        "coordenadas": [
+          -22.979706480238132,
+          -43.23249310735959
+        ],
+        "informacoes_extras": null,
+        "ativo": true
+      }
+    }
+    ]
