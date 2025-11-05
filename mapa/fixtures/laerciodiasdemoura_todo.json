@@ -1,0 +1,614 @@
+[
+{
+  "model": "mapa.local",
+  "pk": 13,
+  "fields": {
+    "nome": "Banheiro feminino",
+    "tipo": "banheiro",
+    "descricao": "Banheiro",
+    "predio": 4,
+    "andar": "Terreo",
+    "localizacao_detalhada": "Banheiro feminino localizado na parte interna do terreo do Ed. Laercio Dias de Moura proximo a escada.",
+    "coordenadas": [
+      -22.977933469884157,
+      -43.23186547048217
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 14,
+  "fields": {
+    "nome": "Banheiro masculino",
+    "tipo": "banheiro",
+    "descricao": "Banheiro",
+    "predio": 4,
+    "andar": "Terreo",
+    "localizacao_detalhada": "Banheiro masculino localizado no interior do terreo do Ed. Laercio Dias de Moura proximo a escada.",
+    "coordenadas": [
+      -22.977933469884157,
+      -43.23186547048217
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 15,
+  "fields": {
+    "nome": "Copa",
+    "tipo": "outro",
+    "descricao": "Copa",
+    "predio": 4,
+    "andar": "Terreo",
+    "localizacao_detalhada": "Copa localizada dentro do terreo do Ed. Laercio Dias de Moura proximo a escada.",
+    "coordenadas": [
+      -22.977933469884157,
+      -43.23186547048217
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 16,
+  "fields": {
+    "nome": "LabRob",
+    "tipo": "laboratorio",
+    "descricao": "Laboratorio de Robotica da PUC-Rio\r\nDepto.: Eng. Mecanica",
+    "predio": 4,
+    "andar": "1",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.977933469884157,
+      -43.23186547048217
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 17,
+  "fields": {
+    "nome": "Assessoria Juridica",
+    "tipo": "administrativo",
+    "descricao": "Assessoria Juridica da PUC-Rio",
+    "predio": 4,
+    "andar": "1",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.977933469884157,
+      -43.23186547048217
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 18,
+  "fields": {
+    "nome": "StoneLab",
+    "tipo": "laboratorio",
+    "descricao": "Laboratorio de pesquisa da PUC-Rio",
+    "predio": 4,
+    "andar": "1",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.977933469884157,
+      -43.23186547048217
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 19,
+  "fields": {
+    "nome": "CePeCAM",
+    "tipo": "outro",
+    "descricao": "Centro de Pesquisa da PUC-Rio\r\nDepto.: Eng. Quimica e de Materiais",
+    "predio": 4,
+    "andar": "1",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.977933469884157,
+      -43.23186547048217
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 20,
+  "fields": {
+    "nome": "Recepcao",
+    "tipo": "outro",
+    "descricao": "Recepcao do Instituto Tecgraf",
+    "predio": 4,
+    "andar": "1",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.977933469884157,
+      -43.23186547048217
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 21,
+  "fields": {
+    "nome": "SIMDUT",
+    "tipo": "laboratorio",
+    "descricao": "Laboratorio de Engenharia dos Fluidos\r\nDepto.: Eng. Mecanica",
+    "predio": 4,
+    "andar": "2",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.977933469884157,
+      -43.23186547048217
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 22,
+  "fields": {
+    "nome": "ExACTa",
+    "tipo": "laboratorio",
+    "descricao": "Laboratorio de pesquisa da PUC-Rio\r\nDepto.: Informatica",
+    "predio": 4,
+    "andar": "2",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.977933469884157,
+      -43.23186547048217
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 23,
+  "fields": {
+    "nome": "Apple Developer Academy",
+    "tipo": "outro",
+    "descricao": "Programa de Inovacao Tecnologica",
+    "predio": 4,
+    "andar": "3",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.977933469884157,
+      -43.23186547048217
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 24,
+  "fields": {
+    "nome": "ECOA",
+    "tipo": "outro",
+    "descricao": "Instituto de pesquisa, desenvolvimento e inovacao",
+    "predio": 4,
+    "andar": "4",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.977933469884157,
+      -43.23186547048217
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 25,
+  "fields": {
+    "nome": "IEPUC",
+    "tipo": "outro",
+    "descricao": "Instituto de pesquisa da PUC-Rio",
+    "predio": 4,
+    "andar": "4",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.977933469884157,
+      -43.23186547048217
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 26,
+  "fields": {
+    "nome": "Geoanalise",
+    "tipo": "laboratorio",
+    "descricao": "Laboratorio de Geoanalise da PUC-Rio\r\nDepto.: Eng. Civil e Ambiental",
+    "predio": 4,
+    "andar": "5",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.977933469884157,
+      -43.23186547048217
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 27,
+  "fields": {
+    "nome": "GREO",
+    "tipo": "laboratorio",
+    "descricao": "Laboratorio de pesquisa da PUC-Rio\r\nDepto.: Eng. Mecanica",
+    "predio": 4,
+    "andar": "5",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.977933469884157,
+      -43.23186547048217
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 28,
+  "fields": {
+    "nome": "Auditorio do Tecgraf",
+    "tipo": "outro",
+    "descricao": "Auditorio do Tecgraf",
+    "predio": 4,
+    "andar": "6",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.977933469884157,
+      -43.23186547048217
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 29,
+  "fields": {
+    "nome": "Diretoria do Tecgraf",
+    "tipo": "administrativo",
+    "descricao": "Diretoria do Tecgraf",
+    "predio": 4,
+    "andar": "6",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.977933469884157,
+      -43.23186547048217
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 30,
+  "fields": {
+    "nome": "LMMP",
+    "tipo": "laboratorio",
+    "descricao": "Laboratorio de pesquisa da PUC-Rio\r\nDepto.: Eng. Mecanica",
+    "predio": 4,
+    "andar": "6",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.977933469884157,
+      -43.23186547048217
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 31,
+  "fields": {
+    "nome": "Lasurf",
+    "tipo": "laboratorio",
+    "descricao": "Laboratorio de pesquisa da PUC-Rio\r\nDepto.: Quimica",
+    "predio": 4,
+    "andar": "7",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.977933469884157,
+      -43.23186547048217
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 32,
+  "fields": {
+    "nome": "CCPP",
+    "tipo": "outro",
+    "descricao": "Coordenacao Central de Projetos Patrocinados",
+    "predio": 4,
+    "andar": "7",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.977933469884157,
+      -43.23186547048217
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 33,
+  "fields": {
+    "nome": "Banheiro feminino",
+    "tipo": "banheiro",
+    "descricao": "Banheiro",
+    "predio": 4,
+    "andar": "1",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.977933469884157,
+      -43.23186547048217
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 34,
+  "fields": {
+    "nome": "Banheiro masculino",
+    "tipo": "banheiro",
+    "descricao": "Banheiro",
+    "predio": 4,
+    "andar": "1",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.977933469884157,
+      -43.23186547048217
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 35,
+  "fields": {
+    "nome": "Banheiro feminino",
+    "tipo": "banheiro",
+    "descricao": "Banheiro",
+    "predio": 4,
+    "andar": "2",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.977933469884157,
+      -43.23186547048217
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 36,
+  "fields": {
+    "nome": "Banheiro masculino",
+    "tipo": "banheiro",
+    "descricao": "Banheiro",
+    "predio": 4,
+    "andar": "2",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.977933469884157,
+      -43.23186547048217
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 37,
+  "fields": {
+    "nome": "Banheiro feminino",
+    "tipo": "banheiro",
+    "descricao": "Banheiro",
+    "predio": 4,
+    "andar": "3",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.977933469884157,
+      -43.23186547048217
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 38,
+  "fields": {
+    "nome": "Banheiro masculino",
+    "tipo": "banheiro",
+    "descricao": "Banheiro",
+    "predio": 4,
+    "andar": "3",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.977933469884157,
+      -43.23186547048217
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 39,
+  "fields": {
+    "nome": "Banheiro feminino",
+    "tipo": "banheiro",
+    "descricao": "Banheiro",
+    "predio": 4,
+    "andar": "4",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.977933469884157,
+      -43.23186547048217
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 40,
+  "fields": {
+    "nome": "Banheiro masculino",
+    "tipo": "banheiro",
+    "descricao": "Banheiro",
+    "predio": 4,
+    "andar": "4",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.977933469884157,
+      -43.23186547048217
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 41,
+  "fields": {
+    "nome": "Banheiro feminino",
+    "tipo": "banheiro",
+    "descricao": "Banheiro",
+    "predio": 4,
+    "andar": "5",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.977933469884157,
+      -43.23186547048217
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 42,
+  "fields": {
+    "nome": "Banheiro masculino",
+    "tipo": "banheiro",
+    "descricao": "Banheiro",
+    "predio": 4,
+    "andar": "5",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.977933469884157,
+      -43.23186547048217
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 43,
+  "fields": {
+    "nome": "Banheiro feminino",
+    "tipo": "banheiro",
+    "descricao": "Banheiro",
+    "predio": 4,
+    "andar": "6",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.977933469884157,
+      -43.23186547048217
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 44,
+  "fields": {
+    "nome": "Banheiro masculino",
+    "tipo": "banheiro",
+    "descricao": "Banheiro",
+    "predio": 4,
+    "andar": "6",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.977933469884157,
+      -43.23186547048217
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 45,
+  "fields": {
+    "nome": "Banheiro feminino",
+    "tipo": "banheiro",
+    "descricao": "Banheiro",
+    "predio": 4,
+    "andar": "7",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.977933469884157,
+      -43.23186547048217
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 46,
+  "fields": {
+    "nome": "Banheiro masculino",
+    "tipo": "banheiro",
+    "descricao": "Banheiro",
+    "predio": 4,
+    "andar": "7",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.977933469884157,
+      -43.23186547048217
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+}
+]
