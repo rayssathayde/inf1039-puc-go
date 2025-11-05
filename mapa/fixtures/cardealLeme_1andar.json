@@ -1,0 +1,956 @@
+[
+{
+  "model": "mapa.local",
+  "pk": 40,
+  "fields": {
+    "nome": "Sala L101",
+    "tipo": "administrativo",
+    "descricao": "Salas administrativas do Departamento de Engenharia Mecânica - MEC\r\nTels: (55 21) 3736-1001 / 3527-1001 \r\nhttps://mec.puc-rio.br",
+    "predio": 1,
+    "andar": "1",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 41,
+  "fields": {
+    "nome": "Sala L115",
+    "tipo": "outro",
+    "descricao": "Sala dos professores: \r\nIvan Fabio Mota de Menezes \r\nJessé Augusto dos Santos Paixão\r\nDepartamento de Engenharia Mecânica",
+    "predio": 1,
+    "andar": "1",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 42,
+  "fields": {
+    "nome": "Sala L117",
+    "tipo": "outro",
+    "descricao": "Sala dos professores: \r\nMarcos Sebastião de Paula Gomes \r\nIvan Rosa de Siqueira\r\nDepartamento de Engenharia Mecânica",
+    "predio": 1,
+    "andar": "1",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 43,
+  "fields": {
+    "nome": "Sala L119",
+    "tipo": "outro",
+    "descricao": "Sala dos professores: \r\nMarco Antônio Meggilolaro \r\nJaime Tupiassú Pinho de Castro\r\nDepartamento de Engenharia Mecânica",
+    "predio": 1,
+    "andar": "1",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 44,
+  "fields": {
+    "nome": "Sala L121",
+    "tipo": "laboratório",
+    "descricao": "Laboratório de Simulação de Sistemas Mecatrônicos - Engenharia de Controle e Automação\r\nDepartamento de Engenharia Mecânica",
+    "predio": 1,
+    "andar": "1",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 45,
+  "fields": {
+    "nome": "Sala L128",
+    "tipo": "laboratório",
+    "descricao": "Laboratório de Fabricação Digital - LAB FAB DIG\r\nDepartamento de Arquitetura e Urbanismo\r\nO Laboratório de Fabricação Digital é um ambiente de estudo, trabalho e produção que pode ser aproveitado pelos estudantes do curso. O espaço é equipado com laptops com todos os programas necessários para o desenvolvimento dos projetos realizados no curso, impressora 3D, plotter e óculos de realidade virtual e a Biblioteca Professor Alfredo Britto com livros de Arquitetura, Urbanismo e assuntos afins.\r\nhttps://www.dau.puc-rio.br/espaco-do-estudante-lab-fab-dig/",
+    "predio": 1,
+    "andar": "1",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 46,
+  "fields": {
+    "nome": "Sala L130",
+    "tipo": "laboratório",
+    "descricao": "Laboratório Multimídia\r\nDepartamento de Letras e Artes da Cena",
+    "predio": 1,
+    "andar": "1",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 47,
+  "fields": {
+    "nome": "Sala L131",
+    "tipo": "outro",
+    "descricao": "Sala dos professores: \r\nIgor Braga de Paula \r\nFábio Jessen W. A. Martins\r\nDepartamento de Engenharia Mecânica",
+    "predio": 1,
+    "andar": "1",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 48,
+  "fields": {
+    "nome": "Sala L133",
+    "tipo": "outro",
+    "descricao": "Sala dos professores: \r\nRubens Sampaio \r\nRoberta de Queiróz Lima\r\nDepartamento de Engenharia Mecânica",
+    "predio": 1,
+    "andar": "1",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 49,
+  "fields": {
+    "nome": "Sala L134",
+    "tipo": "laboratório",
+    "descricao": "Laboratório de Interpretação\r\nDepartamento de Letras e Artes da Cena",
+    "predio": 1,
+    "andar": "1",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 50,
+  "fields": {
+    "nome": "Sala L135",
+    "tipo": "outro",
+    "descricao": "Sala dos professores: \r\nAnderson Pereira \r\nRenato Bichara Vieira\r\nDepartamento de Engenharia Mecânica",
+    "predio": 1,
+    "andar": "1",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 51,
+  "fields": {
+    "nome": "Sala L138",
+    "tipo": "laboratório",
+    "descricao": "Laboratório de Línguas - Sala dos Técnicos\r\nDepartamento de Letras e Artes da Cena",
+    "predio": 1,
+    "andar": "1",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 52,
+  "fields": {
+    "nome": "Sala L140",
+    "tipo": "laboratório",
+    "descricao": "Laboratório de Línguas\r\nDepartamento de Letras e Artes da Cena",
+    "predio": 1,
+    "andar": "1",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 53,
+  "fields": {
+    "nome": "Sala L142",
+    "tipo": "laboratório",
+    "descricao": "Laboratório Wi-fi - Coordenação Central de Cooperação Internacional\r\nDepartamento de Letras e Artes da Cena",
+    "predio": 1,
+    "andar": "1",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 54,
+  "fields": {
+    "nome": "Sala L147",
+    "tipo": "outro",
+    "descricao": "Sala do professor: \r\nMaurício Nogueira Frota\r\nDepartamento de Engenharia Mecânica",
+    "predio": 1,
+    "andar": "1",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 55,
+  "fields": {
+    "nome": "Sala L149",
+    "tipo": "outro",
+    "descricao": "Sala do professor: \r\nRafael Menezes de Oliveira\r\nDepartamento de Engenharia Mecânica",
+    "predio": 1,
+    "andar": "1",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 56,
+  "fields": {
+    "nome": "Sala L163",
+    "tipo": "outro",
+    "descricao": "Sala dos professores: \r\nAngela Ourivio Nieckele \r\nFlorian Alain Yannick Pradelle\r\nDepartamento de Engenharia Mecânica",
+    "predio": 1,
+    "andar": "1",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 57,
+  "fields": {
+    "nome": "Sala L170",
+    "tipo": "laboratório",
+    "descricao": "Laboratório de Ensino\r\nDepartamento de Química",
+    "predio": 1,
+    "andar": "1",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 58,
+  "fields": {
+    "nome": "Sala L178",
+    "tipo": "laboratório",
+    "descricao": "Laboratório de Ensino\r\nDepartamento de Química",
+    "predio": 1,
+    "andar": "1",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 59,
+  "fields": {
+    "nome": "Sala L170A",
+    "tipo": "laboratório",
+    "descricao": "Central Analítica - Pe. Leopoldo Hainberger S.J.\r\nResponsável: José Marcus Godoy\r\nDepartamento de Química\r\nA Central Analítica adota um sistema de gestão integrado, comum a todos, esse modelo consolida a colaboração entre os diferentes grupos de pesquisa e laboratórios existentes no Departamento.\r\nO DQ foi pioneiro na área de Química Analítica no Brasil, formando recursos humanos e desenvolvendo pesquisa científica qualificada. O DQ possui uma infraestrutura moderna para realização de pesquisas de laboratório e campo, assim como competência em técnicas analíticas diversas graças ao nosso corpo docente especializado.\r\nCelular / WhatsApp: (21) 97099-4120\r\nE-mail: centralanalitica@puc-rio.br \r\nhttps://www.qui.puc-rio.br/central-analitica/historia-estatuto-e-objetivos/",
+    "predio": 1,
+    "andar": "1",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 60,
+  "fields": {
+    "nome": "Sala L171",
+    "tipo": "laboratório",
+    "descricao": "Central Analítica - Pe. Leopoldo Hainberger S.J.\r\nResponsável: José Marcus Godoy\r\nDepartamento de Química\r\nA Central Analítica adota um sistema de gestão integrado, comum a todos, esse modelo consolida a colaboração entre os diferentes grupos de pesquisa e laboratórios existentes no Departamento.\r\nO DQ foi pioneiro na área de Química Analítica no Brasil, formando recursos humanos e desenvolvendo pesquisa científica qualificada. O DQ possui uma infraestrutura moderna para realização de pesquisas de laboratório e campo, assim como competência em técnicas analíticas diversas graças ao nosso corpo docente especializado.\r\nCelular / WhatsApp: (21) 97099-4120\r\nE-mail: centralanalitica@puc-rio.br \r\nhttps://www.qui.puc-rio.br/central-analitica/historia-estatuto-e-objetivos/",
+    "predio": 1,
+    "andar": "1",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 61,
+  "fields": {
+    "nome": "Sala L173",
+    "tipo": "laboratório",
+    "descricao": "Central Analítica - Pe. Leopoldo Hainberger S.J.\r\nResponsável: José Marcus Godoy\r\nDepartamento de Química\r\nA Central Analítica adota um sistema de gestão integrado, comum a todos, esse modelo consolida a colaboração entre os diferentes grupos de pesquisa e laboratórios existentes no Departamento.\r\nO DQ foi pioneiro na área de Química Analítica no Brasil, formando recursos humanos e desenvolvendo pesquisa científica qualificada. O DQ possui uma infraestrutura moderna para realização de pesquisas de laboratório e campo, assim como competência em técnicas analíticas diversas graças ao nosso corpo docente especializado.\r\nCelular / WhatsApp: (21) 97099-4120\r\nE-mail: centralanalitica@puc-rio.br \r\nhttps://www.qui.puc-rio.br/central-analitica/historia-estatuto-e-objetivos/",
+    "predio": 1,
+    "andar": "1",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 62,
+  "fields": {
+    "nome": "Sala L174",
+    "tipo": "laboratório",
+    "descricao": "Central Analítica - Pe. Leopoldo Hainberger S.J.\r\nResponsável: José Marcus Godoy\r\nDepartamento de Química\r\nA Central Analítica adota um sistema de gestão integrado, comum a todos, esse modelo consolida a colaboração entre os diferentes grupos de pesquisa e laboratórios existentes no Departamento.\r\nO DQ foi pioneiro na área de Química Analítica no Brasil, formando recursos humanos e desenvolvendo pesquisa científica qualificada. O DQ possui uma infraestrutura moderna para realização de pesquisas de laboratório e campo, assim como competência em técnicas analíticas diversas graças ao nosso corpo docente especializado.\r\nCelular / WhatsApp: (21) 97099-4120\r\nE-mail: centralanalitica@puc-rio.br \r\nhttps://www.qui.puc-rio.br/central-analitica/historia-estatuto-e-objetivos/",
+    "predio": 1,
+    "andar": "1",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 63,
+  "fields": {
+    "nome": "Sala L106",
+    "tipo": "sala de aula",
+    "descricao": "Sala de aula",
+    "predio": 1,
+    "andar": "1",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 64,
+  "fields": {
+    "nome": "Sala L108",
+    "tipo": "sala de aula",
+    "descricao": "Sala de aula",
+    "predio": 1,
+    "andar": "1",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 65,
+  "fields": {
+    "nome": "Sala L110",
+    "tipo": "sala de aula",
+    "descricao": "Sala de aula",
+    "predio": 1,
+    "andar": "1",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 66,
+  "fields": {
+    "nome": "Sala L112",
+    "tipo": "sala de aula",
+    "descricao": "Sala de aula",
+    "predio": 1,
+    "andar": "1",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 67,
+  "fields": {
+    "nome": "Sala L114",
+    "tipo": "sala de aula",
+    "descricao": "Sala de aula",
+    "predio": 1,
+    "andar": "1",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 68,
+  "fields": {
+    "nome": "Sala L116",
+    "tipo": "sala de aula",
+    "descricao": "Sala de aula",
+    "predio": 1,
+    "andar": "1",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 69,
+  "fields": {
+    "nome": "Sala L118",
+    "tipo": "sala de aula",
+    "descricao": "Sala de aula",
+    "predio": 1,
+    "andar": "1",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 70,
+  "fields": {
+    "nome": "Sala L120",
+    "tipo": "sala de aula",
+    "descricao": "Sala de aula",
+    "predio": 1,
+    "andar": "1",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 71,
+  "fields": {
+    "nome": "Sala L122",
+    "tipo": "sala de aula",
+    "descricao": "Sala de aula",
+    "predio": 1,
+    "andar": "1",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 72,
+  "fields": {
+    "nome": "Sala L124",
+    "tipo": "sala de aula",
+    "descricao": "Sala de aula",
+    "predio": 1,
+    "andar": "1",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 73,
+  "fields": {
+    "nome": "Sala L132",
+    "tipo": "sala de aula",
+    "descricao": "Sala de aula",
+    "predio": 1,
+    "andar": "1",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 74,
+  "fields": {
+    "nome": "Sala L136",
+    "tipo": "sala de aula",
+    "descricao": "Sala de aula",
+    "predio": 1,
+    "andar": "1",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 75,
+  "fields": {
+    "nome": "Sala L144",
+    "tipo": "sala de aula",
+    "descricao": "Sala de aula",
+    "predio": 1,
+    "andar": "1",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 76,
+  "fields": {
+    "nome": "Sala L146",
+    "tipo": "sala de aula",
+    "descricao": "Sala de aula",
+    "predio": 1,
+    "andar": "1",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 77,
+  "fields": {
+    "nome": "Sala L148",
+    "tipo": "sala de aula",
+    "descricao": "Sala de aula",
+    "predio": 1,
+    "andar": "1",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 78,
+  "fields": {
+    "nome": "Sala L150",
+    "tipo": "sala de aula",
+    "descricao": "Sala de aula",
+    "predio": 1,
+    "andar": "1",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 79,
+  "fields": {
+    "nome": "Sala L151",
+    "tipo": "sala de aula",
+    "descricao": "Sala de aula",
+    "predio": 1,
+    "andar": "1",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 80,
+  "fields": {
+    "nome": "Sala L152",
+    "tipo": "sala de aula",
+    "descricao": "Sala de aula",
+    "predio": 1,
+    "andar": "1",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 81,
+  "fields": {
+    "nome": "Sala L153",
+    "tipo": "sala de aula",
+    "descricao": "Sala de aula",
+    "predio": 1,
+    "andar": "1",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 82,
+  "fields": {
+    "nome": "Sala L154",
+    "tipo": "sala de aula",
+    "descricao": "Sala de aula",
+    "predio": 1,
+    "andar": "1",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 83,
+  "fields": {
+    "nome": "Sala L156",
+    "tipo": "sala de aula",
+    "descricao": "Sala de aula",
+    "predio": 1,
+    "andar": "1",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 84,
+  "fields": {
+    "nome": "Sala L158",
+    "tipo": "sala de aula",
+    "descricao": "Sala de aula",
+    "predio": 1,
+    "andar": "1",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 85,
+  "fields": {
+    "nome": "Sala L160",
+    "tipo": "sala de aula",
+    "descricao": "Sala de aula",
+    "predio": 1,
+    "andar": "1",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 86,
+  "fields": {
+    "nome": "Sala L162",
+    "tipo": "sala de aula",
+    "descricao": "Sala de aula",
+    "predio": 1,
+    "andar": "1",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 87,
+  "fields": {
+    "nome": "Sala L164",
+    "tipo": "sala de aula",
+    "descricao": "Sala de aula",
+    "predio": 1,
+    "andar": "1",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 88,
+  "fields": {
+    "nome": "Banheiro Masculino",
+    "tipo": "banheiro",
+    "descricao": "Há 4 banheiros masculinos no 1o andar",
+    "predio": 1,
+    "andar": "1",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 89,
+  "fields": {
+    "nome": "Banheiro Feminino",
+    "tipo": "banheiro",
+    "descricao": "Há 3 banheiros femininos no 1o andar",
+    "predio": 1,
+    "andar": "1",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 90,
+  "fields": {
+    "nome": "Banheiro com acessibilidade",
+    "tipo": "banheiro",
+    "descricao": "Há 2 banheiros com acessibilidade no 1o andar",
+    "predio": 1,
+    "andar": "1",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 91,
+  "fields": {
+    "nome": "Entrada para Programa de Pós-Graduação em Metrologia - PósMQI",
+    "tipo": "administrativo",
+    "descricao": "Entrada para Programa de Pós-Graduação em Metrologia - PósMQI",
+    "predio": 1,
+    "andar": "Térreo",
+    "localizacao_detalhada": "Junto à Vice Reitoria Comunitária",
+    "coordenadas": [
+      -22.97985680311869,
+      -43.232495686877
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 92,
+  "fields": {
+    "nome": "Entrada para Edifício Pe. F. X. Roser, S. J.",
+    "tipo": "outro",
+    "descricao": "Entrada para Edifício Pe. F. X. Roser, S. J.",
+    "predio": 1,
+    "andar": "Térreo",
+    "localizacao_detalhada": "Junto à Vice Reitoria Comunitária",
+    "coordenadas": [
+      -22.97985680311869,
+      -43.232495686877
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+}
+]
