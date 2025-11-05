@@ -1,0 +1,1262 @@
+[
+{
+  "model": "mapa.local",
+  "pk": 1,
+  "fields": {
+    "nome": "Sala F100",
+    "tipo": "sala de aula",
+    "descricao": "Sala de aula",
+    "predio": 2,
+    "andar": "1",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979007650188358,
+      -43.232101504983625
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 2,
+  "fields": {
+    "nome": "Sala F101",
+    "tipo": "administrativo",
+    "descricao": "Vice Reitoria",
+    "predio": 2,
+    "andar": "1",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979007650188358,
+      -43.232101504983625
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 3,
+  "fields": {
+    "nome": "Copa",
+    "tipo": "outro",
+    "descricao": "Copa",
+    "predio": 2,
+    "andar": "1",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979007650188358,
+      -43.232101504983625
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 4,
+  "fields": {
+    "nome": "Sala 110F",
+    "tipo": "outro",
+    "descricao": "Diretoria de recursos humanos",
+    "predio": 2,
+    "andar": "1",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979007650188358,
+      -43.232101504983625
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 5,
+  "fields": {
+    "nome": "Sala 111F",
+    "tipo": "administrativo",
+    "descricao": "Vice-Reitoria administrativa",
+    "predio": 2,
+    "andar": "1",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979007650188358,
+      -43.232101504983625
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 6,
+  "fields": {
+    "nome": "Sala F102",
+    "tipo": "administrativo",
+    "descricao": "Diretoria de finanças",
+    "predio": 2,
+    "andar": "1",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979007650188358,
+      -43.232101504983625
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 7,
+  "fields": {
+    "nome": "Sala 200F",
+    "tipo": "sala de aula",
+    "descricao": "Sala de aula",
+    "predio": 2,
+    "andar": "2",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979007650188358,
+      -43.232101504983625
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 8,
+  "fields": {
+    "nome": "Sala 200F(A)",
+    "tipo": "sala de aula",
+    "descricao": "Sala de aula",
+    "predio": 2,
+    "andar": "2",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979007650188358,
+      -43.232101504983625
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 9,
+  "fields": {
+    "nome": "Sala 201F",
+    "tipo": "sala de aula",
+    "descricao": "Sala de aula",
+    "predio": 2,
+    "andar": "2",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979007650188358,
+      -43.232101504983625
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 10,
+  "fields": {
+    "nome": "Sala 201F(A)",
+    "tipo": "sala de aula",
+    "descricao": "Sala de aula",
+    "predio": 2,
+    "andar": "2",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979007650188358,
+      -43.232101504983625
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 11,
+  "fields": {
+    "nome": "Sala 202F",
+    "tipo": "sala de aula",
+    "descricao": "Sala de aula",
+    "predio": 2,
+    "andar": "2",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979007650188358,
+      -43.232101504983625
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 12,
+  "fields": {
+    "nome": "Sala 204F",
+    "tipo": "sala de aula",
+    "descricao": "Sala de aula",
+    "predio": 2,
+    "andar": "2",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979007650188358,
+      -43.232101504983625
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 13,
+  "fields": {
+    "nome": "Sala 206F",
+    "tipo": "sala de aula",
+    "descricao": "Sala de aula",
+    "predio": 2,
+    "andar": "2",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979007650188358,
+      -43.232101504983625
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 14,
+  "fields": {
+    "nome": "Sala 210F",
+    "tipo": "outro",
+    "descricao": "Departamento de Economia",
+    "predio": 2,
+    "andar": "2",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979007650188358,
+      -43.232101504983625
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 15,
+  "fields": {
+    "nome": "Biblioteca",
+    "tipo": "biblioteca",
+    "descricao": "Divisao de biblioteca e documentacao",
+    "predio": 2,
+    "andar": "2",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979007650188358,
+      -43.232101504983625
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 16,
+  "fields": {
+    "nome": "Sala 300F",
+    "tipo": "sala de aula",
+    "descricao": "Sala de aula",
+    "predio": 2,
+    "andar": "3",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979007650188358,
+      -43.232101504983625
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 17,
+  "fields": {
+    "nome": "Sala 301F",
+    "tipo": "sala de aula",
+    "descricao": "Sala de aula",
+    "predio": 2,
+    "andar": "3",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979007650188358,
+      -43.232101504983625
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 18,
+  "fields": {
+    "nome": "Sala 301F(A)",
+    "tipo": "sala de aula",
+    "descricao": "Sala de aula",
+    "predio": 2,
+    "andar": "3",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979007650188358,
+      -43.232101504983625
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 19,
+  "fields": {
+    "nome": "Sala 302F",
+    "tipo": "sala de aula",
+    "descricao": "Sala de aula",
+    "predio": 2,
+    "andar": "3",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979007650188358,
+      -43.232101504983625
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 20,
+  "fields": {
+    "nome": "Sala 306F",
+    "tipo": "sala de aula",
+    "descricao": "Sala de aula",
+    "predio": 2,
+    "andar": "3",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979007650188358,
+      -43.232101504983625
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 21,
+  "fields": {
+    "nome": "Sala 308F",
+    "tipo": "sala de aula",
+    "descricao": "Sala de aula",
+    "predio": 2,
+    "andar": "3",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979007650188358,
+      -43.232101504983625
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 22,
+  "fields": {
+    "nome": "Biblioteca",
+    "tipo": "biblioteca",
+    "descricao": "Sala de estudo em grupo da biblioteca",
+    "predio": 2,
+    "andar": "3",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979007650188358,
+      -43.232101504983625
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 23,
+  "fields": {
+    "nome": "Biblioteca",
+    "tipo": "biblioteca",
+    "descricao": "Biblioteca",
+    "predio": 2,
+    "andar": "3",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979007650188358,
+      -43.232101504983625
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 24,
+  "fields": {
+    "nome": "Sala 400F",
+    "tipo": "sala de aula",
+    "descricao": "Sala de aula",
+    "predio": 2,
+    "andar": "4",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979007650188358,
+      -43.232101504983625
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 25,
+  "fields": {
+    "nome": "Sala 401F",
+    "tipo": "sala de aula",
+    "descricao": "Sala de aula",
+    "predio": 2,
+    "andar": "4",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979007650188358,
+      -43.232101504983625
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 26,
+  "fields": {
+    "nome": "Sala 403F",
+    "tipo": "sala de aula",
+    "descricao": "P.E.T geografia",
+    "predio": 2,
+    "andar": "4",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979007650188358,
+      -43.232101504983625
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 27,
+  "fields": {
+    "nome": "Sala 400A",
+    "tipo": "sala de aula",
+    "descricao": "Sala de aula",
+    "predio": 2,
+    "andar": "4",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979007650188358,
+      -43.232101504983625
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 28,
+  "fields": {
+    "nome": "Sala 402F",
+    "tipo": "sala de aula",
+    "descricao": "Sala de aula",
+    "predio": 2,
+    "andar": "4",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979007650188358,
+      -43.232101504983625
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 29,
+  "fields": {
+    "nome": "Sala 406F",
+    "tipo": "sala de aula",
+    "descricao": "Sala de aula",
+    "predio": 2,
+    "andar": "4",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979007650188358,
+      -43.232101504983625
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 30,
+  "fields": {
+    "nome": "Sala 408F",
+    "tipo": "sala de aula",
+    "descricao": "Sala de aula",
+    "predio": 2,
+    "andar": "4",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979007650188358,
+      -43.232101504983625
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 31,
+  "fields": {
+    "nome": "Sala 410F",
+    "tipo": "sala de aula",
+    "descricao": "Sala de aula",
+    "predio": 2,
+    "andar": "4",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979007650188358,
+      -43.232101504983625
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 32,
+  "fields": {
+    "nome": "Sala 411F",
+    "tipo": "outro",
+    "descricao": "Sala de professor",
+    "predio": 2,
+    "andar": "4",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979007650188358,
+      -43.232101504983625
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 33,
+  "fields": {
+    "nome": "Sala 409F",
+    "tipo": "outro",
+    "descricao": "Sala de professor",
+    "predio": 2,
+    "andar": "4",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979007650188358,
+      -43.232101504983625
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 34,
+  "fields": {
+    "nome": "Sala 407F",
+    "tipo": "outro",
+    "descricao": "Decanato do CCS",
+    "predio": 2,
+    "andar": "4",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979007650188358,
+      -43.232101504983625
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 35,
+  "fields": {
+    "nome": "Sala F405",
+    "tipo": "outro",
+    "descricao": "Sala de professor",
+    "predio": 2,
+    "andar": "4",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979007650188358,
+      -43.232101504983625
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 36,
+  "fields": {
+    "nome": "Sala 405A",
+    "tipo": "outro",
+    "descricao": "Sala de professor",
+    "predio": 2,
+    "andar": "4",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979007650188358,
+      -43.232101504983625
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 37,
+  "fields": {
+    "nome": "Programa de ps graduação mestrado e doutorado instituto de direito",
+    "tipo": "administrativo",
+    "descricao": "Depto. de Direito",
+    "predio": 2,
+    "andar": "5",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979007650188358,
+      -43.232101504983625
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 38,
+  "fields": {
+    "nome": "Sala 502F",
+    "tipo": "sala de aula",
+    "descricao": "Sala de aula",
+    "predio": 2,
+    "andar": "5",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979007650188358,
+      -43.232101504983625
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 39,
+  "fields": {
+    "nome": "Sala 504F",
+    "tipo": "sala de aula",
+    "descricao": "Sala de aula",
+    "predio": 2,
+    "andar": "5",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979007650188358,
+      -43.232101504983625
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 40,
+  "fields": {
+    "nome": "Sala 506F",
+    "tipo": "sala de aula",
+    "descricao": "Sala de aula",
+    "predio": 2,
+    "andar": "5",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979007650188358,
+      -43.232101504983625
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 41,
+  "fields": {
+    "nome": "Sala 508F",
+    "tipo": "outro",
+    "descricao": "Sala de professor",
+    "predio": 2,
+    "andar": "5",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979007650188358,
+      -43.232101504983625
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 42,
+  "fields": {
+    "nome": "Departamento de Historia",
+    "tipo": "outro",
+    "descricao": "Depto. de Historia",
+    "predio": 2,
+    "andar": "5",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979007650188358,
+      -43.232101504983625
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 43,
+  "fields": {
+    "nome": "Sala de professor",
+    "tipo": "outro",
+    "descricao": "Sala do prof. Walmer Jacinto Soares\r\nDepto. de Historia",
+    "predio": 2,
+    "andar": "5",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979007650188358,
+      -43.232101504983625
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 44,
+  "fields": {
+    "nome": "B6",
+    "tipo": "outro",
+    "descricao": "Auditorio",
+    "predio": 2,
+    "andar": "6",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979007650188358,
+      -43.232101504983625
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 45,
+  "fields": {
+    "nome": "Sala 602F",
+    "tipo": "sala de aula",
+    "descricao": "Sala de aula",
+    "predio": 2,
+    "andar": "6",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979007650188358,
+      -43.232101504983625
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 46,
+  "fields": {
+    "nome": "Sala 604F",
+    "tipo": "sala de aula",
+    "descricao": "Sala de aula",
+    "predio": 2,
+    "andar": "6",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979007650188358,
+      -43.232101504983625
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 47,
+  "fields": {
+    "nome": "Sala 606F",
+    "tipo": "sala de aula",
+    "descricao": "Sala de aula",
+    "predio": 2,
+    "andar": "6",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979007650188358,
+      -43.232101504983625
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 48,
+  "fields": {
+    "nome": "Sala 608F",
+    "tipo": "sala de aula",
+    "descricao": "Sala de aula",
+    "predio": 2,
+    "andar": "6",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979007650188358,
+      -43.232101504983625
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 49,
+  "fields": {
+    "nome": "Sala 610F",
+    "tipo": "sala de aula",
+    "descricao": "Sala de aula",
+    "predio": 2,
+    "andar": "6",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979007650188358,
+      -43.232101504983625
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 50,
+  "fields": {
+    "nome": "Sala 603F",
+    "tipo": "outro",
+    "descricao": "Sala\r\nDepto. de Direito",
+    "predio": 2,
+    "andar": "6",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979007650188358,
+      -43.232101504983625
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 51,
+  "fields": {
+    "nome": "Sala 601F",
+    "tipo": "outro",
+    "descricao": "Sala\r\nDepto. de Direito",
+    "predio": 2,
+    "andar": "6",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979007650188358,
+      -43.232101504983625
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 52,
+  "fields": {
+    "nome": "Sala 13",
+    "tipo": "outro",
+    "descricao": "Sala da profa. Thula Pires",
+    "predio": 2,
+    "andar": "7",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979007650188358,
+      -43.232101504983625
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 53,
+  "fields": {
+    "nome": "Sala 14",
+    "tipo": "outro",
+    "descricao": "Sala do prof. Noel Struchiner",
+    "predio": 2,
+    "andar": "7",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979007650188358,
+      -43.232101504983625
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 54,
+  "fields": {
+    "nome": "Sala 15",
+    "tipo": "outro",
+    "descricao": "Sala da profa. Gisele Cittadino",
+    "predio": 2,
+    "andar": "7",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979007650188358,
+      -43.232101504983625
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 55,
+  "fields": {
+    "nome": "Sala 16",
+    "tipo": "outro",
+    "descricao": "Sala do Prof. Adrian Sgarbi",
+    "predio": 2,
+    "andar": "7",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979007650188358,
+      -43.232101504983625
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 56,
+  "fields": {
+    "nome": "Sala 17",
+    "tipo": "outro",
+    "descricao": "Sala do prof. Francisco de Guimaraens",
+    "predio": 2,
+    "andar": "7",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979007650188358,
+      -43.232101504983625
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 57,
+  "fields": {
+    "nome": "Sala 18",
+    "tipo": "outro",
+    "descricao": "Sala da profa. Adriana Vidal",
+    "predio": 2,
+    "andar": "7",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979007650188358,
+      -43.232101504983625
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 58,
+  "fields": {
+    "nome": "Sala 20",
+    "tipo": "outro",
+    "descricao": "Sala da profa. Caitlin Mulholand",
+    "predio": 2,
+    "andar": "7",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979007650188358,
+      -43.232101504983625
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 59,
+  "fields": {
+    "nome": "Sala 9",
+    "tipo": "outro",
+    "descricao": "Sala do prof. Renato Lessa",
+    "predio": 2,
+    "andar": "7",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979007650188358,
+      -43.232101504983625
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 60,
+  "fields": {
+    "nome": "Sala 11",
+    "tipo": "outro",
+    "descricao": "Sala da profa. Rosangela Cavallazi",
+    "predio": 2,
+    "andar": "7",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979007650188358,
+      -43.232101504983625
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 61,
+  "fields": {
+    "nome": "Sala 10",
+    "tipo": "laboratorio",
+    "descricao": "Nucleo de estudos constitucionais\r\nLaboratorio de direito comparado",
+    "predio": 2,
+    "andar": "7",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979007650188358,
+      -43.232101504983625
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 62,
+  "fields": {
+    "nome": "Sala 8",
+    "tipo": "outro",
+    "descricao": "Nucleo de direitos humanos",
+    "predio": 2,
+    "andar": "7",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979007650188358,
+      -43.232101504983625
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 63,
+  "fields": {
+    "nome": "Sala 4",
+    "tipo": "outro",
+    "descricao": "Arquivo Hannah Arendt",
+    "predio": 2,
+    "andar": "7",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979007650188358,
+      -43.232101504983625
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 64,
+  "fields": {
+    "nome": "Sala 1",
+    "tipo": "outro",
+    "descricao": "PET-JUR",
+    "predio": 2,
+    "andar": "7",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979007650188358,
+      -43.232101504983625
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 65,
+  "fields": {
+    "nome": "Auditorio",
+    "tipo": "outro",
+    "descricao": "Auditorio",
+    "predio": 2,
+    "andar": "8",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979007650188358,
+      -43.232101504983625
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 66,
+  "fields": {
+    "nome": "Banco Itau",
+    "tipo": "outro",
+    "descricao": "Banco",
+    "predio": 2,
+    "andar": "Terreo",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979007650188358,
+      -43.232101504983625
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 67,
+  "fields": {
+    "nome": "Prefeitura do Campus PUC-Rio",
+    "tipo": "administrativo",
+    "descricao": "Prefeitura do Campus",
+    "predio": 2,
+    "andar": "Terreo",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979007650188358,
+      -43.232101504983625
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 68,
+  "fields": {
+    "nome": "Banco Santander",
+    "tipo": "outro",
+    "descricao": "Banco",
+    "predio": 2,
+    "andar": "Terreo",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979007650188358,
+      -43.232101504983625
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 69,
+  "fields": {
+    "nome": "Caixa eletronico Santander",
+    "tipo": "outro",
+    "descricao": "Caixa eletronico",
+    "predio": 2,
+    "andar": "Terreo",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979007650188358,
+      -43.232101504983625
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 70,
+  "fields": {
+    "nome": "Instalações de pós-graduação e pesquisa",
+    "tipo": "outro",
+    "descricao": "Depto. de Direito",
+    "predio": 2,
+    "andar": "8",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979007650188358,
+      -43.232101504983625
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+}
+]
