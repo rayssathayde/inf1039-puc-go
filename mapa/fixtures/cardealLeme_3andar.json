@@ -1,0 +1,291 @@
+[
+{
+  "model": "mapa.local",
+  "pk": 142,
+  "fields": {
+    "nome": "Sala L301",
+    "tipo": "administrativo",
+    "descricao": "Salas administrativas do Departamento de Engenharia Civil e Ambiental - CIV",
+    "predio": 1,
+    "andar": "3",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 143,
+  "fields": {
+    "nome": "Sala L311",
+    "tipo": "laboratório",
+    "descricao": "Laboratório de Graduação:\nDepartamento de Engenharia Civil e Ambiental",
+    "predio": 1,
+    "andar": "3",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 144,
+  "fields": {
+    "nome": "Sala L313A",
+    "tipo": "laboratório",
+    "descricao": "Mestrado Profissional - Engenharia Urbana e Ambiental\r\nDepartamento de Engenharia Civil e Ambiental\r\nCoordenador: Antonio Krishnamurti \r\nO título de Mestre em Engenharia Urbana e Ambiental (Opção Profissional) será concedido àqueles que cumprirem os requisitos mínimos apresentados no Regulamento Interno do Programa. Conforme decisão do Conselho Nacional de Educação, tal título garante os mesmos direitos que aqueles obtidos em mestrados acadêmicos ou científicos. Com o objetivo de proporcionar uma visão ampla e multidisciplinar de um modelo de desenvolvimento sustentável e resiliente para as cidades brasileiras, o foco do curso é formar profissionais com competências teóricas e práticas para atuar em áreas como planejamento urbano, engenharia ambiental, transportes, engenharia sanitária, infraestrutura, energia, gerenciamento de resíduos e recursos naturais, além de administração, sociologia e logística.\r\nAtendimento via WhatsApp:\r\n(21) 97670-2435\r\nTels: (21) 3527-1194 / (21) 3527-1190\r\nE-mail: civ-pos@puc-rio.br \r\nhttps://www.civ.puc-rio.br/mestrado-profissional-engenharia-urbana-e-ambiental/ \r\nwww.instagram.com/pucrio.mestradourb.amb ",
+    "predio": 1,
+    "andar": "3",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 145,
+  "fields": {
+    "nome": "Sala L314, L316, L318",
+    "tipo": "laboratório",
+    "descricao": "Laboratório do Ciclo Básico - CTC\r\nSala com computadores.\r\nAcesso restrito",
+    "predio": 1,
+    "andar": "3",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 146,
+  "fields": {
+    "nome": "Sala L319",
+    "tipo": "laboratório",
+    "descricao": "Laboratório de Informática da Pós-Graduação\r\nDepartamento de Engenharia Civil e Ambiental",
+    "predio": 1,
+    "andar": "3",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 147,
+  "fields": {
+    "nome": "Sala L321",
+    "tipo": "outro",
+    "descricao": "Sala para Pesquisador\r\nDepartamento de Engenharia Civil e Ambiental",
+    "predio": 1,
+    "andar": "3",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 148,
+  "fields": {
+    "nome": "Sala 335A",
+    "tipo": "outro",
+    "descricao": "Coordenação Central de Infra Estrutura\r\nCoordenador: Prof. Moisés Henrique Szwarcman\r\nA Coordenação Central de Infra-Estrutura (CCIE) tem como atribuições a coordenação e o acompanhamento de projetos arquitetônicos e projetos de instalações e obras que sejam de interesse de toda a Universidade ou das suas diversas Unidades, tanto nos seus aspectos físicos como financeiros. Tem, também, a função de controlar as aquisições patrimoniais que os investimentos corporativos comportam.\r\nSecretária-plena: Luciana Vaz da Fonseca\r\nE-mail: luciana-vaz@puc-rio.br \r\nhttps://www.puc-rio.br/sobrepuc/admin/vrd/cades_link_estrutura.html#:~:text=A%20Coordena%C3%A7%C3%A3o%20Central%20de%20Infra,seus%20aspectos%20f%C3%ADsicos%20como%20financeiros. ",
+    "predio": 1,
+    "andar": "3",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 149,
+  "fields": {
+    "nome": "Sala L337",
+    "tipo": "outro",
+    "descricao": "Laboratório de Topografia Walther Pollis\r\nDepartamento de Engenharia Civil e Ambiental\r\nResponsável: Prof. Jorge Lucas\r\nOs estudos da disciplina de Topografia contam com uma infraestrutura de laboratório, que dá suporte para as atividades de campo em levantamentos topográficos e locações, como também para as atividades de escritório em processamento de dados, cálculos e desenhos topográficos informatizados.\r\nhttps://www.civ.puc-rio.br/laboratorio-de-topografia/ ",
+    "predio": 1,
+    "andar": "3",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 150,
+  "fields": {
+    "nome": "Sala L342, L348, L350, L254, L258, L262 ",
+    "tipo": "outro",
+    "descricao": "Laboratório de Ensino Pierre Henri Lucie\r\nDepartamento de Física\r\nOs cursos de Matemática, Física, Química, Informática, Biologia, Artes e Arquitetura da PUC-Rio são atendidos pelos Laboratórios.\r\nhttps://www.fis.puc-rio.br/ensino-pierre-henri-lucie/ ",
+    "predio": 1,
+    "andar": "3",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 151,
+  "fields": {
+    "nome": "Sala L347",
+    "tipo": "outro",
+    "descricao": "Sala de apoio\r\nDepartamento de Física\r\n de apoio na qual se produz material didático que serve de suporte aos professores e alunos do CB-CTC. Esta sala possui a infra-estrutura necessária para o apoio técnico. ",
+    "predio": 1,
+    "andar": "3",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 152,
+  "fields": {
+    "nome": "Sala L361",
+    "tipo": "outro",
+    "descricao": "Núcleo de Memória da PUC-Rio \r\nDiretor: Marco Antonio Villela Pamplona\r\n acadêmico interdisciplinar dedicado à pesquisa e formação de pesquisadores no campo de Estudos da Memória e à construção e divulgação de acervo sobre a história da PUC-Rio.\r\nhttp://nucleodememoria.vrac.puc-rio.br/ ",
+    "predio": 1,
+    "andar": "3",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+
+{
+  "model": "mapa.local",
+  "pk": 153,
+  "fields": {
+    "nome": "Sala  L370A, L372",
+    "tipo": "laboratório",
+    "descricao": "Laboratório de Química Analítica Prof. Reinaldo Calixto de Campos\r\nDepartamento de Química",
+    "predio": 1,
+    "andar": "3",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 154,
+  "fields": {
+    "nome": "Sala L371",
+    "tipo": "outro",
+    "descricao": "Sala da professora: \r\nProfa. Maria Isabel Pais da Silva\r\nDepartamento de Química",
+    "predio": 1,
+    "andar": "3",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 155,
+  "fields": {
+    "nome": "Sala L373",
+    "tipo": "laboratório",
+    "descricao": "Sala dos professores: \r\nProf. Dr. Jones Limberger (LaSOQF) \r\nProfa. Dra. Ana M. Percebom (M&N Lab)\r\nDepartamento de Química",
+    "predio": 1,
+    "andar": "3",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 156,
+  "fields": {
+    "nome": "Sala L374, L376B",
+    "tipo": "laboratório",
+    "descricao": "Laboratório de Caracterização de Combustíveis - LACCOMDepartamento de Química\r\nCoordenadora: Profa. Maria Isabel Pais da Silva\r\nRealiza pesquisa, desenvolvimento e apoio em análises de biocombustíveis e combustíveis derivados do petróleo e gás natural.\r\nTel: (21) 3527-1039\r\nE-mail: isapais@puc-rio.br \r\nhttps://soulscience.com.br/rj/laccom-laboratorio-de-caracterizacao-de-combustiveis/ ",
+    "predio": 1,
+    "andar": "3",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 157,
+  "fields": {
+    "nome": "Sala L379",
+    "tipo": "laboratório",
+    "descricao": "Laboratório de Eletroanalítica, Espectroanalítica e Análise Elementar Aplicada - LEEA\r\nDepartamento de Química\r\nCoordenador: Prof. Ricardo Queiroz Aucélio\r\nEspecializado no desenvolvimento de métodos espectroanalíticos e eletroanalíticos associados ou não a métodos de separação para a determinação de fármacos, agrotóxicos e substâncias de interesse da indústria do petróleo e biocombustíveis. Metrologia Química e aplicação de nanomateriais em Química Analítica.\r\nTel: (21) 3527-1819 \r\nE-mail: aucelior@puc-rio.br \r\nhttps://soulscience.com.br/nao-localizado/laboratorio-de-eletroanalitica-espectroanalitica-e-analise-elementar-aplicada-leea/ ",
+    "predio": 1,
+    "andar": "3",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.979706480238132,
+      -43.23249310735959
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+}
+]
