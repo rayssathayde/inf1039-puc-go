@@ -1,0 +1,704 @@
+[
+{
+  "model": "mapa.local",
+  "pk": 1,
+  "fields": {
+    "nome": "Porto do Sabor",
+    "tipo": "restaurante",
+    "descricao": "Café da manhã (pão na chapa, misto quente, crepioca, tapioca, omelete, ovos mexidos)\r\nAlmoço (Crepe - doce e salgado, empadão, quiche, torta de frango, saladas, filé de frango, guarnições)\r\nSopas/Sanduíches/Salgados/Saladas/Açaí/Sobremesas/Bebidas\r\nhttps://portodosabor.com.br/",
+    "predio": 1,
+    "andar": "Térreo",
+    "localizacao_detalhada": "Próximo ao NAI",
+    "coordenadas": [
+      -22.97962579077317,
+      -43.23206533553239
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 2,
+  "fields": {
+    "nome": "Gráfica Digital do Leme - Gráfica Rápida",
+    "tipo": "outro",
+    "descricao": "A Gráfica Digital do Leme foi fundada no ano de 2010, onde teve o seu começo apenas na área de impressões em Offset. Hoje, a nossa gama de serviços abrange não apenas Offset, mas Birô de Impressão, Impressão Digital, Plotter, Gráfica Rápida e todo tipo de material gráfico de Comunicação Visual.\r\nLinha Industrial | Offset (Cartões De Visita, Panfleto, Folders, Pastas, Envelopes, Timbrados, Adesivos em Papel, Pastas, Catálogo)\r\nImpressão Digital (Laser Color, Preto e Branco, Apostilas, Dados Variáveis, Impressão De Boletos, Mala Direta, Carta De Cobrança, Boletos, Autoenvelopamento, Dobra/Serrilha/Cola, Livretos, Agendas, Blocos, Talões)\r\nComunicação Visual (Faixas, Lonas, Banners, Recorte Eletrônico, Adesivo Vinil, Etiquetas, Rótulos, Elipses, Painéis, Placas, Projetos Especiais)\r\nhttps://graficadigitaldoleme.com.br/",
+    "predio": 1,
+    "andar": "Térreo",
+    "localizacao_detalhada": "Próximo ao NAI",
+    "coordenadas": [
+      -22.97962579077317,
+      -43.23206533553239
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 3,
+  "fields": {
+    "nome": "Pilotis PUC - Loja Institucional PUC-Rio",
+    "tipo": "outro",
+    "descricao": "Caderno, caderneta, agenda, bloco, caneta\r\nGarrafa térmica, copo térmico, caneca, chaveiro\r\nMoletom, camisa, boné\r\nBijuterias (brincos, cordões, pulseiras)\r\nEcobag\r\nhttps://www.instagram.com/pilotis_puc_rio_loja/",
+    "predio": 1,
+    "andar": "Térreo",
+    "localizacao_detalhada": "Próximo ao NAI",
+    "coordenadas": [
+      -22.97962579077317,
+      -43.23206533553239
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 4,
+  "fields": {
+    "nome": "LeMax",
+    "tipo": "restaurante",
+    "descricao": "Almoço executivo\r\nHambúrguer, sanduíches\r\nSaladas\r\nAperitivos\r\nSobremesas\r\nBebidas\r\nhttps://www.lemaxhamburgueria.com.br/lojas/puc/",
+    "predio": 1,
+    "andar": "Térreo",
+    "localizacao_detalhada": "Próximo ao NAI",
+    "coordenadas": [
+      -22.97962579077317,
+      -43.23206533553239
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 5,
+  "fields": {
+    "nome": "Bar Nossa Senhora do Carmo (Bar das Freiras)",
+    "tipo": "restaurante",
+    "descricao": "Almoço self-service que começa a ser servido às 11:00 e acaba às 15:00.",
+    "predio": 1,
+    "andar": "Térreo",
+    "localizacao_detalhada": "Próximo ao Auditório Padre José de Anchieta",
+    "coordenadas": [
+      -22.97985680311869,
+      -43.232495686877
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 6,
+  "fields": {
+    "nome": "Rei do Mate",
+    "tipo": "restaurante",
+    "descricao": "Salgados\r\nDoces e sobremesas\r\nAçaí\r\nBebidas quentes e frias\r\nhttps://www.reidomate.com.br/",
+    "predio": 1,
+    "andar": "Térreo",
+    "localizacao_detalhada": "Em frente ao BioDesign Lab",
+    "coordenadas": [
+      -22.97985680311869,
+      -43.232495686877
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 7,
+  "fields": {
+    "nome": "Arquibancada com tomadas",
+    "tipo": "outro",
+    "descricao": "Arquibancada para descanso e uso de tomadas",
+    "predio": 1,
+    "andar": "Térreo",
+    "localizacao_detalhada": "Em frente ao BioDesign Lab",
+    "coordenadas": [
+      -22.980061341426854,
+      -43.23274141506229
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 8,
+  "fields": {
+    "nome": "Caixa eletrônico - Itaú",
+    "tipo": "outro",
+    "descricao": "Caixa eletrônico - Itaú",
+    "predio": 1,
+    "andar": "Térreo",
+    "localizacao_detalhada": "Em frente ao LAMAQ",
+    "coordenadas": [
+      -22.980061341426854,
+      -43.23274141506229
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 9,
+  "fields": {
+    "nome": "Descarte de lixo eletrônico e pilhas/baterias",
+    "tipo": "outro",
+    "descricao": "Descarte de lixo eletrônico e pilhas/baterias",
+    "predio": 1,
+    "andar": "Térreo",
+    "localizacao_detalhada": "Em frente ao LAMAQ",
+    "coordenadas": [
+      -22.980061341426854,
+      -43.23274141506229
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 10,
+  "fields": {
+    "nome": "Arquibancada com tomadas",
+    "tipo": "outro",
+    "descricao": "Arquibancada para descanso e uso de tomadas",
+    "predio": 1,
+    "andar": "Térreo",
+    "localizacao_detalhada": "Em frente ao Laboratório de Microscopia Eletrônica",
+    "coordenadas": [
+      -22.980061341426854,
+      -43.23274141506229
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 11,
+  "fields": {
+    "nome": "Geneal",
+    "tipo": "restaurante",
+    "descricao": "Cachorro-quente\r\nSalgados\r\nDoces e sobremesas\r\nAçaí\r\nBebidas quentes e frias\r\nhttps://www.geneal.com.br/cardapio-puc",
+    "predio": 1,
+    "andar": "Térreo",
+    "localizacao_detalhada": "Em frente ao Laboratório de Microscopia Eletrônica",
+    "coordenadas": [
+      -22.980167346536895,
+      -43.2329072204389
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 12,
+  "fields": {
+    "nome": "California Coffee",
+    "tipo": "restaurante",
+    "descricao": "Salgados\r\nDoces e sobremesas\r\nBebidas quentes e frias\r\nhttps://www.instagram.com/californiacoffeepucrio/",
+    "predio": 1,
+    "andar": "Térreo",
+    "localizacao_detalhada": "Em frente ao Laboratório de Estruturas e Materiais - LEM",
+    "coordenadas": [
+      -22.980352705141197,
+      -43.23312304034305
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 13,
+  "fields": {
+    "nome": "Na Medida/Cardeal",
+    "tipo": "restaurante",
+    "descricao": "Omelete, crepe, quiche\r\nSaladas\r\nSalgados\r\nAlmoço - monte seu prato\r\nSobremesas\r\nBebidas\r\nhttps://www.instagram.com/namedidapuc/",
+    "predio": 1,
+    "andar": "Térreo",
+    "localizacao_detalhada": "Em frente ao Laboratório de Estruturas e Materiais - LEM",
+    "coordenadas": [
+      -22.980352705141197,
+      -43.23312304034305
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 14,
+  "fields": {
+    "nome": "Soba Sushi",
+    "tipo": "restaurante",
+    "descricao": "Peças de comida japonesa\r\nYakisoba",
+    "predio": 1,
+    "andar": "Térreo",
+    "localizacao_detalhada": "Em frente ao Laboratório de Estruturas e Materiais - LEM",
+    "coordenadas": [
+      -22.980352705141197,
+      -43.23312304034305
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 15,
+  "fields": {
+    "nome": "LAC",
+    "tipo": "laboratório",
+    "descricao": "Departamento de Letras e Artes da Cena\r\nO LAC – laboratório de artes cênicas – é um espaço que acolhe, convida, chama para criar, inventar, pesquisar. Todas as aulas práticas são realizadas no LAC, um espaço de convivência compartilhada para estudar, realizar, investigar, praticar, pensar, fazer acontecer.",
+    "predio": 1,
+    "andar": "Térreo",
+    "localizacao_detalhada": "Próximo ao NAI",
+    "coordenadas": [
+      -22.97962579077317,
+      -43.23206533553239
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 16,
+  "fields": {
+    "nome": "Entrada para Casa V",
+    "tipo": "outro",
+    "descricao": "Na Casa V, uma das residências remanescentes do período anterior à construção do campus, localizam-se a Agência Experimental de Propaganda, a Editora PUC-Rio e a Comunicação Comunitária, núcleos do Projeto Comunicar (VRC).\r\nhttps://www.editora.puc-rio.br/cgi/cgilua.exe/sys/start.htm?tpl=home \r\nhttps://agencia.vrc.puc-rio.br/cgi/cgilua.exe/sys/start.htm?tpl=home",
+    "predio": 1,
+    "andar": "Térreo",
+    "localizacao_detalhada": "Próximo ao NAI",
+    "coordenadas": [
+      -22.97962579077317,
+      -43.23206533553239
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 17,
+  "fields": {
+    "nome": "Entrada para o Espaço Leandro Konder",
+    "tipo": "administrativo",
+    "descricao": "Departamento de Educação\r\nCoordenação dos cursos de especialização\r\nLaboratórios de Pesquisa, Desenvolvimento de Metodologia e de Multimídia",
+    "predio": 1,
+    "andar": "Térreo",
+    "localizacao_detalhada": "Próximo ao NAI",
+    "coordenadas": [
+      -22.97962579077317,
+      -43.23206533553239
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 18,
+  "fields": {
+    "nome": "Auditório Padre José de Anchieta",
+    "tipo": "outro",
+    "descricao": "Auditório Padre José de Anchieta",
+    "predio": 1,
+    "andar": "Térreo",
+    "localizacao_detalhada": "Próximo ao NAI",
+    "coordenadas": [
+      -22.97985680311869,
+      -43.232495686877
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 19,
+  "fields": {
+    "nome": "Laboratório de Introdução à Engenharia - LIENG",
+    "tipo": "laboratório",
+    "descricao": "Laboratório de Introdução à Engenharia - LIENG",
+    "predio": 1,
+    "andar": "Térreo",
+    "localizacao_detalhada": "Próximo ao Bar das Freiras",
+    "coordenadas": [
+      -22.97985680311869,
+      -43.232495686877
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 20,
+  "fields": {
+    "nome": "Programa de Integração Universidade, Escola e Sociedade - PIUES",
+    "tipo": "administrativo",
+    "descricao": "O Programa de Integração Universidade, Escola e Sociedade da PUC-Rio (PIUES) foi criado em 1992 com o objetivo apresentar aos jovens do Ensino Médio o ambiente universitário e, dessa forma, ajudá-los nas escolhas de suas trajetórias acadêmicas. Promovemos atividades que aproximam o conhecimento científico às demandas de um mundo em contínua transformação.\r\nhttps://www.puc-rio.br/piues/#sobre",
+    "predio": 1,
+    "andar": "Térreo",
+    "localizacao_detalhada": "Em frente ao LeMax",
+    "coordenadas": [
+      -22.97985680311869,
+      -43.232495686877
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 21,
+  "fields": {
+    "nome": "Núcleo de Apoio e Inclusão da Pessoa com Deficiência - NAIPD",
+    "tipo": "administrativo",
+    "descricao": "Apoia e orienta os alunos com necessidades educacionais específicas.\r\nhttps://www.instagram.com/naipdpucrio/",
+    "predio": 1,
+    "andar": "Térreo",
+    "localizacao_detalhada": "Em frente ao LeMax",
+    "coordenadas": [
+      -22.97985680311869,
+      -43.232495686877
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 22,
+  "fields": {
+    "nome": "Livraria Manresa",
+    "tipo": "outro",
+    "descricao": "Livraria e papelaria\r\nhttps://www.instagram.com/manresalivraria/",
+    "predio": 1,
+    "andar": "Térreo",
+    "localizacao_detalhada": "Em frente ao Bar das Freiras",
+    "coordenadas": [
+      -22.97985680311869,
+      -43.232495686877
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 23,
+  "fields": {
+    "nome": "Megamatte",
+    "tipo": "restaurante",
+    "descricao": "Salgados\r\nQuiche\r\nDoces e sobremesas\r\nBebidas quentes e frias\r\nhttps://megamatte.com.br/",
+    "predio": 1,
+    "andar": "Térreo",
+    "localizacao_detalhada": "Em frente ao Bar das Freiras",
+    "coordenadas": [
+      -22.97985680311869,
+      -43.232495686877
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 24,
+  "fields": {
+    "nome": "Vice-Reitoria Comunitária",
+    "tipo": "administrativo",
+    "descricao": "Vice-Reitor para Assuntos Comunitários: Prof. Renato Callado\r\nDe acordo com o Regimento da PUC-Rio, cabe à Vice-Reitoria para Assuntos Comunitários é o órgão executivo que promove, orienta, coordena e fiscaliza os serviços de interesse da comunidade universitária, na esfera de sua competência.\r\nhttps://www.puc-rio.br/sobrepuc/admin/vrc/",
+    "predio": 1,
+    "andar": "Térreo",
+    "localizacao_detalhada": "Em frente ao Bar das Freiras",
+    "coordenadas": [
+      -22.97985680311869,
+      -43.232495686877
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 25,
+  "fields": {
+    "nome": "Núcleo de Prática Jurídica",
+    "tipo": "administrativo",
+    "descricao": "Departamento de Direito\r\nO Núcleo de Prática Jurídica é o órgão do Departamento de Direito cuja finalidade é proporcionar aos alunos do Curso de Graduação em Direito da PUC-Rio o Estágio de Prática Jurídica (curricular – MEC) e o Estágio Profissional de Advocacia (extracurricular – OAB), de acordo com as respectivas normas vigentes.\r\nhttps://npj.jur.puc-rio.br/",
+    "predio": 1,
+    "andar": "Térreo",
+    "localizacao_detalhada": "Em frente à arquibancada com tomadas",
+    "coordenadas": [
+      -22.980061341426854,
+      -43.23274141506229
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 26,
+  "fields": {
+    "nome": "Empresa Júnior",
+    "tipo": "outro",
+    "descricao": "Consultoria empresarial associada à PUC-Rio, uma das maiores escolas de negócios do país. Contamos com ajuda dos melhores professores do Brasil e temos preços abaixo da média do mercado.\r\nhttps://empresajunior.com/",
+    "predio": 1,
+    "andar": "Térreo",
+    "localizacao_detalhada": "Próximo ao Bar das Freiras",
+    "coordenadas": [
+      -22.980061341426854,
+      -43.23274141506229
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 27,
+  "fields": {
+    "nome": "Programa Institucional de Permanência Estudantil - FESP",
+    "tipo": "administrativo",
+    "descricao": "O FESP - Programa Institucional de Permanência Estudantil, instituído em 1997, sob a responsabilidade da Vice-reitoria para Assuntos Comunitários (VRC), tem como objetivo contribuir para a permanência estudantil dos bolsistas com perfil filantrópico integral. O Programa promove a concessão dos auxílios transporte, alimentação, computador e socioassistencial em situações esporádicas e emergenciais para estudantes, cuja renda bruta familiar per capita é de até um salário mínimo e meio e a renda líquida per capita até um salário mínimo.\r\nhttps://www.puc-rio.br/sobrepuc/admin/vrc/inclusao_social/cba/fesp/index.html",
+    "predio": 1,
+    "andar": "Térreo",
+    "localizacao_detalhada": "Próximo ao Rei do Mate",
+    "coordenadas": [
+      -22.980061341426854,
+      -43.23274141506229
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 28,
+  "fields": {
+    "nome": "Laboratório de Dinâmicas e Vibrações",
+    "tipo": "laboratório",
+    "descricao": "Departamento de Engenharia Mecânica\r\nResponsável: Roberta de Queiroz Lima\r\nO Laboratório de Dinâmica e Vibrações tem por finalidade dar suporte às atividades de ensino e pesquisa no estudo dinâmico de sistemas mecânicos, o que ocorre por uma modelagem dinâmica do comportamento de corpos rígidos e elásticos, interligados e conectados a elementos fora do sistema por componentes elásticos, dissipativos, atuadores e outros. O resultado são modelos matemáticos não lineares cuja qualidade é garantida por validações numéricas e experimentais. O Laboratório tem e desenvolve ferramentas computacionais para esta finalidade e constrói dispositivos que permitem o uso das técnicas de validação. Para tanto dispõe de sensores de posição, de aceleração, de força e momento, atuadores, motores, elementos mecânicos diversos, bem como placas de aquisição de dados, programas de representação e análise destas informações. Aplicações recentes: estudo dinâmico de colunas de perfuração, estudo do fenômeno de stick-slip em brocas de perfuração, estudo dinâmico de distemas com parâmetros incertos, estudo de controle de dispositivos com folgas e stick-slip, estudo de impactos em sistemas embarcados, estudo do movimento de rotação de corpos em capotamento, etc.\r\nE-mail: robertalima@puc-rio.br \r\nhttps://mec.puc-rio.br/2022/03/24/laboratorio-de-dinamica-e-vibracoes/",
+    "predio": 1,
+    "andar": "Térreo",
+    "localizacao_detalhada": "Próximo ao Rei do Mate",
+    "coordenadas": [
+      -22.980061341426854,
+      -43.23274141506229
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 29,
+  "fields": {
+    "nome": "Inteligência Artificial - Graduação Bacharelado",
+    "tipo": "administrativo",
+    "descricao": "Secretaria do curso de bacharelado em Inteligência Artificial\r\nTel: 21 3527-2783\r\nE-mail: bachareladoemia@puc-rio.br",
+    "predio": 1,
+    "andar": "Térreo",
+    "localizacao_detalhada": "Próximo ao Rei do Mate",
+    "coordenadas": [
+      -22.980061341426854,
+      -43.23274141506229
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 30,
+  "fields": {
+    "nome": "BIODESIGN LAB",
+    "tipo": "laboratório",
+    "descricao": "O BIODESIGN LAB é uma parceria entre a PUC-Rio e o DASA para pesquisa e desenvolvimento de tecnologias 3D, aplicadas à área médica.\r\nhttps://biodesign.dad.puc-rio.br/",
+    "predio": 1,
+    "andar": "Térreo",
+    "localizacao_detalhada": "Próximo ao Geneal",
+    "coordenadas": [
+      -22.980061341426854,
+      -43.23274141506229
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 31,
+  "fields": {
+    "nome": "RioBotz",
+    "tipo": "outro",
+    "descricao": "Coordenador: Marco Antônio Meggiolaro \r\nCriada em 2003, sob a supervisão do professor Marco Antônio Meggiolaro, doutor pelo MIT, RioBotz é a equipe de robótica da PUC-Rio, universidade carioca referência nas mais diversas áreas. Embora tenhamos o foco em robôs de combate, nosso grupo de pesquisa desenvolveu também sistemas para a área médica, militar e a indústria de petróleo e energia. Nós projetamos, otimizamos e construímos estruturas mecânicas, sistemas de locomoção e atuadores.\r\nhttps://www.riobotz.com/sobre",
+    "predio": 1,
+    "andar": "Térreo",
+    "localizacao_detalhada": "Próximo ao Geneal",
+    "coordenadas": [
+      -22.980167346536895,
+      -43.2329072204389
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 32,
+  "fields": {
+    "nome": "AeroRio",
+    "tipo": "outro",
+    "descricao": "Coordenador: Eduardo Costa\r\nEquipe de UAV (veículos aéreos não-tripulados) Design da PUC-Rio.\r\nhttps://www.ctc.puc-rio.br/aerorio/",
+    "predio": 1,
+    "andar": "Térreo",
+    "localizacao_detalhada": "Próximo ao Geneal",
+    "coordenadas": [
+      -22.980167346536895,
+      -43.2329072204389
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 33,
+  "fields": {
+    "nome": "Reptiles - Baja",
+    "tipo": "outro",
+    "descricao": "Orientação: Prof. Márcio Carvalho e Prof. José Paulo Silva de Paula \r\nA equipe Reptiles Baja PUC-Rio constrói um veículo off-road, desde o projeto até a manufatura, para participar de competições organizadas pela SAE-Brasil (Society of Automotive Engineers). O intuito é proporcionar, além da aplicação na prática dos conteúdos de sala de aula, o exercício de habilidades como: liderança, proatividade, organização, respeito e disciplina.\r\nhttps://www.instagram.com/reptilesbaja/?hl=pt",
+    "predio": 1,
+    "andar": "Térreo",
+    "localizacao_detalhada": "Próximo ao Geneal",
+    "coordenadas": [
+      -22.980167346536895,
+      -43.2329072204389
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 34,
+  "fields": {
+    "nome": "Laboratórios de Engenharia Mecânica - Laboratório de Engenharia de Fluidos",
+    "tipo": "laboratório",
+    "descricao": "Departamento de Engenharia Mecânica\r\nEquipe: Luis Fernando A. Azevedo, Angela Ourivio Nieckele, Igor Braga de Paula, Fábio Jessen Werneck de Almeida Martins\r\nO Laboratório de Engenharia de Fluidos (LEF), vinculado ao Departamento de Engenharia Mecânica da PUC-Rio, conduz estudos fundamentais e aplicados nas áreas de mecânica dos fluidos e transferência de calor e massa. As principais linhas de pesquisa estão voltadas para estudos experimentais de escoamentos bifásicos, escoamentos turbulentos na presença de superfícies, redução de atrito, escoamentos cardiovasculares, deposição de parafina em linhas de transporte de petróleo, entre outros.\r\nTel: (55 21) 3527-1983\r\nEmail: Lfaa@puc-rio.br \r\nhttps://lef.mec.puc-rio.br/?lang=pt",
+    "predio": 1,
+    "andar": "Térreo",
+    "localizacao_detalhada": "Próximo ao Geneal",
+    "coordenadas": [
+      -22.980352705141197,
+      -43.23312304034305
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 35,
+  "fields": {
+    "nome": "Laboratório de Microscopia Eletrônica - Grupo de Reologia",
+    "tipo": "laboratório",
+    "descricao": "Departamento de Engenharia Mecânica\r\nLíderes: Paulo Roberto de Souza Mendes e Mônica Feijó Naccache\r\nO Laboratório de Microscopia Eletrônica realiza a caracterização de materiais através do microscópio eletrônico de varredura Clara da Tescan. Atualmente, nosso laboratório presta serviços de análise para diversos grupos de pesquisa e empresas.\r\nhttps://greo.mec.puc-rio.br/instalacoes/laboratoriodemicroscopiaeletronicadevarredura/",
+    "predio": 1,
+    "andar": "Térreo",
+    "localizacao_detalhada": "Próximo ao Geneal",
+    "coordenadas": [
+      -22.980167346536895,
+      -43.2329072204389
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 36,
+  "fields": {
+    "nome": "Laboratório de Estruturas e Materiais - LEM",
+    "tipo": "laboratório",
+    "descricao": "Departamento de Engenharia Civil e Ambiental\r\nCoordenador: Flávio de Andrade Silva\r\nO laboratório está capacitado para executar ensaios de estruturas de concreto armado e protendido, estruturas metálicas e mistas, materiais compósitos cimentícios, poliméricos e metálicos além de protótipos especiais e de sistemas construtivos. O LEM-DEC dispõe de uma área de 600 m², com duas lajes de reação (46 m² e 90 m²), contando com vários sistemas de transporte e içamento de peças estruturais e equipamentos.\r\nE-mail: fsilva@puc-rio.br \r\nhttp://www.lem.civ.puc-rio.br/",
+    "predio": 1,
+    "andar": "Térreo",
+    "localizacao_detalhada": "Próximo ao California Coffee",
+    "coordenadas": [
+      -22.980352705141197,
+      -43.23312304034305
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 37,
+  "fields": {
+    "nome": "Arquibancada com tomadas",
+    "tipo": "outro",
+    "descricao": "Arquibancada para descanso e uso de tomadas",
+    "predio": 1,
+    "andar": "Térreo",
+    "localizacao_detalhada": "Nos fundos do prédio, antes do RDC",
+    "coordenadas": [
+      -22.980352705141197,
+      -43.23312304034305
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 38,
+  "fields": {
+    "nome": "Núcleo de Acolhimento Institucional - NAI",
+    "tipo": "administrativo",
+    "descricao": "O NAI realiza uma abordagem estratégica que visa proporcionar uma experiência educacional positiva e bem-sucedida em todas as fases da jornada acadêmica dos estudantes, e é responsável por fornecer suporte e atendimento aos alunos da Universidade sobre questões acadêmicas e administrativas, garantindo um ambiente inclusivo e acolhedor.\r\nO Núcleo de Acolhimento Institucional (NAI) é uma unidade subordinada a Vice-reitoria de Infraestrutura e Serviços\r\nCoordenadora: Carolina Pucci Santos",
+    "predio": 1,
+    "andar": "Térreo",
+    "localizacao_detalhada": "Próximo ao Porto do Sabor",
+    "coordenadas": [
+      -22.97962579077317,
+      -43.23206533553239
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 39,
+  "fields": {
+    "nome": "Coordenação Central de Admissão e Registro - CCAR",
+    "tipo": "administrativo",
+    "descricao": "A CCAR é a coordenação responsável pela administração da vida escolar na PUC-RIO e responde por:\r\nMatrícula nos Cursos de Graduação;\r\nMatrícula nos Cursos de Pós-graduação;\r\nA CCAR está autorizada a receber requerimentos ou quaisquer outros documentos de caráter acadêmico, bem como emitir diplomas, atestados ou demais documentos relacionados com a vida escolar dos alunos.\r\nCoordenadora: Profa. Daniela Trejos Vargas\r\ne-mail: dar@puc-rio.br\r\nhttps://www.puc-rio.br/sobrepuc/depto/dar/",
+    "predio": 1,
+    "andar": "Térreo",
+    "localizacao_detalhada": "Próximo ao NAI",
+    "coordenadas": [
+      -22.97962579077317,
+      -43.23206533553239
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+}
+]
