@@ -26,19 +26,6 @@
 }
 
 
-.btn-localizacao {
-    position: absolute;
-    top: 205px;
-    left: 360px;
-    display: flex;
-    align-items: center;
-    background-color: #f3f5f6;
-    color: #4d5564;
-    border: none;
-    padding: 8px 8px;
-    border-radius: 8px;
-    cursor: pointer;
-}
 
 .container-secao-loc-sugeridas {
     width: 100%;

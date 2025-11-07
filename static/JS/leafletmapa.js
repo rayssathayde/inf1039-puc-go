@@ -11,23 +11,4 @@ document.addEventListener("DOMContentLoaded", function () {
   const marker = L.marker([lat, lon]).addTo(map);
   map.panTo([lat, lon]);
   
-  const btnLocalizacao = document.querySelector(".btn-localizacao");
-
-
-  if (btnLocalizacao) {
-    btnLocalizacao.addEventListener("click", () => {
-      map.locate({ setView: true, maxZoom: 20 });
-    });
-
-    map.on("locationfound", function (e) {
-      L.marker(e.latlng)
-        .addTo(map)
-        .bindPopup("Você está aqui")
-        .openPopup();
-    });
-
-    map.on("locationerror", function (e) {
-      alert("Não foi possível obter sua localização: " + e.message);
-    });
-  }
 });
