@@ -1,12 +1,58 @@
 from django.shortcuts import render
 from django.contrib.auth.decorators import login_required
+from django.db.models import Q
+from mapa.models import Predio, Local
 
 # Create your views here.
 def home(request):
-    return render(request, 'index.html')
+    predios = Predio.objects.all()
+    tipos = Local.TIPO_CHOICES
+    return render(request, 'index.html', {
+        'predios': predios,
+        'tipos': tipos
+    })
 
 def search_result(request):
-    return render(request, 'resultado_pesquisa.html')
+    query = request.GET.get('result_pesquisa', '')
+    categoria = request.GET.get('categorias', 'all')
+    predio_id = request.GET.get('predios', 'all_predios')
+    cadeirante = request.GET.get('cadeirante', '') == 'on'
+    elevador = request.GET.get('elevador', '') == 'on'
+    
+    locais = Local.objects.filter(ativo=True).select_related('predio')
+    
+    if query:
+        locais = locais.filter(
+            Q(nome__icontains=query) |
+            Q(descricao__icontains=query) |
+            Q(predio__nome__icontains=query)
+        )
+    
+    if categoria and categoria != 'all':
+        locais = locais.filter(tipo=categoria)
+    
+    if predio_id and predio_id != 'all_predios':
+        locais = locais.filter(predio_id=predio_id)
+    
+    if cadeirante:
+        locais = locais.filter(informacoes_extras__acessivel_cadeirante=True)
+    
+    if elevador:
+        locais = locais.filter(informacoes_extras__proximo_elevador=True)
+    
+    contexto = {
+        'locais': locais,
+        'query': query,
+        'total_resultados': locais.count(),
+        'predios': Predio.objects.all(),
+        'tipos': Local.TIPO_CHOICES,
+        'selected_categoria': categoria,
+        'selected_predio': predio_id,
+        'cadeirante_checked': cadeirante,
+        'elevador_checked': elevador,
+    }
+    
+    return render(request, 'resultado_pesquisa.html', contexto)
 
 def available_locations(request):
     return render(request, 'locais_disponiveis.html')
