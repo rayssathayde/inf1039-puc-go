@@ -10,56 +10,80 @@
 
     <div class = "resultados">
         <p class = "titulo-res">Resultados da Pesquisa</p>
-        <p class = "quant-res">1 resultado encontrado para "Sala L314"</p>
+        <p class = "quant-res">{{ total_resultados }} resultado encontrado para "{{ query }}"</p>
     </div>
 
-
-    <div class="container-pesq">
-        <div class="img-res">
-            <i data-lucide="building" class="icone-predio2"></i>
-            <p class="titulo-card">Edifício Cardeal Leme</p>
-            <p class="subtit-card">3° Andar</p>
-        </div>
-        <div class="res-txt">
-            <div class="div-pesq">
-                <p class="nome-pesq">Sala L314</p>
-                <button class="favorites-btn2">♡</button>  
-            </div>
-            <div class="div-pesq2">
-                <i data-lucide="building" class="icone-textos"></i>
-                <p class="text-pesq">Prédio Leme</p>
-            </div>
-            <div class="div-pesq2">
-                <i data-lucide="layers" class="icone-textos"></i>
-                <p class="text-pesq">3° Andar</p>
-            </div>
-            <div class="div-pesq2">
-                <i data-lucide="door-open" class="icone-textos"></i>
-                <p class="text-pesq">Sala de Aula</p>
-            </div>
-            <div class="div-pesq3">
-                <div class="div-pesq">
-                    <p class="tit-inf-adc">Informações Adicionais</p>
+    {% if locais %}
+        {% for local in locais %}
+            <div class="container-pesq">
+                <div class="img-res">
+                    <i data-lucide="building" class="icone-predio2"></i>
+                    <p class="titulo-card">{{ local.predio.nome }}</p>
+                    <p class="subtit-card">{{ local.andar }}º Andar</p>
                 </div>
-                <div class="div-pesq4">
-                    <p class="text-pesq">Capacidade: <span class="text-pesq2">40 pessoas</span></p>
-                    <p class="text-pesq">Tipo:  <span class="text-pesq2">Sala de Aula</span></p>
-                    <p class="text-pesq">Recursos: <span class="text-pesq2">Projetor, Ar-Condicionado</span></p>
-                    <p class="text-pesq">Acesso:  <span class="text-pesq2">Elevador Disponível</span></p>
+                <div class="res-txt">
+                    <div class="div-pesq">
+                        <p class="nome-pesq">{{ local.nome }}</p>
+                        <button class="favorites-btn2">♡</button>  
+                    </div>
+                    <div class="div-pesq2">
+                        <i data-lucide="building" class="icone-textos"></i>
+                        <p class="text-pesq">{{ local.predio.nome }}</p>
+                    </div>
+                    <div class="div-pesq2">
+                        <i data-lucide="layers" class="icone-textos"></i>
+                        <p class="text-pesq">{{ local.andar }}º Andar</p>
+                    </div>
+                    <div class="div-pesq2">
+                        <i data-lucide="door-open" class="icone-textos"></i>
+                        <p class="text-pesq">{{ local.get_tipo_display }}</p>
+                    </div>
+                    <div class="div-pesq3">
+                        <div class="div-pesq">
+                            <p class="tit-inf-adc">Informações Adicionais</p>
+                        </div>
+                        <div class="div-pesq4">
+                            {% if local.informacoes_extras.capacidade %}
+                            <p class="text-pesq">
+                                Capacidade: <span class="text-pesq2">{{ local.informacoes_extras.capacidade }} pessoas</span>
+                            </p>
+                            {% endif %}
+                            {% if local.informacoes_extras.tipo %}
+                            <p class="text-pesq">
+                                Tipo:  <span class="text-pesq2">{{ local.get_tipo_display }}</span>
+                            </p>
+                            {% endif %}
+                            {% if local.informacoes_extras.recursos %}
+                            <p class="text-pesq">
+                                Recursos: <span class="text-pesq2">{{ local.informacoes_extras.recursos }}</span>
+                            </p>
+                            {% endif %}
+                            {% if local.informacoes_extras.acessibilidade %}
+                            <p class="text-pesq">
+                                Acesso:  <span class="text-pesq2">{{ local.informacoes_extras.acessibilidade }}</span>
+                            </p>
+                            {% endif %}
+                        </div>
+                    </div>    
+                    <div class="div-pesq5">
+                        <button class="marcar-btn"><span data-lucide="map-pinned" class="icones-btns"></span>Marcar como destino</button>
+                        <button class="extras-btn"><span data-lucide="route" class="icones-btns"></span>Ver Rotas</button>
+                        <button class="extras-btn"><span data-lucide="share-2" class="icones-btns"></span>Compartilhar</button>
+                    </div>
                 </div>
-            </div>    
-            <div class="div-pesq5">
-                <button class="marcar-btn"><span data-lucide="map-pinned" class="icones-btns"></span>Marcar como destino</button>
-                <button class="extras-btn"><span data-lucide="route" class="icones-btns"></span>Ver Rotas</button>
-                <button class="extras-btn"><span data-lucide="share-2" class="icones-btns"></span>Compartilhar</button>
-            </div>
+    </div>
+    {% endfor %}
+    
+        <div class = "resultados">
+            <p class = "quant-res">Fim dos resultados da pesquisa</p>
         </div>
-    </div>
-   
-    <div class = "resultados">
-        <p class = "quant-res">Fim dos resultados da pesquisa</p>
-    </div>
 
+    {% else %}
+        <div class="resultados">
+            <p class="quant-res"> Nenhum resultado encontrado para "{{ query }}"</p>
+        </div>
+
+    {% endif %}
 
 
 {% endblock %}
