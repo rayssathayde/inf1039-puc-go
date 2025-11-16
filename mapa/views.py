@@ -1,6 +1,13 @@
 from django.shortcuts import render
 from django.http import JsonResponse
-from .models import Local, Predio
+from django.shortcuts import get_object_or_404, redirect
+from django.contrib.auth.decorators import login_required
+
+from .models import Local, Predio, FavoritoLocal, FavoritoPredio
+
+def mapas(request):
+    return render(request, 'mapa.html')
+
 
 def listar_locais(request):
     tipo = request.GET.get('tipo', None)
@@ -41,5 +48,34 @@ def listar_predios(request):
     
     return JsonResponse(dados, safe=False)
 
-def mapas(request):
-    return render(request, 'mapa.html')
+
+
+
+@login_required(login_url='login')
+def favoritar_local(request, local_id):
+    local = get_object_or_404(Local, id=local_id)
+
+    favorito, created = FavoritoLocal.objects.get_or_create(
+        user=request.user,
+        local=local
+    )
+
+    if not created:
+        favorito.delete()  # se já existia, remove 
+
+    return redirect(request.META.get('HTTP_REFERER', 'home')) # volta pra página anterior
+
+
+@login_required(login_url='login')
+def favoritar_predio(request, predio_id):
+    predio = get_object_or_404(Predio, id=predio_id)
+
+    favorito, created = FavoritoPredio.objects.get_or_create(
+        user=request.user,
+        predio=predio
+    )
+
+    if not created:
+        favorito.delete()  
+
+    return redirect(request.META.get('HTTP_REFERER', 'home'))

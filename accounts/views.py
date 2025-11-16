@@ -7,6 +7,8 @@ from django.core.validators import validate_email
 from django.core.exceptions import ValidationError
 from django.contrib.auth import logout
 
+from mapa.models import FavoritoPredio, FavoritoLocal
+
 # Create your views here.
 def login(request):
     if request.method == "GET":
@@ -87,7 +89,19 @@ def register(request):
     
 @login_required(login_url='login')
 def favorites(request):
-    return render(request, 'localizacoes_favoritas.html')
+    favoritos_predios = FavoritoPredio.objects.filter(
+        user=request.user
+    ).select_related('predio')
+
+    favoritos_locais = FavoritoLocal.objects.filter(
+        user=request.user
+    ).select_related('local', 'local__predio')
+
+    context = {
+        'favoritos_predios': favoritos_predios,
+        'favoritos_locais': favoritos_locais,
+    }
+    return render(request, 'localizacoes_favoritas.html', context)
         
 
 def user_logout(request):
