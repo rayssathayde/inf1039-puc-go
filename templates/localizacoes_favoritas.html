@@ -19,39 +19,70 @@
 
 
         <div class="container-cards-locais-favoritos">
-            <div class="card-localfav1">
-                <p class="titulo">Edifício Cardeal Leme</p>
-                <p class="subtitulo">Edifício Cardeal Leme</p>
-                <i data-lucide="heart" class="icone-coracao"></i>
-                <p class="descr">Localizado próximo à entrada da Av. Padre Leonel Franca. Após o bicicletário.</p>
-                <i data-lucide="map-pin" class="icone-pin"></i>
-                <p class="local">Edifício Cardeal Leme</p>
+             {# -------- PRÉDIOS FAVORITOS ---------- #}
+            {% for fav in favoritos_predios %}
+                <div class="card-localfav">
+                    <p class="titulo">{{ fav.predio.nome }}</p>
+                    <p class="subtitulo">{{ fav.predio.nome }}</p>
+
+                
+                    <a href="{% url 'mapa:favoritar_predio' fav.predio.id %}">
+                    <i data-lucide="heart" class="icone-coracao-preenchido"></i>
+                    </a>
+
+                    <p class="descr">
+                        {{ fav.predio.descricao|default:"Sem descrição disponível." }}
+                    </p>
+
+                    <i data-lucide="map-pin" class="icone-pin"></i>
+                    <p class="local">
+                        {{ fav.predio.nome }}
+                    </p>
+
+                    <button class="btn-marcar-destino">
+                        <span class="texto-marcar-destino">Marcar como destino</span>
+                    </button>
+                </div>
+    
+            {% empty %}
+            {# se não tiver prédios favoritos, não mostra nada aqui #}
+            {% endfor %}
+
+            {# -------- LOCAIS FAVORITOS --------- #}
+            {% for fav in favoritos_locais %}
+                <div class="card-localfav">
+                    <p class="titulo">{{ fav.local.nome }}</p>
+                    <p class="subtitulo">{{ fav.local.nome }}</p>
+
+                    <a href="{% url 'mapa:favoritar_local' fav.local.id %}">
+                    <i data-lucide="heart" class="icone-coracao-preenchido"></i>
+                    </a>
+
+                    <p class="descr">
+                    {{ fav.local.descricao|default:"Sem descrição disponível." }}
+                    </p>
+
+                    <i data-lucide="map-pin" class="icone-pin"></i>
+                    <p class="local">
+                        {{ fav.local.predio.nome }} – 
+                            {% if fav.local.andar.isdigit %}
+                                {{ fav.local.andar }}º andar
+                            {% else %}
+                                {{ fav.local.andar }}
+                            {% endif %}
+                    </p>
+
                 <button class="btn-marcar-destino">
-                    <span class="texto-marcar-destino"> Marcar como destino</span>
+                    <span class="texto-marcar-destino">Marcar como destino</span>
                 </button>
-            </div>
-            <div class="card-localfav2">
-                <p class="titulo">Restaurante Universitário</p>
-                <p class="subtitulo">Restaurante Universitário</p>
-                <i data-lucide="heart" class="icone-coracao"></i>
-                <p class="descr">Localizado no subsolo do Edifício da Amizade - Ala Frings. Entrada alternativa pela Alameda Alceu Amoroso Lima, na Vila dos Diretórios. </p>
-                <i data-lucide="map-pin" class="icone-pin"></i>
-                <p class="local">Edifício da Amizade - Ala Frings - Subsolo</p>
-                <button class="btn-marcar-destino">
-                    <span class="texto-marcar-destino"> Marcar como destino</span>
-                </button>
-            </div>
-            <div class="card-localfav3">
-                <p class="titulo">Biblioteca Central</p>
-                <p class="subtitulo">Biblioteca Central</p>
-                <i data-lucide="heart" class="icone-coracao"></i>
-                <p class="descr">Localizada no 3º andar do Edifício da Amizade - Ala Frings.</p>
-                <i data-lucide="map-pin" class="icone-pin"></i>
-                <p class="local">Edifício da Amizade - Ala Frings - 3º andar</p>
-                <button class="btn-marcar-destino">
-                    <span class="texto-marcar-destino"> Marcar como destino</span>
-                </button>
-            </div>
+                </div>
+        {% empty %}
+        
+        {% endfor %}
+
+        {% if not favoritos_predios and not favoritos_locais %}
+            <p>Você ainda não tem localizações favoritas.</p>
+        {% endif %}
         </div>
     </main>
 
