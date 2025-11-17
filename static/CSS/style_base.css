@@ -487,6 +487,7 @@ main {
     max-width: 90%;
     text-align: center;
     box-shadow: 0 2px 15px rgba(0,0,0,0.2);
+    gap:10px;
 }
 
 /* Corpo e rodapé do modal */
