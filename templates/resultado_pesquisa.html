@@ -19,20 +19,50 @@
                 <div class="img-res">
                     <i data-lucide="building" class="icone-predio2"></i>
                     <p class="titulo-card">{{ local.predio.nome }}</p>
-                    <p class="subtit-card">{{ local.andar }}º Andar</p>
+                    <p class="subtit-card"> 
+                            {% if local.andar.isdigit %}
+                                {{ local.andar }}º andar
+                            {% else %}
+                                {{ local.andar }}
+                            {% endif %}
+                    </p>
                 </div>
                 <div class="res-txt">
                     <div class="div-pesq">
                         <p class="nome-pesq">{{ local.nome }}</p>
-                        <button class="favorites-btn2">♡</button>  
+                        
+                        {% if user.is_authenticated %}
+                            <form method="post" action="{% url 'mapa:favoritar_local' local.id %}">
+                            {% csrf_token %}
+                                <button type="submit" class="favorites-btn2" aria-label="Favoritar local">
+                                    {% if local.id in favoritos_locais_ids %}
+                                        <i data-lucide="heart" class="icone-coracao-preenchido"></i>
+                                    {% else %}
+                                        <i data-lucide="heart" class="icone-coracao-vazio"></i>
+                                    {% endif %}
+                                </button>
+                            </form>
+                        {% else %}
+                        <button class="favorites-btn2" disabled title="Faça login para favoritar">
+                            <i data-lucide="heart" class="icone-coracao-vazio"></i>
+                        </button>
+                        {% endif %}
+                    
+                    
                     </div>
+
+
                     <div class="div-pesq2">
                         <i data-lucide="building" class="icone-textos"></i>
                         <p class="text-pesq">{{ local.predio.nome }}</p>
                     </div>
                     <div class="div-pesq2">
                         <i data-lucide="layers" class="icone-textos"></i>
-                        <p class="text-pesq">{{ local.andar }}º Andar</p>
+                        <p class="text-pesq">{% if local.andar.isdigit %}
+                                                {{ local.andar }}º andar
+                                            {% else %}
+                                                {{ local.andar }}
+                                            {% endif %} </p>
                     </div>
                     <div class="div-pesq2">
                         <i data-lucide="door-open" class="icone-textos"></i>
