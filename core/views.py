@@ -1,7 +1,8 @@
 from django.shortcuts import render
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
-from mapa.models import Predio, Local
+
+from mapa.models import Predio, Local, FavoritoLocal, FavoritoPredio
 
 # Create your views here.
 def home(request):
@@ -39,6 +40,20 @@ def search_result(request):
     
     if elevador:
         locais = locais.filter(informacoes_extras__proximo_elevador=True)
+
+    favoritos_locais_ids = []
+    favoritos_predios_ids = []
+
+    if request.user.is_authenticated:
+        favoritos_locais_ids = list(
+            FavoritoLocal.objects.filter(user=request.user)
+            .values_list('local_id', flat=True)
+        )
+
+        favoritos_predios_ids = list(
+            FavoritoPredio.objects.filter(user=request.user)
+            .values_list('predio_id', flat=True)
+        )
     
     contexto = {
         'locais': locais,
@@ -50,6 +65,8 @@ def search_result(request):
         'selected_predio': predio_id,
         'cadeirante_checked': cadeirante,
         'elevador_checked': elevador,
+        'favoritos_locais_ids': favoritos_locais_ids,
+        'favoritos_predios_ids': favoritos_predios_ids,
     }
     
     return render(request, 'resultado_pesquisa.html', contexto)
