@@ -610,5 +610,113 @@
     "informacoes_extras": null,
     "ativo": true
   }
+},
+{
+  "model": "mapa.local",
+  "pk": 47,
+  "fields": {
+    "nome": "Escritório do Tecgraf",
+    "tipo": "outro",
+    "descricao": "Escritório",
+    "predio": 4,
+    "andar": "2",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.977933469884157,
+      -43.23186547048217
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 48,
+  "fields": {
+    "nome": "Escritório do Tecgraf",
+    "tipo": "outro",
+    "descricao": "Escritório",
+    "predio": 4,
+    "andar": "3",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.977933469884157,
+      -43.23186547048217
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 49,
+  "fields": {
+    "nome": "Escritório do Tecgraf",
+    "tipo": "outro",
+    "descricao": "Escritório",
+    "predio": 4,
+    "andar": "4",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.977933469884157,
+      -43.23186547048217
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 50,
+  "fields": {
+    "nome": "Escritório do Tecgraf",
+    "tipo": "outro",
+    "descricao": "Escritório",
+    "predio": 4,
+    "andar": "5",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.977933469884157,
+      -43.23186547048217
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 51,
+  "fields": {
+    "nome": "Escritório do Tecgraf",
+    "tipo": "outro",
+    "descricao": "Escritório",
+    "predio": 4,
+    "andar": "6",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.977933469884157,
+      -43.23186547048217
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
+},
+{
+  "model": "mapa.local",
+  "pk": 52,
+  "fields": {
+    "nome": "Escritório do Tecgraf",
+    "tipo": "outro",
+    "descricao": "Escritório",
+    "predio": 4,
+    "andar": "7",
+    "localizacao_detalhada": "",
+    "coordenadas": [
+      -22.977933469884157,
+      -43.23186547048217
+    ],
+    "informacoes_extras": null,
+    "ativo": true
+  }
 }
 ]
