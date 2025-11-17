@@ -39,7 +39,7 @@
   "model": "mapa.predio",
   "pk": 4,
   "fields": {
-    "nome": "Instituto Tecgraf",
+    "nome": "Edifício Laercio Dias de Moura",
     "descricao": "",
     "coordenadas": [
       -22.977933469884157,
@@ -78,8 +78,8 @@
     "nome": "Igreja do Sagrado Coração de Jesus",
     "descricao": "",
     "coordenadas": [
-      -22.97938700202643,
-      -43.233768422377814
+      -22.9793895,
+      -43.2338522
     ]
   }
 },
@@ -90,8 +90,8 @@
     "nome": "Pastoral Universitária Anchieta",
     "descricao": "",
     "coordenadas": [
-      -22.97960324497389,
-      -43.23360761942245
+      -22.9797272,
+      -43.2338277
     ]
   }
 },
@@ -104,6 +104,114 @@
     "coordenadas": [
       -22.977726609663314,
       -43.232079259311824
+    ]
+  }
+},
+{
+  "model": "mapa.predio",
+  "pk": 10,
+  "fields": {
+    "nome": "Edifício Padre Leonel Franca",
+    "descricao": "",
+    "coordenadas": [
+      -22.9802994,
+      -43.2341157
+    ]
+  }
+},
+{
+  "model": "mapa.predio",
+  "pk": 11,
+  "fields": {
+    "nome": "Escola de Negócios - IAG",
+    "descricao": "",
+    "coordenadas": [
+      -22.979967,
+      -43.2336839
+    ]
+  }
+},
+{
+  "model": "mapa.predio",
+  "pk": 12,
+  "fields": {
+    "nome": "Tendas ART 4 e 5",
+    "descricao": "",
+    "coordenadas": [
+      -22.9792413,
+      -43.2338814
+    ]
+  }
+},
+{
+  "model": "mapa.predio",
+  "pk": 13,
+  "fields": {
+    "nome": "Solar Grandjean de Montigny",
+    "descricao": "",
+    "coordenadas": [
+      -22.978874,
+      -43.2335934
+    ]
+  }
+},
+{
+  "model": "mapa.predio",
+  "pk": 14,
+  "fields": {
+    "nome": "Casa de Inovação",
+    "descricao": "",
+    "coordenadas": [
+      -22.9788595,
+      -43.2330271
+    ]
+  }
+},
+{
+  "model": "mapa.predio",
+  "pk": 15,
+  "fields": {
+    "nome": "SPA - Serviço de Psicologia Aplicada",
+    "descricao": "",
+    "coordenadas": [
+      -22.9782193,
+      -43.2331471
+    ]
+  }
+},
+{
+  "model": "mapa.predio",
+  "pk": 16,
+  "fields": {
+    "nome": "Edifício Luiz Cyrillo Fernandes - Biologia",
+    "descricao": "",
+    "coordenadas": [
+      -22.9780359,
+      -43.2328494
+    ]
+  }
+},
+{
+  "model": "mapa.predio",
+  "pk": 17,
+  "fields": {
+    "nome": "Departamento de Artes e Design",
+    "descricao": "",
+    "coordenadas": [
+      -22.9780359,
+      -43.2328494
+    ]
+  }
+},
+{
+  "model": "mapa.predio",
+  "pk": 18,
+  "fields": {
+    "nome": "Vila dos Diretórios",
+    "descricao": "",
+    "coordenadas": [
+      -22.9785524,
+      -43.2326321
     ]
   }
 }
