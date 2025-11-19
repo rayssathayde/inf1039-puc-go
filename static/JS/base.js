@@ -40,6 +40,10 @@ const meuModal = document.getElementById('meuModal');
 const btnNaoVisitar = document.getElementById('btnNaoVisitar');
 const btnSimVisitar = document.getElementById('btnSimVisitar');
 
+//Modais de ajuda e suporte
+const modalAjuda = document.getElementById('modalAjuda');
+const modalSuporte = document.getElementById('modalSuporte');
+
 // Segundo modal
 const modalInstrucoes = document.getElementById('modalInstrucoes');
 const btnEntendi = document.getElementById('btnEntendi');
@@ -95,3 +99,50 @@ btnEntendi.addEventListener('click', () => {
     marcarTutorialVisto();
     fecharTodosModais();
 });
+
+
+
+
+//-------------------------------- ---------------------------------//
+
+// ============== TOGGLE SENHA (MOSTRAR/OCULTAR) ==============
+const togglePasswordButtons = document.querySelectorAll('.toggle-password');
+
+togglePasswordButtons.forEach(button => {
+    button.addEventListener('click', function() {
+        // Encontra o input de senha relacionado ao botão
+        const passwordInput = this.parentElement.querySelector('input');
+        const eyeIcon = this.querySelector('.eye-icon');
+        
+        // Alterna entre password e text
+        if (passwordInput.type === 'password') {
+            passwordInput.type = 'text';
+            eyeIcon.setAttribute('data-lucide', 'eye-off');
+        } else {
+            passwordInput.type = 'password';
+            eyeIcon.setAttribute('data-lucide', 'eye');
+        }
+        
+        // Reinicializa os ícones do Lucide para refletir a mudança
+        if (typeof lucide !== 'undefined') {
+            lucide.createIcons();
+        }
+    });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

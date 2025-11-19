@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}PUC-Go{% endblock %}</title>
+
+    <link rel="stylesheet" href="{% static 'CSS/style_base.css' %}">
+    {% block extra_css %}{% endblock %}
+    
+    <!-- IMPORTANDO FONTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    
+    <!-- ICONES -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+
+
+
+
+
+
+<div id="modalInstrucoes" class="modal-overlay">
+    <div class="modalSuporte">
+        <div class="modal-cabecalho">
+             <h2 class="modal-titulo">Ajuda!</h2>
+        </div>
+        
+        <div class="modal-corpo-instrucoes">
+            <ul>
+                <li>Onde posso encontrar meus lugares favoritos?</li>
+                <li>-Na pagina inicial no icone de coração! Lá terá uma lista dos locais que você salvou, que ficam gravados no seu lógica.</li>
+                <li>Como faço para traçaruma rota até o local desejado?</li>
+                <li>-Primeiro, você deve estar conectado a internet. Além disso, apenas locais principais possuem a função de rota pelo gps, os demais locais possuem apenas uma descrição detalhada do caminho por onde você deve seguir!</li>
+                <li>Como posso encontrar todos os locais de um prédio?</li>
+                <li>-No menu, presente em todas as páginas, há uma aba chamada Prédios onde você encontrará os locais desejados noprédio escolhido</li>
+                <li>Não en ontrei o local que pesquisei no site!</li>
+                <li>-Primeiramente, veja se o nome da sala ou local está correto, depois, se o problema persistir, mande um feedback por meio dos contatos em -Suporte- explicando a situaçãopara que possamos te auxiliar!</li>
+            </ul>
+        </div>
+
+</body>
+</html>
+
