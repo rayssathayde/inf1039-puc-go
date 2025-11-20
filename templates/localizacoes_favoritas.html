@@ -52,7 +52,7 @@
             {% for fav in favoritos_locais %}
                 <div class="card-localfav">
                     <p class="titulo">{{ fav.local.nome }}</p>
-                    <p class="subtitulo">{{ fav.local.nome }}</p>
+                    <p class="subtitulo">{{ fav.local.predio.nome }}</p>
 
                     <a href="{% url 'mapa:favoritar_local' fav.local.id %}">
                     <i data-lucide="heart" class="icone-coracao-preenchido"></i>

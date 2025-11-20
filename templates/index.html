@@ -69,19 +69,48 @@
         </div>
 
         <div class="container-cards-locais">
-            <div class="card-localizacao1">
-                <i data-lucide="building" class="icone-predio"></i>
-                <p class="titulo">Edifício Cardeal Leme</p>
-            </div>
-            <div class="card-localizacao2">
-                <i data-lucide="utensils" class="icone-restaurante"></i>
-                <p class="titulo">Restaurante Universitário</p>
-            </div>
-            <div class="card-localizacao3">
-                <i data-lucide="book" class="icone-biblioteca"></i>
-                <p class="titulo">Biblioteca Central</p>
-            </div>
+            {% if locais_sugeridos %}
+                {% for local in locais_sugeridos %}
+                    <div class="card-localizacao">
+                        <p class="titulo">{{ local.nome }}</p>
+                        <p class="subtitulo">{{ local.predio.nome }}</p>
+
+                        {% if user.is_authenticated %}
+                            <a href="{% url 'mapa:favoritar_local' local.id %}">
+                                {% if local.id in favoritos_locais_ids %}
+                                    <i data-lucide="heart" class="icone-coracao-preenchido"></i>
+                                {% else %}
+                                    <i data-lucide="heart" class="icone-coracao-vazio"></i>
+                                {% endif %}
+                            </a>
+                        {% else %}
+                            <i data-lucide="heart" class="icone-coracao-vazio" title="Faça login para favoritar"></i>
+                        {% endif %}
+
+                        <p class="descr">
+                        {{ local.descricao|default:"Sem descrição disponível." }}
+                        </p>
+
+                        <i data-lucide="map-pin" class="icone-pin"></i>
+                        <p class="local">
+                            {{ local.predio.nome }} – 
+                                {% if local.andar.isdigit %}
+                                    {{ local.andar }}º andar
+                                {% else %}
+                                    {{ local.andar }}
+                                {% endif %}
+                        </p>
+
+                        <button class="btn-marcar-destino">
+                            <span class="texto-marcar-destino">Marcar como destino</span>
+                        </button>   
+                    </div>
+                {% endfor %}
+            {% else %}
+                <p>Não há locais cadastrados ainda.</p>
+            {% endif %}
         </div>
+
     </main>
 
 {% endblock %}

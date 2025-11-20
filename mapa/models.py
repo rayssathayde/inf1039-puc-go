@@ -33,6 +33,9 @@ class Local(models.Model):
     coordenadas = models.JSONField(null=True, blank=True)
     informacoes_extras = models.JSONField(null=True, blank=True)
     ativo = models.BooleanField(default=True)
+
+    search_count = models.PositiveIntegerField(default=0)
+    sugerido_padrao = models.BooleanField(default=False)
     
     class Meta:
         verbose_name_plural = "Locais"
