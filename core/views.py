@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.contrib.auth.decorators import login_required
-from django.db.models import Q
+from django.db.models import Q, F
 
 from mapa.models import Predio, Local, FavoritoLocal, FavoritoPredio
 
@@ -8,9 +8,53 @@ from mapa.models import Predio, Local, FavoritoLocal, FavoritoPredio
 def home(request):
     predios = Predio.objects.all()
     tipos = Local.TIPO_CHOICES
+    
+    # com 3 locais mais buscados
+    locais_populares = Local.objects.filter(
+        ativo=True,
+        search_count__gt=0
+    ).order_by('-search_count')[:3]
+
+    locais_sugeridos = list(locais_populares)
+
+    # se ainda não tiver 3, completa com default
+    if len(locais_sugeridos) < 3:
+        faltando = 3 - len(locais_sugeridos)
+
+        sugestoes_default = Local.objects.filter(
+            ativo=True,
+            sugerido_padrao=True
+        ).exclude(
+            id__in=[l.id for l in locais_sugeridos]
+        )[:faltando]
+
+        locais_sugeridos.extend(sugestoes_default)
+
+    # se ainda assim faltar, completa com local ativo aleatorio
+    if len(locais_sugeridos) < 3:
+        faltando = 3 - len(locais_sugeridos)
+
+        outros_locais = Local.objects.filter(
+            ativo=True
+        ).exclude(
+            id__in=[l.id for l in locais_sugeridos]
+        )[:faltando]
+
+        locais_sugeridos.extend(outros_locais)
+    
+    favoritos_locais_ids = []
+    if request.user.is_authenticated:
+        favoritos_locais_ids = list(
+            FavoritoLocal.objects.filter(user=request.user)
+            .values_list('local_id', flat=True)
+    )
+    
+    
     return render(request, 'index.html', {
         'predios': predios,
-        'tipos': tipos
+        'tipos': tipos,
+        'locais_sugeridos': locais_sugeridos,
+        'favoritos_locais_ids': favoritos_locais_ids,
     })
 
 def search_result(request):
@@ -40,6 +84,12 @@ def search_result(request):
     
     if elevador:
         locais = locais.filter(informacoes_extras__proximo_elevador=True)
+    
+    if query:
+        Local.objects.filter(
+            id__in=locais.values_list('id', flat=True)
+        ).update(search_count=F('search_count') + 1)
+        
 
     favoritos_locais_ids = []
     favoritos_predios_ids = []
@@ -71,8 +121,10 @@ def search_result(request):
     
     return render(request, 'resultado_pesquisa.html', contexto)
 
+
 def available_locations(request):
     return render(request, 'locais_disponiveis.html')
+
 
 def info_ambientes(request):
     return render(request, 'info_ambientes.html')

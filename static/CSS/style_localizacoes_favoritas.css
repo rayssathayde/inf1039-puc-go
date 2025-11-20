@@ -67,7 +67,14 @@
     position: absolute;
     top: 220px;
     left: 10px;
+    width: 330px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;  
+    -webkit-box-orient: vertical;
 }
+
 
 .card-localfav .local {
     color: #111828;
