@@ -526,3 +526,50 @@ main {
 body.modal-aberto {
     overflow: hidden;
 }
+
+/* Modal específico de Termos de Uso / Privacidade */
+.modal-conteudo.modal-termos {
+    width: 700px;
+    max-width: 95%;
+    max-height: 85vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-subtitulo {
+    font-size: 0.95rem;
+    margin-top: 8px;
+    margin-bottom: 10px;
+}
+
+/* Css dos Termos de Privacidade */
+.modal-termos-scroll {
+    margin-top: 8px;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    max-height: 55vh;
+    overflow-y: auto;
+    text-align: left;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.modal-termos-scroll h3,
+.modal-termos-scroll h4 {
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+.modal-termos-scroll p,
+.modal-termos-scroll ul {
+    margin-bottom: 8px;
+}
+
+.checkbox-termos {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 10px;
+    font-size: 0.9rem;
+}

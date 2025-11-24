@@ -11,21 +11,319 @@
 {% block content %}
 
 <div id="meuModal" class="modal-overlay">
-    <div class="modal-conteudo">
+    <div class="modal-conteudo modal-termos">
         <div class="modal-corpo">
-            <h2 class="modal-titulo">É sua primeira vez no site?</h2>
+            <!--- O termo começa aqui-->
+            <h2 class="modal-titulo">TERMOS DE USO – PUC-Go</h2>
+            <div class="modal-termos-scroll">
+                <p><strong>Última atualização:</strong> 16/11/2025</p>
+
+                <p>Bem-vindo(a)!</p>
+
+                <p>
+                    Os Termos de Uso regulam o acesso e utilização do PUC-Go, um mapa interativo desenvolvido para auxiliar usuários a navegar pelo campus da PUC-Rio.
+                </p>
+
+                <p>
+                    Ao utilizar o PUC-Go, você concorda com r. Termos.
+                </p>
+
+                <h3>1. Sobre o PUC-Go</h3>
+
+                <p>O PUC-Go utiliza:</p>
+
+                <ul>
+                    <li>Leaflet.js, licenciado sob a BSD 2-Clause, para renderização e interação cartográfica.</li>
+                    <li>OpenStreetMap (OSM), licenciado sob a Open Database License (ODbL), como fonte dos tiles de mapa.</li>
+                </ul>
+
+                <p>
+                    Os tiles são carregados diretamente do servidor do OSM, o que implica possíveis registros técnicos (como IP, agente do navegador e horário), conforme prática padrão descrita pelo próprio OSM.
+                </p>
+
+                <p>
+                    Este aplicativo não é oficial da PUC-Rio, trata-se de um projeto da disciplina INF-1039.
+                </p>
+
+                <h3>2. Uso Permitido</h3>
+
+                <p>O uso do PUC-Go é permitido exclusivamente para:</p>
+
+                <ul>
+                    <li>navegação pelo campus,</li>
+                    <li>fins pessoais, educacionais ou informativos,</li>
+                    <li>visualização de estruturas, prédios e serviços da universidade.</li>
+                </ul>
+
+                <p>Com base em boas práticas de termos de plataformas cartográficas (como Google Maps Platform Terms of Service), é proibido:</p>
+
+                <ul>
+                    <li>redistribuir, armazenar ou comercializar os tiles do mapa ou quaisquer dados cartográficos;</li>
+                    <li>utilizar sistemas automatizados para extração de dados;</li>
+                    <li>manipular conteúdo geográfico de forma a causar erro, desinformação ou uso indevido;</li>
+                    <li>tentar contornar limitações técnicas da API ou do serviço de tiles.</li>
+                </ul>
+
+                <h3>3. Propriedade Intelectual</h3>
+
+                <h4>3.1. Conteúdos próprios</h4>
+
+                <p>
+                    Todo o código, interface, ícones, marcações e estrutura do aplicativo são protegidos por direitos autorais.
+                </p>
+
+                <h4>3.2. Leaflet.js – BSD 2-Clause</h4>
+
+                <p>
+                    O PUC-Go utiliza Leaflet.js conforme os termos da BSD de 2 cláusulas, o que inclui:
+                </p>
+
+                <ul>
+                    <li>obrigação de manter aviso de copyright;</li>
+                    <li>obrigação de manter o texto da licença;</li>
+                    <li>isenção de garantias por parte dos autores da biblioteca.</li>
+                </ul>
+
+                <h4>3.3. OpenStreetMap – ODbL</h4>
+
+                <p>O conteúdo cartográfico:</p>
+
+                <ul>
+                    <li>pertence aos colaboradores do OSM;</li>
+                    <li>exige atribuição: © OpenStreetMap contributors;</li>
+                    <li>não pode ser apresentado como se fosse de autoria do PUC-Go;</li>
+                    <li>deve respeitar obrigatoriamente os termos da ODbL no uso de bases derivadas.</li>
+                </ul>
+
+                <p>
+                    Esses pontos seguem as exigências descritas nas políticas oficiais do OSM.
+                </p>
+
+                <h3>4. Localização do Usuário</h3>
+
+                <p>
+                    O PUC-Go pode, opcionalmente, solicitar acesso à localização. Com base nas diretrizes de políticas de privacidade de dados de localização, o aplicativo:
+                </p>
+
+                <ul>
+                    <li>utiliza a localização apenas quando o usuário autoriza;</li>
+                    <li>não realiza coleta em segundo plano;</li>
+                    <li>não armazena, redistribui ou compartilha localização;</li>
+                    <li>utiliza a informação apenas para exibição momentânea no mapa.</li>
+                </ul>
+
+                <h3>5. Limitação de Responsabilidade</h3>
+
+                <p>
+                    De acordo com boas práticas observadas em serviços de mapas (como Google Maps Platform ToS):
+                </p>
+
+                <ul>
+                    <li>o PUC-Go é fornecido “no estado em que se encontra”;</li>
+                    <li>não garantimos precisão absoluta dos dados exibidos;</li>
+                    <li>não garantimos funcionamento ininterrupto;</li>
+                    <li>o serviço depende de infraestruturas de terceiros, sobre as quais não temos controle.</li>
+                </ul>
+
+                <h3>6. Atualizações</h3>
+
+                <p>
+                    Os Termos podem ser modificados periodicamente para garantir conformidade com:
+                </p>
+
+                <ul>
+                    <li>atualizações da LGPD,</li>
+                    <li>mudanças nas licenças do Leaflet ou do OSM,</li>
+                    <li>boas práticas de privacidade e transparência.</li>
+                </ul>
+
+                <h3>7. Contato</h3>
+
+                <p>puc-go@gmail.com</p>
+
+                <h2 style="margin-top: 16px;">POLÍTICA DE PRIVACIDADE – PUC-Go</h2>
+
+                <p><strong>Última atualização:</strong> 16/11/2025</p>
+
+                <p>
+                    Esta Política foi elaborada com base na Lei Geral de Proteção de Dados Pessoais (LGPD, Lei 13.709/2018).
+                </p>
+
+                <h3>1. Dados Coletados</h3>
+
+                <h4>1.1. Dados técnicos</h4>
+
+                <p>
+                    Coletamos automaticamente informações mínimas, necessárias para funcionamento, tais como:
+                </p>
+
+                <ul>
+                    <li>endereço IP;</li>
+                    <li>tipo de navegador e dispositivo;</li>
+                    <li>registros de erro e desempenho.</li>
+                </ul>
+
+                <p>
+                    Esse tipo de coleta segue a categoria de “dados necessários para o funcionamento do serviço”, sem os quais não seria possível seu uso.
+                </p>
+
+                <h4>1.2. Localização</h4>
+
+                <p>
+                    A localização só é acessada com consentimento explícito do usuário.
+                </p>
+
+                <p>
+                    O PUC-Go não armazena a localização.
+                </p>
+
+                <p>
+                    A informação é utilizada apenas momentaneamente, para exibição do ponto no mapa.
+                </p>
+
+                <p>
+                    O app não rastreia o usuário fora do uso voluntário do recurso.
+                </p>
+
+                <h4>1.3. Dados de terceiros (OpenStreetMap)</h4>
+
+                <p>
+                    Ao carregar o mapa, o navegador faz requisições ao servidor do OSM, que pode coletar:
+                </p>
+
+                <ul>
+                    <li>IP;</li>
+                    <li>hora da requisição;</li>
+                    <li>agente do navegador;</li>
+                    <li>dados técnicos de acesso.</li>
+                </ul>
+
+                <p>
+                    Esses dados não são controlados pelo PUC-Go, e estão sujeitos à política de privacidade do OSM.
+                </p>
+
+                <h4>1.4. Dados fornecidos voluntariamente</h4>
+
+                <p>
+                    Se o usuário enviar feedback:
+                </p>
+
+                <ul>
+                    <li>nome,</li>
+                    <li>email,</li>
+                    <li>mensagem enviada.</li>
+                </ul>
+
+                <p>
+                    Esses dados não são compartilhados.
+                </p>
+
+                <h3>2. Finalidades</h3>
+
+                <p>
+                    Conforme LGPD art. 6º (princípios de finalidade e necessidade), os dados são utilizados para:
+                </p>
+
+                <ul>
+                    <li>exibição do mapa;</li>
+                    <li>melhoria de funcionamento;</li>
+                    <li>garantia de segurança;</li>
+                    <li>resposta a solicitações de suporte.</li>
+                </ul>
+
+                <p>
+                    Nenhum dado é utilizado para publicidade, marketing ou criação de perfis.
+                </p>
+
+                <h3>3. Bases legais</h3>
+
+                <p>O tratamento se fundamenta em:</p>
+
+                <ul>
+                    <li>Consentimento (localização opcional),</li>
+                    <li>Execução de funcionalidade essencial (dados técnicos),</li>
+                    <li>Atendimento do legítimo interesse mínimo e proporcional, conforme boas práticas de apps mobile.</li>
+                </ul>
+
+                <h3>4. Compartilhamento</h3>
+
+                <p>
+                    O PUC-Go não compartilha dados com terceiros. A única exceção é a coleta automática de logs pelo servidor do OpenStreetMap quando o mapa é carregado, necessário ao funcionamento do serviço cartográfico.
+                </p>
+
+                <h3>5. Cookies</h3>
+
+                <p>
+                    Podem ser utilizados cookies técnicos de sessão, sem finalidade de rastreamento.
+                </p>
+
+                <h3>6. Direitos do usuário (LGPD art. 18)</h3>
+
+                <p>O usuário pode solicitar:</p>
+
+                <ul>
+                    <li>confirmação de tratamento;</li>
+                    <li>acesso;</li>
+                    <li>correção;</li>
+                    <li>anonimização;</li>
+                    <li>revogação de consentimento;</li>
+                    <li>eliminação.</li>
+                </ul>
+
+                <h3>7. Segurança</h3>
+
+                <p>
+                    Conforme diretrizes investigadas, adotamos:
+                </p>
+
+                <ul>
+                    <li>medidas técnicas razoáveis para evitar acesso indevido;</li>
+                    <li>coleta mínima estritamente necessária;</li>
+                    <li>ausência de armazenamento de localização.</li>
+                </ul>
+
+                <h3>8. Retenção</h3>
+
+                <p>
+                    Somente dados de logs técnicos podem ser mantidos temporariamente, para diagnóstico. Não há retenção de dados sensíveis, incluindo localização.
+                </p>
+
+                <h3>9. Alterações</h3>
+
+                <p>
+                    Esta Política poderá ser atualizada para:
+                </p>
+
+                <ul>
+                    <li>atender novas exigências legais;</li>
+                    <li>refletir atualizações do Leaflet, OSM ou serviços relacionados;</li>
+                    <li>seguir as melhores práticas de privacidade.</li>
+                </ul>
+
+                <h3>10. Contato</h3>
+
+                <p>puc-go@gmail.com</p>
+            </div>
+            <!-- Estou forcando o usuário aceitar os termos para usar o app -->
+            <label class="checkbox-termos">
+                <input type="checkbox" id="aceitoTermos">
+                Li e concordo com os Termos de Uso e a Política de Privacidade.
+            </label>
+
         </div>
+
         <div class="modal-rodape">
             <button type="button" id="btnSimVisitar" class="btn-primario">
                 Sim, me mostre como funciona
             </button>
             <button type="button" id="btnNaoVisitar" class="btn-secundario">
-                    Não, já sei usar!        
+                Não, já sei usar!
             </button>
-            
         </div>
     </div>
 </div>
+
+
 
 <div id="modalInstrucoes" class="modal-overlay">
     <div class="modal-conteudo modal-instrucoes">

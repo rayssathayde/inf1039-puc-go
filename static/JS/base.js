@@ -40,9 +40,10 @@ const meuModal = document.getElementById('meuModal');
 const btnNaoVisitar = document.getElementById('btnNaoVisitar');
 const btnSimVisitar = document.getElementById('btnSimVisitar');
 
-// Segundo modal
 const modalInstrucoes = document.getElementById('modalInstrucoes');
 const btnEntendi = document.getElementById('btnEntendi');
+
+const checkboxTermos = document.getElementById('aceitoTermos');
 
 // Função para abrir um modal
 function abrirModal(modalElement) {
@@ -58,8 +59,8 @@ function fecharModal(modalElement) {
 
 // Fechar todos modais
 function fecharTodosModais() {
-    meuModal.style.display = 'none';
-    modalInstrucoes.style.display = 'none';
+    if (meuModal) meuModal.style.display = 'none';
+    if (modalInstrucoes) modalInstrucoes.style.display = 'none';
     document.body.classList.remove('modal-aberto');
 }
 
@@ -72,10 +73,24 @@ function marcarTutorialVisto() {
     localStorage.setItem("tutorialVisto", "true");
 }
 
-// MOSTRAR APENAS NA PRIMEIRA VEZ. O problema era que a função antiga sempre abria o modal.
-// Agora só abre se Usuario nunca interagiu com o modal antes.
+// Desabilita os botões até o usuário aceitar os termos
+function atualizarEstadoBotoesTermos() {
+    if (!checkboxTermos) return;
+
+    const habilitar = checkboxTermos.checked;
+    btnSimVisitar.disabled = !habilitar;
+    btnNaoVisitar.disabled = !habilitar;
+}
+
+if (checkboxTermos) {
+    btnSimVisitar.disabled = true;
+    btnNaoVisitar.disabled = true;
+    checkboxTermos.addEventListener('change', atualizarEstadoBotoesTermos);
+}
+
+// MOSTRAR APENAS NA PRIMEIRA VEZ
 window.addEventListener('load', () => {
-    if (!usuarioJaViuTutorial()) {
+    if (!usuarioJaViuTutorial() && meuModal) {
         abrirModal(meuModal);
     }
 });
@@ -95,3 +110,4 @@ btnEntendi.addEventListener('click', () => {
     marcarTutorialVisto();
     fecharTodosModais();
 });
+
