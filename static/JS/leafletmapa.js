@@ -1,7 +1,10 @@
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", async function () {
   const lat = -22.979279047516552; 
-  const lon =  -43.23199899901637;
-  const map = L.map("map").setView([lat, lon], 17);
+  const lon = -43.23199899901637;
+
+
+  window.map = L.map("map").setView([lat, lon], 17);
+
   let userMarker = null;
 
   L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
@@ -9,33 +12,30 @@ document.addEventListener("DOMContentLoaded", function () {
       '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
   }).addTo(map);
 
-navigator.geolocation.getCurrentPosition(success, error);
+  navigator.geolocation.getCurrentPosition(success, error);
 
-function success(pos) {
+  function success(pos) {
     const pos_lat = pos.coords.latitude;
     const pos_lng = pos.coords.longitude;
-    
-    if(!userMarker)
-    {
-      userMarker = L.marker([pos_lat, pos_lng]).addTo(map)
+
+    if (!userMarker) {
+      userMarker = L.marker([pos_lat, pos_lng])
         .addTo(map)
         .bindPopup("Você está aqui")
         .openPopup();
-    }
-    else{
-      userMarker.setLatLng([pos_lat,pos_lng]);
-    }
-}
-
-function error(err) {
-    if (err.code === 1) {
-        alert("Permita o site acessar sua localização");
     } else {
-        alert("Não foi possível pegar a localização");
+      userMarker.setLatLng([pos_lat, pos_lng]);
     }
-}
-  map.panTo([lat, lon]);
-  var polygon_puc= L.polygon([
+  }
+
+  function error(err) {
+    if (err.code === 1) {
+      alert("Permita o site acessar sua localização");
+    } else {
+      alert("Não foi possível pegar a localização");
+    }
+  }
+  var polygon_puc = L.polygon([
     [-22.979999, -43.231609],
     [-22.978704, -43.230997],
     [-22.977361, -43.231260],
@@ -46,12 +46,52 @@ function error(err) {
     [-22.982218, -43.235219],
     [-22.981109, -43.233489],
   ]).addTo(map);
-  async function loadGeoJson()
-  {
-    try{
-      const request = await fetch("");
-    } catch (error) {
-      console.log(error);
-    }
-  }
+
+  const response = await fetch("/api/predios/");
+  const predios = await response.json();
+
+  predios.forEach(p => {
+    const marker = L.marker([p.latitude, p.longitude]).addTo(map);
+
+    marker.bindPopup(`
+      <b>${p.nome}</b><br>
+      <button onclick="irPara(${p.latitude}, ${p.longitude})">
+        Traçar rota
+      </button>
+    `);
+  });
+
+  
+  map.setView([lat, lon], 17);
 });
+
+
+window.irPara = async function (destLat, destLng) {
+  if (!window.map) {
+    alert("Mapa não carregado!");
+    return;
+  }
+  
+  if (!userMarker) {
+    alert("Sua localização ainda não foi carregada!");
+    return;
+  }
+
+  const origem = userMarker.getLatLng();
+  const destino = { lat: destLat, lng: destLng };
+
+  const url = `https://router.project-osrm.org/route/v1/foot/${origem.lng},${origem.lat};${destino.lng},${destino.lat}?overview=full&geometries=geojson`;
+
+  const req = await fetch(url);
+  const data = await req.json();
+  
+  const coords = data.routes[0].geometry.coordinates;
+  const latlngs = coords.map(c => [c[1], c[0]]);
+  
+  if (window.rota) {
+    window.map.removeLayer(window.rota);
+  }
+  
+  window.rota = L.polyline(latlngs, { weight: 5 }).addTo(window.map);
+  window.map.fitBounds(window.rota.getBounds());
+};
