@@ -13,7 +13,70 @@
         <p class = "quant-res">{{ total_resultados }} resultado encontrado para "{{ query }}"</p>
     </div>
 
-    {% if locais %}
+    {% if predios_encontrados or locais %}
+        {% for predio in predios_encontrados %}
+        <div class="container-pesq">
+            <div class="img-res">
+                <i data-lucide="building" class="icone-predio2"></i>
+                <p class="titulo-card">{{ predio.nome }}</p>
+                <p class="subtit-card">Prédio</p>
+            </div>
+            <div class="res-txt">
+                <div class="div-pesq">
+                    <p class="nome-pesq">{{ predio.nome }}</p>
+
+                    {% if user.is_authenticated %}
+                        <form method="post" action="{% url 'mapa:favoritar_predio' predio.id %}">
+                        {% csrf_token %}
+                            <button type="submit" class="favorites-btn2" aria-label="Favoritar prédio">
+                                {% if predio.id in favoritos_predios_ids %}
+                                    <i data-lucide="heart" class="icone-coracao-preenchido"></i>
+                                {% else %}
+                                    <i data-lucide="heart" class="icone-coracao-vazio"></i>
+                                {% endif %}
+                            </button>
+                        </form>
+                    {% else %}
+                        <button class="favorites-btn2" disabled title="Faça login para favoritar">
+                            <i data-lucide="heart" class="icone-coracao-vazio"></i>
+                        </button>
+                    {% endif %}
+                </div>
+                
+                <div class="div-pesq2">
+                    <i data-lucide="map-pin" class="icone-textos"></i>
+                    <p class="text-pesq">Edifício completo</p>
+                </div>
+                    <div class="div-pesq3">
+                        <div class="div-pesq">
+                            <p class="tit-inf-adc">Informações Adicionais</p>
+                        </div>
+                        {% if predio.descricao %}
+                        <div class="div-pesq2">  
+                            <i data-lucide="info" class="icone-textos"></i>  
+                            <p class="text-pesq">{{ predio.descricao }}</p>
+                        </div>
+                        {% else %}
+                        <div class="div-pesq2">  
+                            <i data-lucide="info" class="icone-textos"></i>  
+                            <p class="text-pesq">Sem descrição</p>      
+                        </div>
+                        {% endif %}
+                    </div>    
+                <div class="div-pesq5">
+                    <a href="{% url 'mapa:mapa' %}" class="marcar-btn">
+                        <span data-lucide="map-pinned" class="icones-btns"></span>Marcar como destino
+                    </a>
+                    <!-- <button class="marcar-btn"><span data-lucide="map-pinned" class="icones-btns"></span>Marcar como destino</button> -->
+                    <a href="{% url 'available_locations' %}" class="extras-btn">
+                        <span data-lucide="route" class="icones-btns"></span>Ver Locais
+                    </a>
+                    <button class="extras-btn"><span data-lucide="share-2" class="icones-btns"></span>Compartilhar</button>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+        
         {% for local in locais %}
             <div class="container-pesq">
                 <div class="img-res">
@@ -96,7 +159,10 @@
                         </div>
                     </div>    
                     <div class="div-pesq5">
-                        <button class="marcar-btn"><span data-lucide="map-pinned" class="icones-btns"></span>Marcar como destino</button>
+                        <a href="{% url 'mapa:mapa' %}" class="marcar-btn">
+                            <span data-lucide="map-pinned" class="icones-btns"></span>Marcar como destino
+                        </a>
+                        <!-- <button class="marcar-btn"><span data-lucide="map-pinned" class="icones-btns"></span>Marcar como destino</button> -->
                         <button class="extras-btn"><span data-lucide="route" class="icones-btns"></span>Ver Rotas</button>
                         <button class="extras-btn"><span data-lucide="share-2" class="icones-btns"></span>Compartilhar</button>
                     </div>

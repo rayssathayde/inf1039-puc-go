@@ -4,7 +4,7 @@
   "pk": 1,
   "fields": {
     "nome": "Edifício Cardeal Leme",
-    "descricao": "O prédio abriga diversas salas de aula, laboratórios e setores administrativos.",
+    "descricao": "",
     "coordenadas": [
       -22.979706480238132,
       -43.23249310735959
@@ -16,7 +16,7 @@
   "pk": 2,
   "fields": {
     "nome": "Edifício da Amizade - Ala Frings",
-    "descricao": "O prédio abriga diversas salas de aula, laboratórios e setores administrativos.",
+    "descricao": "",
     "coordenadas": [
       -22.979007650188358,
       -43.232101504983625
@@ -28,7 +28,7 @@
   "pk": 3,
   "fields": {
     "nome": "Edifício da Amizade - Ala Kennedy",
-    "descricao": "O prédio abriga diversas salas de aula, laboratórios e setores administrativos.",
+    "descricao": "",
     "coordenadas": [
       -22.979170626966074,
       -43.23285788908495
@@ -40,7 +40,7 @@
   "pk": 4,
   "fields": {
     "nome": "Edifício Laercio Dias de Moura",
-    "descricao": "O prédio abriga o Instituto Tecgraf e diversos laboratórios.",
+    "descricao": "",
     "coordenadas": [
       -22.977933469884157,
       -43.23186547048217
@@ -52,7 +52,7 @@
   "pk": 5,
   "fields": {
     "nome": "Rio Datacentro - RDC",
-    "descricao": "Prédio de infraestrutura e serviços de TI da universidade.",
+    "descricao": "",
     "coordenadas": [
       -22.9806433,
       -43.2336178
@@ -64,7 +64,7 @@
   "pk": 6,
   "fields": {
     "nome": "Laboratório de Graduação (LAB-GRAD)",
-    "descricao": "O prédio oferece infraestrutura aos alunos para estudos, pesquisas e desenvolvimento de trabalhos.",
+    "descricao": "",
     "coordenadas": [
       -22.9809708,
       -43.2340983
@@ -76,7 +76,7 @@
   "pk": 7,
   "fields": {
     "nome": "Igreja do Sagrado Coração de Jesus",
-    "descricao": "Igreja da PUC-Rio.",
+    "descricao": "",
     "coordenadas": [
       -22.9793895,
       -43.2338522
@@ -88,7 +88,7 @@
   "pk": 8,
   "fields": {
     "nome": "Pastoral Universitária Anchieta",
-    "descricao": "A Pastoral Universitária da PUC-Rio é um espaço de acolhimento e serviço à comunidade acadêmica,",
+    "descricao": "",
     "coordenadas": [
       -22.9797272,
       -43.2338277
@@ -100,7 +100,7 @@
   "pk": 9,
   "fields": {
     "nome": "Ginásio",
-    "descricao": "Espaço dedicado à prática esportiva e às atividades físicas, oferecendo estrutura para aulas, treinos, competições e eventos voltados à comunidade acadêmica.",
+    "descricao": "",
     "coordenadas": [
       -22.977726609663314,
       -43.232079259311824
@@ -124,7 +124,7 @@
   "pk": 11,
   "fields": {
     "nome": "Escola de Negócios - IAG",
-    "descricao": "Escola de Negócios da PUC-Rio.",
+    "descricao": "",
     "coordenadas": [
       -22.979967,
       -43.2336839
@@ -136,7 +136,7 @@
   "pk": 12,
   "fields": {
     "nome": "Tendas ART 4 e 5",
-    "descricao": "Salas de aula do departamento de artes e design",
+    "descricao": "",
     "coordenadas": [
       -22.9792413,
       -43.2338814
@@ -148,7 +148,7 @@
   "pk": 13,
   "fields": {
     "nome": "Solar Grandjean de Montigny",
-    "descricao": "Centro cultural que abriga exposições de arte, atividades culturais e possui acervo, arquivo e biblioteca.",
+    "descricao": "",
     "coordenadas": [
       -22.978874,
       -43.2335934
@@ -160,7 +160,7 @@
   "pk": 14,
   "fields": {
     "nome": "Casa de Inovação",
-    "descricao": "É um espaço de colaboração para conectar a universidade com o mercado, empresas, governo e a sociedade, com o objetivo de fomentar a criatividade, o empreendedorismo e a inovação.",
+    "descricao": "",
     "coordenadas": [
       -22.9788595,
       -43.2330271
@@ -172,7 +172,7 @@
   "pk": 15,
   "fields": {
     "nome": "SPA - Serviço de Psicologia Aplicada",
-    "descricao": "Clínica universitária que oferece serviços de apoio psicológico para a comunidade, com foco em populações de baixa renda, e para o treinamento de alunos de graduação e pós-graduação.",
+    "descricao": "",
     "coordenadas": [
       -22.9782193,
       -43.2331471
@@ -184,7 +184,7 @@
   "pk": 16,
   "fields": {
     "nome": "Edifício Luiz Cyrillo Fernandes - Biologia",
-    "descricao": "O prédio abriga laboratórios e salas de aula para as atividades do curso de Biologia.",
+    "descricao": "",
     "coordenadas": [
       -22.9780359,
       -43.2328494
@@ -196,7 +196,7 @@
   "pk": 17,
   "fields": {
     "nome": "Departamento de Artes e Design",
-    "descricao": "O Prédio abriga salas de computação gráfica, laboratórios, salas de aula e espaços administrativos.",
+    "descricao": "",
     "coordenadas": [
       -22.9780359,
       -43.2328494
@@ -208,7 +208,7 @@
   "pk": 18,
   "fields": {
     "nome": "Vila dos Diretórios",
-    "descricao": "O local abriga departamentos acadêmicos, centros acadêmicos, diretórios e o ambulatório da universidade.",
+    "descricao": "",
     "coordenadas": [
       -22.9785524,
       -43.2326321

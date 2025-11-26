@@ -522,6 +522,25 @@ main {
     cursor: pointer;
 }
 
+/* Estado desabilitado (antes de aceitar os termos) */
+.btn-primario:disabled,
+.btn-secundario:disabled {
+    opacity: 0.5;         
+    cursor: not-allowed;   
+    box-shadow: none;      
+}
+
+.btn-primario:disabled {
+    background-color: #4b5563;
+}
+
+.btn-secundario:disabled {
+    background-color: #e5e7eb;
+    color: #9ca3af;
+    border-color: #d1d5db;
+}
+
+
 /* Efeito quando modal está aberto (bloqueia scroll) */
 body.modal-aberto {
     overflow: hidden;
