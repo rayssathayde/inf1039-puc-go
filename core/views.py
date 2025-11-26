@@ -65,19 +65,23 @@ def search_result(request):
     elevador = request.GET.get('elevador', '') == 'on'
     
     locais = Local.objects.filter(ativo=True).select_related('predio')
+    predios_encontrados = Predio.objects.none()
+
     
     if query:
+        predios_encontrados = Predio.objects.filter(Q(nome__icontains=query) | 
+                                                    Q(descricao__icontains=query))
         locais = locais.filter(
             Q(nome__icontains=query) |
-            Q(descricao__icontains=query) |
-            Q(predio__nome__icontains=query)
-        )
+            Q(descricao__icontains=query)).exclude(predio__nome__icontains=query)
+        
     
     if categoria and categoria != 'all':
         locais = locais.filter(tipo=categoria)
     
     if predio_id and predio_id != 'all_predios':
         locais = locais.filter(predio_id=predio_id)
+        predios_encontrados = predios_encontrados.filter(id=predio_id)
     
     if cadeirante:
         locais = locais.filter(informacoes_extras__acessivel_cadeirante=True)
@@ -90,7 +94,7 @@ def search_result(request):
             id__in=locais.values_list('id', flat=True)
         ).update(search_count=F('search_count') + 1)
         
-
+    total_resultados = len(predios_encontrados) + len(locais)
     favoritos_locais_ids = []
     favoritos_predios_ids = []
 
@@ -107,8 +111,9 @@ def search_result(request):
     
     contexto = {
         'locais': locais,
+        'predios_encontrados': predios_encontrados,
         'query': query,
-        'total_resultados': locais.count(),
+        'total_resultados': total_resultados,
         'predios': Predio.objects.all(),
         'tipos': Local.TIPO_CHOICES,
         'selected_categoria': categoria,

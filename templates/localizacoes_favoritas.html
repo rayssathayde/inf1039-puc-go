@@ -38,10 +38,12 @@
                     <p class="local">
                         {{ fav.predio.nome }}
                     </p>
-
-                    <button class="btn-marcar-destino">
+                    <a href="{% url 'mapa:mapa' %}" class="btn-marcar-destino">
+                        <span class="texto-marcar-destino"></span>Marcar como destino
+                    </a>
+                    <!-- <button class="btn-marcar-destino">
                         <span class="texto-marcar-destino">Marcar como destino</span>
-                    </button>
+                    </button> -->
                 </div>
     
             {% empty %}
@@ -71,10 +73,12 @@
                                 {{ fav.local.andar }}
                             {% endif %}
                     </p>
-
-                <button class="btn-marcar-destino">
+                <a href="{% url 'mapa:mapa' %}" class="btn-marcar-destino">
+                    <span class="texto-marcar-destino"></span>Marcar como destino
+                </a>
+                <!-- <button class="btn-marcar-destino">
                     <span class="texto-marcar-destino">Marcar como destino</span>
-                </button>
+                </button> -->
                 </div>
         {% empty %}
         
