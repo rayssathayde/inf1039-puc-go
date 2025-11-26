@@ -92,7 +92,8 @@
     border-bottom-right-radius: 15px;
     margin-left: 75px;
     display: grid;
-    align-content: start;
+    align-content: space-around;
+    padding:10px;
     position: relative;
     border:solid;
     border-width:thin;
@@ -240,6 +241,7 @@
 .icone-coracao-vazio {
     width: 20px;
     height: 20px;
+    margin-right:10px;
 }
 
 
