@@ -121,8 +121,18 @@
     padding: 10px 45px;
     border-radius: 5px;
     cursor: pointer;
+    text-decoration: none;
+    outline: none;
 }
 
+.btn-marcar-destino,
+.btn-marcar-destino:link,
+.btn-marcar-destino:visited,
+.btn-marcar-destino:hover,
+.btn-marcar-destino:active {
+    color: #f3f5f6;
+    text-decoration: none;
+}
 
 .icn-rota{
     width:12px;
