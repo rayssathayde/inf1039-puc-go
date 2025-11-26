@@ -17,7 +17,7 @@ function success(pos) {
     
     if(!userMarker)
     {
-      userMarker = L.marker([pos_lat, pos_lng]).addTo(map)
+      userMarker = L.marker([pos_lat, pos_lng],{icon: iconePredio})
         .addTo(map)
         .bindPopup("Você está aqui")
         .openPopup();
@@ -46,12 +46,41 @@ function error(err) {
     [-22.982218, -43.235219],
     [-22.981109, -43.233489],
   ]).addTo(map);
+
+  const iconePredio = L.divIcon({
+  html: '<i class="fa fa-location-dot" style="color: #030052; font-size: 32px;"></i>',
+  className: 'custom-div-icon',
+  iconSize: [30, 30],
+  iconAnchor: [15, 30],
+  popupAnchor: [0, -30]
+});
+
   async function loadGeoJson()
   {
     try{
-      const request = await fetch("");
+      const response = await fetch("/static/data/predios.json");
+
+      if (!response.ok){
+        throw new Error(`HTTP error! status: ${response.status}`)
+      }
+      const predios = await response.json();
+
+      predios.forEach(predio => {
+        const coordenadas = predio.fields.coordenadas;
+        const nome = predio.fields.nome;
+        const descricao = predio.fields.descricao;
+
+        L.marker([coordenadas[0], coordenadas[1]], {
+        icon: iconePredio
+      })
+      .addTo(map)
+      .bindPopup(`<b>${nome}</b><br>${descricao}`);
+      });
+
     } catch (error) {
-      console.log(error);
+      console.log("Erro ao carregar os prédios: ", error);
     }
   }
+  loadGeoJson();
 });
+

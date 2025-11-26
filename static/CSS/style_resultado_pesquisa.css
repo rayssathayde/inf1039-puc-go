@@ -175,6 +175,8 @@
     font-size:16px;
     color:#f3f5f6;
     cursor: pointer;
+    text-decoration: none;
+    outline: none;
 }
 
 
@@ -192,6 +194,8 @@
     cursor: pointer;
     border-width:1px;
     border:#d1d4dc;
+    text-decoration: none;
+    outline: none;
 }
 
 
@@ -221,6 +225,8 @@
     height: 22px;
     color:#666 ;
     margin-left:1em;
+    transform: translate(-2px);
+    transform: translateY(-4px);
 }
 
 
