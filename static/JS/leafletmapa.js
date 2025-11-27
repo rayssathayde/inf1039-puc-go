@@ -1,16 +1,25 @@
 document.addEventListener("DOMContentLoaded",  async function () {
+  
+  // Puc-Rio coordenadas
   const lat = -22.979279047516552; 
   const lon =  -43.23199899901637;
   const map = L.map("map").setView([lat, lon], 17);
-  let userMarker = null;
+
   
   L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    maxZoom:19,
     attribution:
     '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
   }).addTo(map);
   
-  
+  //Marcador do usuário
+  let userMarker = null;
+
+  //linha da rota
+  let rotaLayer =null;
+
   //icone dos predios
+
   const iconePredio = L.divIcon({
     html: '<i class="fa fa-location-dot" style="color: #030052; font-size: 32px;"></i>',
     className: 'custom-div-icon',
@@ -18,50 +27,60 @@ document.addEventListener("DOMContentLoaded",  async function () {
     iconAnchor: [15, 30],
     popupAnchor: [0, -30]
   });
+
+  const iconeUsuario = L.divIcon({
+    html: '<i class="fa-solid fa-circle" style="color: #2563eb; font-size: 18px;"></i>',
+    className: "usuario-marker",
+    iconSize: [18, 18],
+    iconAnchor: [9, 9],
+});
   
   //localizacao do usuario
-  navigator.geolocation.getCurrentPosition(success, error);
-  function success(pos) {
-    const pos_lat = pos.coords.latitude;
-    const pos_lng = pos.coords.longitude;
-  }
-
-if(!userMarker)
-    {
-      userMarker = L.marker([pos_lat, pos_lng],{icon: iconePredio})
-      .addTo(map)
-        .bindPopup("Você está aqui")
-        .openPopup();
+  function localizarUsuario() {
+      if (!navigator.geolocation) {
+          console.warn("Geolocalização não suportada pelo navegador.");
+          return;
       }
-    else{
-      userMarker.setLatLng([pos_lat,pos_lng]);
-    }
-    function error(err) {
-        if (err.code === 1) {
-            alert("Permita o site acessar sua localização");
-        } else {
-            alert("Não foi possível pegar a localização");
-        }
+
+      navigator.geolocation.getCurrentPosition(
+          (pos) => {
+              const lat = pos.coords.latitude;
+              const lng = pos.coords.longitude;
+
+              if (!userMarker) {
+                  userMarker = L.marker([lat, lng], { icon: iconeUsuario })
+                      .addTo(map)
+                      .bindPopup("Você está aqui");
+              } else {
+                  userMarker.setLatLng([lat, lng]);
+              }
+
+              //area puc
+              var polygon_puc= L.polygon([
+                [-22.979999, -43.231609],
+                [-22.978704, -43.230997],
+                [-22.977361, -43.231260],
+                [-22.977455, -43.232336],
+                [-22.979003, -43.234457],
+                [-22.979902, -43.234543],
+                [-22.981314, -43.236056],
+                [-22.982218, -43.235219],
+                [-22.981109, -43.233489],
+              ]).addTo(map);
+
+              // opcional: centralizar no usuário
+              //map.setView([lat, lng], 17);
+          },
+          (err) => {
+              console.warn("Erro ao obter localização do usuário:", err);
+          }
+      );
   }
-
-
-  //area puc
-  var polygon_puc= L.polygon([
-    [-22.979999, -43.231609],
-    [-22.978704, -43.230997],
-    [-22.977361, -43.231260],
-    [-22.977455, -43.232336],
-    [-22.979003, -43.234457],
-    [-22.979902, -43.234543],
-    [-22.981314, -43.236056],
-    [-22.982218, -43.235219],
-    [-22.981109, -43.233489],
-  ]).addTo(map);
-  
-  
 
   
   //funçao de rota
+
+
   window.irPara = async function (destLat, destLng) {
     if (!userMarker) {
       alert("Sua localização ainda não foi carregada!");
@@ -73,101 +92,89 @@ if(!userMarker)
 
     const url = `https://router.project-osrm.org/route/v1/foot/${origem.lng},${origem.lat};${destino.lng},${destino.lat}?overview=full&geometries=geojson`;
 
-    const req = await fetch(url);
-    const data = await req.json();
-    
-    const coords = data.routes[0].geometry.coordinates;
-    const latlngs = coords.map((c) => [c[1], c[0]]);
+    try{
+      const resp = await fetch(url);
+      if(!resp.ok){
+        throw new Error("Erro na resposta do serviço de rotas.");
+      }
 
-    if (window.rota) {
-      map.removeLayer(window.rota);
+      const data = await resp.json();
+    
+      if (!data.routes || data.routes.length === 0) {
+            alert("Nenhuma rota encontrada.");
+            return;
+      }
+
+      const coords = data.routes[0].geometry.coordinates; // pega do osrm como lng,lat
+      const latlngs = coords.map((c) => [c[1], c[0]]); //inverte, pois leaflet usa lat,lng
+
+    if (rotaLayer) {
+      map.removeLayer(rotaLayer);
     }
 
-    window.rota = L.polyline(latlngs, { weight: 5 }).addTo(map);
-    map.fitBounds(window.rota.getBounds());
+    rotaLayer = L.polyline(latlngs, { weight: 5 }).addTo(map);
+    map.fitBounds(rotaLayer.getBounds(), {padding:[40,40]});
+    } catch (err) {
+        console.error("Erro ao calcular rota:", err);
+        alert("Não foi possível calcular a rota. Tente novamente mais tarde.");
+    }
   };
-  const response = await fetch("/api/predios/");
-  const predios = await response.json();
-  
-  predios.forEach(p => {
-    const marker = L.marker([p.latitude, p.longitude]).addTo(map);
-    
-    marker.bindPopup(`
-      <b>${p.nome}</b><br>
-      <button onclick="irPara(${p.latitude}, ${p.longitude})">
-      Traçar rota
-      </button>
+
+  //Carregar prédios
+  async function carregarPredios() {
+  try {
+    const resp = await fetch("/api/predios/", {
+      credentials: "same-origin",  // garante envio dos cookies
+    });
+
+    if (!resp.ok) {
+      throw new Error("Não foi possível carregar /api/predios/");
+    }
+
+    const dados = await resp.json();
+
+    dados.forEach((p) => {
+      const { nome, descricao, coordenadas } = p;
+
+      if (!Array.isArray(coordenadas) || coordenadas.length < 2) {
+        console.warn("Coordenadas inválidas para o prédio:", p);
+        return;
+      }
+
+      const [lat, lng] = coordenadas;
+
+      const marker = L.marker([lat, lng], { icon: iconePredio }).addTo(map);
+
+      marker.bindPopup(`
+        <div>
+          <strong>${nome}</strong><br/>
+          ${descricao ? `<span style="font-size:0.85rem;">${descricao}</span><br/>` : ""}
+          <button 
+            class="btn-traçar-rota" 
+            onclick="irPara(${lat}, ${lng})"
+            style="
+              margin-top: 6px;
+              padding: 6px 10px;
+              border-radius: 6px;
+              border: none;
+              background-color: #111827;
+              color: #fff;
+              cursor: pointer;
+              font-size: 0.85rem;
+            "
+          >
+            Traçar rota até aqui
+          </button>
+        </div>
       `);
     });
+  } catch (err) {
+    console.error("Erro ao carregar prédios da API:", err);
+  }
+}
 
-    
-    map.setView([lat, lon], 17);
+ // chama uma vez ao carregar
+  localizarUsuario();
+  await carregarPredios();
 });
-
-
-window.irPara = async function (destLat, destLng) {
-  if (!window.map) {
-    alert("Mapa não carregado!");
-    return;
-  }
-  
-  if (!userMarker) {
-    alert("Sua localização ainda não foi carregada!");
-    return;
-  }
-  
-  const origem = userMarker.getLatLng();
-  const destino = { lat: destLat, lng: destLng };
-  
-  const url = `https://router.project-osrm.org/route/v1/foot/${origem.lng},${origem.lat};${destino.lng},${destino.lat}?overview=full&geometries=geojson`;
-  
-  const req = await fetch(url);
-  const data = await req.json();
-  
-  const coords = data.routes[0].geometry.coordinates;
-  const latlngs = coords.map(c => [c[1], c[0]]);
-  
-  if (window.rota) {
-    window.map.removeLayer(window.rota);
-  }
-  
-  window.rota = L.polyline(latlngs, { weight: 5 }).addTo(window.map);
-  window.map.fitBounds(window.rota.getBounds());
-};
-  const iconePredio = L.divIcon({
-    html: '<i class="fa fa-location-dot" style="color: #030052; font-size: 32px;"></i>',
-    className: 'custom-div-icon',
-  iconSize: [30, 30],
-  iconAnchor: [15, 30],
-  popupAnchor: [0, -30]
-});
-
-  async function loadGeoJson()
-  {
-    try{
-      const response = await fetch("/static/data/predios.json");
-      
-      if (!response.ok){
-        throw new Error(`HTTP error! status: ${response.status}`)
-      }
-      const predios = await response.json();
-      
-      predios.forEach(predio => {
-        const coordenadas = predio.fields.coordenadas;
-        const nome = predio.fields.nome;
-        const descricao = predio.fields.descricao;
-        
-        L.marker([coordenadas[0], coordenadas[1]], {
-          icon: iconePredio
-        })
-        .addTo(map)
-      .bindPopup(`<b>${nome}</b><br>${descricao}`);
-    });
-    
-  } catch (error) {
-      console.log("Erro ao carregar os prédios: ", error);
-    }
-  }
-  loadGeoJson();
-
 
