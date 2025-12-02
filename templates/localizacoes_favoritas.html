@@ -41,9 +41,7 @@
                     <a href="{% url 'mapa:mapa' %}" class="btn-marcar-destino">
                         <span class="texto-marcar-destino"></span>Marcar como destino
                     </a>
-                    <!-- <button class="btn-marcar-destino">
-                        <span class="texto-marcar-destino">Marcar como destino</span>
-                    </button> -->
+
                 </div>
     
             {% empty %}
@@ -73,12 +71,14 @@
                                 {{ fav.local.andar }}
                             {% endif %}
                     </p>
+                <div class="botoes-card-fav">
                 <a href="{% url 'mapa:mapa' %}" class="btn-marcar-destino">
                     <span class="texto-marcar-destino"></span>Marcar como destino
                 </a>
-                <!-- <button class="btn-marcar-destino">
-                    <span class="texto-marcar-destino">Marcar como destino</span>
-                </button> -->
+                    <a href="{% url 'info_ambientes' fav.local.id %}" class="btn-mais-infos">
+                        <span data-lucide="info" class="icone-mais"></span>Mais informações
+                    </a>
+                </div>
                 </div>
         {% empty %}
         

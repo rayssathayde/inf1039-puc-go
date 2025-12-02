@@ -10,7 +10,18 @@
 
     <div class = "resultados">
         <p class = "titulo-res">Resultados da Pesquisa</p>
-        <p class = "quant-res">{{ total_resultados }} resultado encontrado para "{{ query }}"</p>
+
+        {% if query %}
+        <p class="quant-res">
+            {{ total_resultados }} resultado{% if total_resultados != 1 %}s{% endif %}
+            encontrado{% if total_resultados != 1 %}s{% endif %} para "{{ query }}"
+        </p>
+    {% else %}
+        <p class="quant-res">
+            {{ total_resultados }} resultado{% if total_resultados != 1 %}s{% endif %}
+            encontrado{% if total_resultados != 1 %}s{% endif %} com os filtros selecionados
+        </p>
+    {% endif %}
     </div>
 
     {% if predios_encontrados or locais %}
@@ -67,7 +78,6 @@
                     <a href="{% url 'mapa:mapa' %}" class="marcar-btn">
                         <span data-lucide="map-pinned" class="icones-btns"></span>Marcar como destino
                     </a>
-                    <!-- <button class="marcar-btn"><span data-lucide="map-pinned" class="icones-btns"></span>Marcar como destino</button> -->
                     <a href="{% url 'available_locations' %}" class="extras-btn">
                         <span data-lucide="route" class="icones-btns"></span>Ver Locais
                     </a>
@@ -106,9 +116,11 @@
                                 </button>
                             </form>
                         {% else %}
-                        <button class="favorites-btn2" disabled title="Faça login para favoritar">
-                            <i data-lucide="heart" class="icone-coracao-vazio"></i>
-                        </button>
+                        <button type="button"
+                                        class="favorites-btn2 login-required"
+                                        data-message="Você precisa estar logado para favoritar locais.">
+                                    <i data-lucide="heart" class="icone-coracao-vazio"></i>
+                                </button>
                         {% endif %}
                     
                     
@@ -162,9 +174,9 @@
                         <a href="{% url 'mapa:mapa' %}" class="marcar-btn">
                             <span data-lucide="map-pinned" class="icones-btns"></span>Marcar como destino
                         </a>
-                        <!-- <button class="marcar-btn"><span data-lucide="map-pinned" class="icones-btns"></span>Marcar como destino</button> -->
-                        <button class="extras-btn"><span data-lucide="route" class="icones-btns"></span>Ver Rotas</button>
-                        <button class="extras-btn"><span data-lucide="share-2" class="icones-btns"></span>Compartilhar</button>
+                        <a href="{% url 'info_ambientes' local.id %}" class="extras-btn">
+                            <span data-lucide="info" class="icones-btns"></span>Mais informações
+                        </a>
                     </div>
                 </div>
     </div>
@@ -176,10 +188,33 @@
 
     {% else %}
         <div class="resultados">
-            <p class="quant-res"> Nenhum resultado encontrado para "{{ query }}"</p>
+            {% if query %}
+        <p class="quant-res">
+            {{ total_resultados }} resultado{% if total_resultados != 1 %}s{% endif %}
+            encontrado{% if total_resultados != 1 %}s{% endif %} para "{{ query }}"
+        </p>
+    {% else %}
+        <p class="quant-res">
+            {{ total_resultados }} resultado{% if total_resultados != 1 %}s{% endif %}
+            encontrado{% if total_resultados != 1 %}s{% endif %} com os filtros selecionados
+        </p>
+    {% endif %}
         </div>
 
     {% endif %}
 
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const btns = document.querySelectorAll('.login-required');
+
+    btns.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+            const msg = btn.dataset.message || 'Você precisa estar logado para fazer isso.';
+            alert(msg);
+        });
+    });
+});
+</script>
 
 {% endblock %}

@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q, F
 
@@ -162,7 +162,29 @@ def available_locations(request):
     return render(request, 'locais_disponiveis.html', contexto)
 
 
-def info_ambientes(request):
-    return render(request, 'info_ambientes.html')
+def info_ambientes(request, local_id):
+    local = get_object_or_404(Local.objects.select_related('predio'), id=local_id)
+
+    favoritos_locais_ids = []
+    favoritos_predios_ids = []
+
+    if request.user.is_authenticated:
+        favoritos_locais_ids = list(
+            FavoritoLocal.objects.filter(user=request.user)
+            .values_list('local_id', flat=True)
+        )
+
+        favoritos_predios_ids = list(
+            FavoritoPredio.objects.filter(user=request.user)
+            .values_list('predio_id', flat=True)
+        )
+
+    contexto = {
+        'local': local,
+        'favoritos_locais_ids': favoritos_locais_ids,
+        'favoritos_predios_ids': favoritos_predios_ids,
+    }
+
+    return render(request, 'info_ambientes.html', contexto)
 
 

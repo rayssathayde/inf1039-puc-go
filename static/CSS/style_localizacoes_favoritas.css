@@ -46,6 +46,7 @@
     position: relative;
 }
 
+
 .card-localfav .titulo {
     color: #f3f5f6;
     font-size: 18px;
@@ -113,21 +114,65 @@
     stroke: #111828;
 }
 
-
-.btn-marcar-destino {
+.card-localfav-buttons {
     position: absolute;
     bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.botoes-card-fav {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.btn-marcar-destino {
     display: flex;
     align-items: center;
     background-color: #111828;
     color: #f3f5f6;
     border: none;
-    padding: 10px 45px;
+    padding: 7px 18px;
     border-radius: 5px;
     cursor: pointer;
     text-decoration: none;
     outline: none;
+    font-size: 14px;
+    white-space: nowrap;
 }
+
+.btn-mais-infos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f3f5f6;
+    color: #111828;
+    border: 1px solid #ccc;
+    padding: 7px 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+    font-size: 14px;
+    white-space: nowrap;
+    gap: 5px;
+}
+
+
 
 .btn-marcar-destino,
 .btn-marcar-destino:link,

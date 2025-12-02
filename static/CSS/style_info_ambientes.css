@@ -1,195 +1,234 @@
 /* ==================== INFORMAÇÕES DE AMBIENTES - PATH ==================== */
 
-.caminho-cont{
-    display: flex;
-    margin-left:150px;
-    margin-top:75px;
-    background: none;
-    gap: 8px;
-}
-
-.caminho-local{
-    background: none;
-    border: none;
-    font-size: 15px;
-    cursor: pointer;
-    color: #4d5564;
-    font-weight: 500;
-}
-
-.caminho-local2{
-    background: none;
-    border: none;
-    font-size: 15px;
-    cursor: pointer;
-    color: #000;
-    font-weight: 500;
-}
-
-
-/* ==================== CONTAINER PRINCIPAL - INFOS ==================== */
-
-.cont-principal{
-    display: flex;
-    margin-left:150px;
-    margin-top:15px;
-    background: none;
-    gap: 15px;
-}
-
-.cont-infos{
-    width:40%;
-    height:fit-content;
-    margin-bottom:100px;
-    display: grid;
-    background: none;
-    border: solid;
-    border-width: 1px;
-    border-color:#e2e5e9;
-    border-radius: 15px;
-    gap:10px;
-}
-
-.titulo-cont{
-    margin-top: 20px;
-    margin-left: 20px;
-    background: none;
-    border: none;
+.titulo-res{
     font-size: 30px;
-    color: #000;
-    font-weight: 500;
+    color:#000; 
 }
 
-.btn-favorite{
-    background: none;
-    border: none;
-    margin-top: 20px;
-    margin-right: 20px;
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-    color: #333;
+
+.titulo-card{
+    font-size: 18px;
+    color:#f3f5f6;
 }
 
-.divide-textos{
-    display: flex;
-    width: 100%;
-    justify-content:space-between;
-}
-    
-.divide-textos2{
-    display: flex;
-    width: 100%;
-    justify-content:start;
-    margin-bottom:10px;
-}
 
-.icone-texto{
-    width: 22px;
-    height: 22px;
-    color:#666;
-    margin-left:20px;
-}
-
-.subtit-cont{
-    background: none;
-    border: none;
-    font-size: 17px;
-    color: #666;
-    align-content:center;
-}
-
-.foto-local{
-    margin-left:20px;
-    margin-right:20px;
-    height:200px;
-    background-color:#4d5564;
-    border-radius:15px;
+.subtit-card{
     font-size:15px;
-    color:#e2e5e9;
-    align-content: center;
-    justify-items: center;
+    color:#f3f5f6;
 }
 
-.divide-textos3{
-    display: grid;
-    border:none;
-    width: auto;
-    margin-left:20px;
-    margin-right:20px;
-    margin-top:5px;
-    gap:10px;
+
+.quant-res{
+    font-size: 14px;
+    margin-bottom:5px;
+}
+.nome-pesq{
+    font-size: 25px;
+    margin-left: 17px;
+    color:#1a1a1a;
 }
 
-.icone-texto2{
-    width: 22px;
-    height: 22px;
+
+.text-pesq{
+    font-size: 14px;
+    margin-left: 5px;
+    margin-bottom:5px;
     color:#666;
 }
 
 
-/* ==================== CONTAINER PRINCIPAL - EXTRAS ==================== */
+.text-pesq2{
+    font-size: 14px;
+    margin-left: 5px;
+    margin-right:5px;
+    color:#333;
+}
 
-.cont-extras{
-    width: 40%;
+
+.tit-inf-adc{
+    font-size: 16px;
+    margin-left: 20px;
+    margin-top: 15px;
+    color:#333;
+    font-weight: bold;
+}
+
+
+/* ==================== CONTAINERS ==================== */
+
+
+.resultados{
     display: grid;
-    height:fit-content;
-    background: none;
-    border: solid;
-    border-width: 1px;
-    border-color:#e2e5e9;
-    border-radius:15px;
-    gap:10px;
-    margin-bottom:100px;
+    justify-content: start;
+    align-items: start;
+    margin-top: 50px;
+    margin-left: 77px;
+    gap: 15%;
 }
 
-.titulo-extras{
-    margin:20px;
-    margin-bottom:1px;
-    background: none;
-    border: none;
-    font-size: 20px;
-    color: #000;
-    font-weight: 500;
-    align-content:center;
-}
 
-.mapa{
-    margin-left:20px;
-    margin-right:20px;
-    height:450px;
-    background-color:#4d5564;
-    border-radius:15px;
-    font-size:15px;
-    color:#e2e5e9;
-    align-content: center;
-    justify-items: center;
-}
-
-.local-prox{
-    display:flex;
-    justify-content:start;
-    margin-left:20px;
-    margin-bottom:20px;
-    gap:8px;
-}
-
-.icone-prox{
-    display:flex;
-    height:50px;
-    width:50px;
-    background-color:#4d5564;
-    border-radius:5px;
-    font-size:15px;
-    color:#e2e5e9;
-    align-items: center;
+.img-res{
+    width: 65%;
+    height: 250px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-top: 25px;
+    margin-left: 75px;
+    background-color: #4d5564;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: relative;
 }
 
-.divide-textos4{
+
+.res-txt{
+    width: 65%;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin-left: 75px;
+    display: flex;
+    flex-direction: column;
+    padding:10px;
+    position: relative;
+    border:solid;
+    border-width:thin;
+    border-color:#ccc;
+    gap:5px;
+}
+
+
+.container-pesq{
     display: grid;
-    border:none;
-    width: auto;
-    gap:3px;
-    align-content:center;
+    align-items:end;
+    width: 1400px;
+}
+
+
+.div-pesq{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    width:100%;
+    margin-bottom:5px;
+}
+
+
+.div-pesq2{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom:5px;
+}
+
+
+.div-pesq3{
+    display: grid;
+    justify-items: start;
+    align-items: end;
+    background-color:#ebecee;
+    border-radius: 15px;
+    margin-left:1em;
+    margin-right: 20px;
+    margin-bottom:5px;
+}
+
+
+.div-pesq4{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    align-items: start;
+    width: 100%;
+    gap: 5px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+
+.div-pesq5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap:10px;
+    margin-bottom:5px;
+    margin-top:10px;
+}
+
+
+/* ==================== BOTÕES ==================== */
+
+
+.marcar-btn{
+    display:flex;
+    background-color:#111828;
+    border-radius:10px;
+    width:50%;
+    height: 55px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    font-size:16px;
+    color:#f3f5f6;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+}
+
+
+.favorites-btn2 {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+
+/* ==================== ÍCONES ==================== */
+
+
+.icone-predio2 {
+    width: 50px;
+    height: 50px;
+    color:#f3f5f6;
+}
+
+
+.icone-textos {
+    width: 22px;
+    height: 22px;
+    color:#666 ;
+    margin-left:1em;
+    transform: translate(-2px);
+    transform: translateY(-4px);
+}
+
+
+.icones-btns{
+    width: 22px;
+    height: 22px;
+}
+
+
+.icone-coracao-preenchido,
+.icone-coracao-vazio {
+    width: 20px;
+    height: 20px;
+    margin-right:10px;
+}
+
+
+.icone-coracao-preenchido {
+    fill: #111828;
+    stroke: #111828;
+}
+
+.icone-coracao-vazio {
+    fill: none;
+    stroke: #111828;
 }

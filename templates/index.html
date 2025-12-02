@@ -383,7 +383,11 @@
                                 {% endif %}
                             </a>
                         {% else %}
-                            <i data-lucide="heart" class="icone-coracao-vazio" title="Faça login para favoritar"></i>
+                            <button type="button"
+                                        class="favorites-btn2 login-required"
+                                        data-message="Você precisa estar logado para favoritar locais.">
+                                    <i data-lucide="heart" class="icone-coracao-vazio"></i>
+                                </button>
                         {% endif %}
 
                         <p class="descr">
@@ -399,12 +403,15 @@
                                     {{ local.andar }}
                                 {% endif %}
                         </p>
-                        <a href="{% url 'mapa:mapa' %}" class="btn-marcar-destino">
-                            <span class="texto-marcar-destino"></span>Marcar como destino
-                        </a>
-                        <!-- <button class="btn-marcar-destino">
-                            <span class="texto-marcar-destino">Marcar como destino</span>
-                        </button>    -->
+                        <div class="botoes-card-loc">
+                            <a href="{% url 'mapa:mapa' %}" class="btn-marcar-destino">
+                                <span class="texto-marcar-destino"></span>Marcar como destino
+                            </a>
+                            <a href="{% url 'info_ambientes' local.id %}" class="btn-mais-infos">
+                                <span data-lucide="info" class="icone-mais"></span>Mais informações
+                            </a>
+                        </div>
+
                     </div>
                 {% endfor %}
             {% else %}
@@ -413,6 +420,20 @@
         </div>
 
     </main>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const btns = document.querySelectorAll('.login-required');
+
+    btns.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+            const msg = btn.dataset.message || 'Você precisa estar logado para fazer isso.';
+            alert(msg);
+        });
+    });
+});
+</script>
 
 {% endblock %}
 
