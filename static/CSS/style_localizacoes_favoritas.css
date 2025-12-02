@@ -50,7 +50,11 @@
     color: #f3f5f6;
     font-size: 18px;
     position: absolute;
-    top: 80px;
+    top: 60px;
+    left: 50%;               
+    transform: translateX(-50%);  
+    width: 90%;              
+    text-align: center;
 }
 
 .card-localfav .subtitulo {
