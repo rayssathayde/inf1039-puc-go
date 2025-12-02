@@ -171,6 +171,64 @@
     text-decoration: none;
 }
 
+/* Botões dentro dos cards de locais sugeridos (home) */
+.card-localizacao .botoes-card-loc {
+    position: absolute;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Botão preto "Marcar como destino" dentro do card */
+.card-localizacao .btn-marcar-destino {
+    position: static;              /* deixa o container controlar a posição */
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;       /* centraliza o texto no botão */
+    padding: 8px 10px;
+    font-size: 13px;
+    background-color: #111828;
+    color: #f3f5f6;
+    border-radius: 6px;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Botão "Mais informações" */
+.card-localizacao .btn-mais-infos {
+    all: unset;                    /* limpa estilos de link */
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 8px 10px;
+    font-size: 13px;
+    background-color: #f3f5f6;
+    color: #111828;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.card-localizacao .btn-mais-infos:hover {
+    background-color: #e5e7eb;
+}
+
+.card-localizacao .icone-mais {
+    width: 14px;
+    height: 14px;
+}
+
+
+
 /* ==================== PAG INICIAL RESPONSIVIDADE ==================== */
 
 @media (max-width: 1100px) {

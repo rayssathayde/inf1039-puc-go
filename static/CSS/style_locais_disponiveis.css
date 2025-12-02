@@ -57,11 +57,12 @@ font-size: large;
     margin: 10px auto;  
     display: flex;
     justify-content: center; 
-    align-items: start;
+    align-items: flex-start;
     flex-wrap: wrap; 
     gap: 20px;
     padding: 0 20px; 
 }
+
 .card-localizacao {
     flex: 0 0 380px;
     height: 400px;
@@ -71,10 +72,10 @@ font-size: large;
     background: linear-gradient(to bottom, #4d5564 40%, #f3f5f6 40%);
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    gap: 10px;
     position: relative;
+    padding-bottom: 70px; 
+    gap: 10px;
 }
 
 .card-localizacao .titulo {
@@ -95,7 +96,6 @@ font-size: large;
     top: 180px;
     left: 10px;
 }
-
 
 .card-localizacao .descr {
     color: #111828;
@@ -133,53 +133,106 @@ font-size: large;
     top: 290px;
 }
 
-.icone-coracao-preenchido {
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    color: #111828;
-    right: 25px;
-    top: 180px;
-    fill: #111828;   
-    stroke: #111828;
-}
-
-/* coração vazio */
+.icone-coracao-preenchido,
 .icone-coracao-vazio {
     width: 20px;
     height: 20px;
     position: absolute;
-    color: #111828;
     right: 25px;
     top: 180px;
-    fill: none;   
     stroke: #111828;
 }
 
-.btn-marcar-destino {
-    position: absolute;
-    bottom: 20px;
-    display: flex;
-    align-items: center;
-    background-color: #111828;
-    color: #f3f5f6;
-    border: none;
-    padding: 10px 45px;
-    border-radius: 5px;
-    cursor: pointer;
-    outline: none;
+.icone-coracao-preenchido {
+    fill: #111828;
 }
 
-.btn-marcar-destino,
-.btn-marcar-destino:link,
-.btn-marcar-destino:visited,
-.btn-marcar-destino:hover,
-.btn-marcar-destino:active {
+.icone-coracao-vazio {
+    fill: none;
+}
+
+/* ==== ÁREA DOS BOTÕES NO RODAPÉ DO CARD ==== */
+.card-localizacao .botoes-card-loc {
+    position: absolute;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+}
+
+.card-localizacao .btn-marcar-destino {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 10px;
+    font-size: 13px;
+    background-color: #111828;
     color: #f3f5f6;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
     text-decoration: none;
 }
 
+.card-localizacao .btn-mais-infos {
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 10px;
+    font-size: 13px;
+    background-color: #f3f5f6;
+    color: #111828;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    text-decoration: none;
+}
 
+.card-localizacao .btn-mais-infos:hover {
+    background-color: #e5e7eb;
+}
 
+.card-localizacao .icone-mais {
+    width: 14px;
+    height: 14px;
+}
+
+/* ===== BOTÕES PARA CARDS DE PRÉDIOS ===== */
+
+.botoes-card-predio {
+    position: absolute;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-marcar-destino-predio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 10px;
+    font-size: 13px;
+    background-color: #111828;
+    color: #f3f5f6 !important;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    width: 100%;
+}
+
+.btn-marcar-destino-predio:hover {
+    background-color: #1e293b;
+}
 
 
