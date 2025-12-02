@@ -154,16 +154,26 @@ main {
 /* ==================== RESPONSIVIDADE ==================== */
 @media (max-width: 768px) {
     .search-wrapper {
-        display: none;
+        position: relative;
+        width: 100%;
+        order: 3;
+        margin-top: 10px;
+    }
+    .search-bar{
+        font-size:13px;
+        padding:8px 14px 8px 38px;
     }
     
     .nav-content {
         gap: 12px;
+        flex-wrap: wrap;
     }
     
     .menu-text {
         display: none;
     }
+
+
 }
 
 /* ==================== Filtro ==================== */
@@ -171,8 +181,7 @@ main {
 .filtro {
     display:none;
     position: absolute;
-    top: 60px;
-    left: 355px;
+    top: 48px;
     background: #fff;
     border-radius: 12px;
     border: 1px solid #f9f9f9;
@@ -189,6 +198,7 @@ main {
 {
     font-size:18px;
 }
+
 .predioCategoria {
   display: flex;
   flex-direction: row;
@@ -211,48 +221,33 @@ main {
   border-radius: 3px;
   border: 1px solid #ccc;
 }
-
-.tituloAcessibilidade{
-    margin-top: 20px;
-}
-.acessibilidade {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.lugar1 button {
-      padding: 8px 4px;
-      text-align: left;
-      margin-left: 5px;
-      border: 0;
-      background: #f7f7f7;
-      border-radius: 3px;
-      cursor: pointer;
+@media (max-width: 768px) {
+    .predioCategoria {
+        flex-direction: column;
+        gap: 12px;
     }
-.lugar2 button {
-    padding: 8px 4px;
-    text-align: left;
-    margin-left: 5px;
-    border: 0;
-    background: #f7f7f7;
-    border-radius: 3px;
-    cursor: pointer;
-}
-.lugar3 button {
-      padding: 8px 4px;
-      text-align: left;
-      margin-left: 5px;
-      border: 0;
-      background: #f7f7f7;
-      border-radius: 3px;
-      cursor: pointer;
+
+    .campo select {
+        width: 100%;
+        max-width: 100%;
     }
+}
 .botoes-filtro {
   display: flex;
   justify-content: flex-end; 
   gap: 10px; 
   margin-top: 10px; 
+}
+@media (max-width: 768px) {
+    .botoes-filtro {
+        justify-content: center;    
+        flex-wrap: wrap;            
+        gap: 12px;
+    }
+
+    .botoes-filtro button {
+        width: 100%;                
+    }
 }
 .clean{
     padding: 8px 10px;

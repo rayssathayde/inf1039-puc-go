@@ -41,63 +41,44 @@
                     </a>
                     <span class="name-text">PUC-Go</span>
                 </button>
+            </form>
 
                 <div class="search-wrapper">
                     <span data-lucide="search" class="search-icon"></span>
                     <form action="{% url 'search_results' %}" method="get">
                         <input type="text" id="barraPesquisa" name="result_pesquisa" class="search-bar" placeholder="Buscar localizações no campus...">
-                    </form>
+                        <div class = "filtro">
+                            <h2>Filtros de Busca</h2>
+                            <div class="predioCategoria">
+                                <div class="campo">
+                                    <p>Categoria</p>
+                                    <select name="categorias" id="todas_categorias">
+                                    <option value="all">Todas as categorias</option>
+                                    {% for tipo, label in tipos %}
+                                        <option value="{{ tipo }}">{{ label }}</option>
+                                    {% endfor %}
+                                    </select>
+                                </div>
+            
+                                <div class="campo">
+                                    <p>Prédio</p>
+                                    <select name="predios" id="todos_predios">
+                                    <option value="all_predios">Todos os prédios</option>
+                                    {% for predio in predios %}
+                                        <option value="{{ predio.id }}" >{{ predio.nome }}</option>
+                                    {% endfor %}
+                                    </select>
+                                </div>
+                            </div>
+                            <div class ="botoes-filtro">
+                                <button class="clean">Limpar</button>
+                                <button class="filter">Aplicar Filtros</button>
+                            </div>
+                            
+                        </div>
                 </div>
-
-                <form action="{% url 'search_results' %}" method="GET">
-                    <div class = "filtro">
-                        <h2>Filtros de Busca</h2>
-                        <div class="predioCategoria">
-                            <div class="campo">
-                                <p>Categoria</p>
-                                <select name="categorias" id="todas_categorias">
-                                <option value="all">Todas as categorias</option>
-                                {% for tipo, label in tipos %}
-                                    <option value="{{ tipo }}">{{ label }}</option>
-                                {% endfor %}
-                                </select>
-                            </div>
-
-                            <div class="campo">
-                                <p>Prédio</p>
-                                <select name="predios" id="todos_predios">
-                                <option value="all_predios">Todos os prédios</option>
-                                {% for predio in predios %}
-                                    <option value="{{ predio.id }}" >{{ predio.nome }}</option>
-                                {% endfor %}
-                                </select>
-                            </div>
-                        </div>
-                        <p class = "tituloAcessibilidade">Acessibilidade</p>
-                        <div class= "acessibilidade">
-                            <input type="checkbox" id = "cadeirante" name="nomecadeirante">
-                            <label for ="cadeirante">Acesso para cadeirantes</label>
-                            <input type="checkbox" id = "elevador" name="elevadorprox">
-                            <label for="elevador">Próximo ao elevador</label>
-                        </div>
-                        <div class ="botoes-filtro">
-                            <button class="clean">Limpar</button>
-                            <button class="filter">Aplicar Filtros</button>
-                        </div>
-                        <div class="lugar1">
-                            <i data-lucide="toilet" class="banheiro-icon"></i>
-                            <button class="banheiroA">Banheiro Prédio A - Térreo</button>
-                            </div>
-                            <div class ="lugar2">
-                            <i data-lucide="book" class="biblioteca-icon"></i>
-                            <button class="biblioteca_central">Biblioteca Central</button>
-                            </div>
-                            <div class ="lugar3">
-                            <i data-lucide="utensils" class="restaurante-icon"></i>
-                            <button class="cantina">Cantina Principal</button>
-                        </div>
-                    </div>
-                </form>
+                
+               
                 
 
                 <div class="nav-right">
