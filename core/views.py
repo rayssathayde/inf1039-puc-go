@@ -128,7 +128,38 @@ def search_result(request):
 
 
 def available_locations(request):
-    return render(request, 'locais_disponiveis.html')
+    tipo = request.GET.get('tipo', 'todos')
+
+    locais = Local.objects.filter(ativo=True).select_related('predio')
+    if tipo not in ('todos', 'predio'):
+        locais = locais.filter(tipo=tipo)
+
+    predios = Predio.objects.all()
+
+    favoritos_locais_ids = []
+    favoritos_predios_ids = []
+
+    if request.user.is_authenticated:
+        favoritos_locais_ids = list(
+            FavoritoLocal.objects.filter(user=request.user)
+            .values_list('local_id', flat=True)
+        )
+
+        favoritos_predios_ids = list(
+            FavoritoPredio.objects.filter(user=request.user)
+            .values_list('predio_id', flat=True)
+        )
+
+    contexto = {
+        'locais': locais,
+        'predios': predios,
+        'favoritos_locais_ids': favoritos_locais_ids,
+        'favoritos_predios_ids': favoritos_predios_ids,
+        'tipos': Local.TIPO_CHOICES,
+        'selected_tipo': tipo,
+    }
+
+    return render(request, 'locais_disponiveis.html', contexto)
 
 
 def info_ambientes(request):

@@ -11,73 +11,118 @@
 
 
     <main class = "container-predio">
-    <!--PRÉDIO X - LOCAIS DISPONÍVEIS -> Título e subtítulo-->
+
     <div class = "title">
-        <h1 class = "predio">Prédio X - Locais Disponíveis</h1>
-        <p class = "descricao">Encontre salas, banheiros e restaurantes neste prédio</p>
+        <h1 class = "predio">Locais Disponíveis</h1>
+        <p class = "descricao">Encontre salas, banheiros e restaurantes no campus</p>
     </div>
+
     <section class = "place_cards">
     <nav class="tabs">
-                <button class="active">Todos</button>
-                <button>Salas</button>
-                <button>Banheiros</button>
-                <button>Restaurantes</button>
+                {# Aba "Todos" #}
+            <form method="get">
+                <input type="hidden" name="tipo" value="todos">
+                <button type="submit"
+                        class="{% if selected_tipo == 'todos' %}active{% endif %}">
+                    Todos
+                </button>
+            </form>
+
+                {# Aba "Prédios" #}
+            <form method="get">
+                <input type="hidden" name="tipo" value="predio">
+                <button type="submit"
+                        class="{% if selected_tipo == 'predio' %}active{% endif %}">
+                    Prédios
+                </button>
+            </form>
+
+            {# Abas por tipo - pegando do TIPO_CHOICES #}
+            {% for value, label in tipos %}
+                <form method="get">
+                    <input type="hidden" name="tipo" value="{{ value }}">
+                    <button type="submit"
+                            class="{% if selected_tipo == value %}active{% endif %}">
+                        {{ label }}
+                    </button>
+                </form>
+            {% endfor %}
     </nav>
+
     <div class = "all_locations">
-        <div class ="localizacoes_card1">
-            <div class="card-img">Sala 101</div>
-            <div class="card-body">
-                <h2 class>Sala 101</h2>
-                <p class>1º andar, corredor princial, próximo ao elevador</p>
-                <button type="button" class="define_destination"><span data-lucide="map-pin" class="icn-rota"></span> Definir como destino</button>
-                <button type = "button" class = "favorite"><span data-lucide="heart" class="icn-core"></span> Adicionar aos favoritos</button>
-            </div>
-        </div>
-        <div class = "localizacoes_card2">
-            <div class = "card-img">Banheiro Masculino</div>
-            <div class = "card-body">
-                <h2 class>Banheiro Masculino</h2>
-                <p class>1º andar, final do corredor oeste, perto da escada</p>
-                <button type="button" class="define_destination"><span data-lucide="map-pin" class="icn-rota"></span> Definir como destino</button>
-                <button type = "button" class = "favorite"><span data-lucide="heart" class="icn-core"></span> Adicionar aos favoritos</button>
-            </div>
-        </div>
-        <div class = "localizacoes_card3">
-            <div class = "card-img">Restaurante Central</div>
-            <div class = "card-body">
-                <h2 class>Restaurante Central</h2>
-                <p class>Térreo, área central do prédio, próximo à recepção</p>
-                <button type="button" class="define_destination"><span data-lucide="map-pin" class="icn-rota"></span> Definir como destino</button>
-                <button type = "button" class = "favorite"><span data-lucide="heart" class="icn-core"></span> Adicionar aos favoritos</button>
-            </div>
-        </div>
-        <div class = "localizacoes_card1">
-            <div class = "card-img">Sala 205</div>
-            <div class = "card-body">
-                <h2 class>Sala 205</h2>
-                <p class>2º andar, corredor principal</p>
-                <button type="button" class="define_destination"><span data-lucide="map-pin" class="icn-rota"></span> Definir como destino</button>
-                <button type = "button" class = "favorite"><span data-lucide="heart" class="icn-core"></span> Adicionar aos favoritos</button>
-            </div>
-        </div>
-        <div class = "localizacoes_card2">
-            <div class = "card-img">Banheiro Feminino</div>
-            <div class = "card-body">
-                <h2 class>Banheiro feminino</h2>
-                <p class>2º andar, final do corredor</p>
-                <button type="button" class="define_destination"><span data-lucide="map-pin" class="icn-rota"></span> Definir como destino</button>
-                <button type = "button" class = "favorite"><span data-lucide="heart" class="icn-core"></span> Adicionar aos favoritos</button>
-            </div>
-        </div>
-        <div class = "localizacoes_card3">
-            <div class = "card-img">Biblioteca Central</div>
-            <div class = "card-body">
-                <h2 class>Biblioteca Central</h2>
-                <p class>3º andar, à esquerda</p>
-                <button type="button" class="define_destination"><span data-lucide="map-pin" class="icn-rota"></span> Definir como destino</button>
-                <button type = "button" class = "favorite"><span data-lucide="heart" class="icn-core"></span> Adicionar aos favoritos</button>
-            </div>
-        </div>
+
+        {% if selected_tipo == 'todos' or selected_tipo == 'predio' %}
+            {% for predio in predios %}
+                <div class="card-localizacao">
+                    <p class="titulo">{{ predio.nome }}</p>
+                    <p class="subtitulo">Prédio</p>
+
+                    {% if user.is_authenticated %}
+                        <a href="{% url 'mapa:favoritar_predio' predio.id %}">
+                            {% if predio.id in favoritos_predios_ids %}
+                                <i data-lucide="heart" class="icone-coracao-preenchido"></i>
+                            {% else %}
+                                <i data-lucide="heart" class="icone-coracao-vazio"></i>
+                            {% endif %}
+                        </a>
+                    {% else %}
+                        <i data-lucide="heart" class="icone-coracao-vazio"
+                           title="Faça login para favoritar"></i>
+                    {% endif %}
+
+                    <p class="descr">
+                        {{ predio.descricao|default:"Sem descrição disponível." }}
+                    </p>
+
+                    <i data-lucide="map-pin" class="icone-pin"></i>
+                    <p class="local">
+                        {{ predio.nome }} 
+                    </p>
+
+                    <a href="{% url 'mapa:mapa' %}" class="btn-marcar-destino">
+                        <span class="texto-marcar-destino"></span>Marcar como destino
+                    </a>
+                </div>
+            {% endfor %}
+        {% endif %}
+        
+        {% if selected_tipo != 'predio' %}
+            {% for local in locais %}
+                        <div class="card-localizacao">
+                            <p class="titulo">{{ local.nome }}</p>
+                            <p class="subtitulo">{{ local.predio.nome }}</p>
+
+                            {% if user.is_authenticated %}
+                                <a href="{% url 'mapa:favoritar_local' local.id %}">
+                                    {% if local.id in favoritos_locais_ids %}
+                                        <i data-lucide="heart" class="icone-coracao-preenchido"></i>
+                                    {% else %}
+                                        <i data-lucide="heart" class="icone-coracao-vazio"></i>
+                                    {% endif %}
+                                </a>
+                            {% else %}
+                                <i data-lucide="heart" class="icone-coracao-vazio" title="Faça login para favoritar"></i>
+                            {% endif %}
+
+                            <p class="descr">
+                            {{ local.descricao|default:"Sem descrição disponível." }}
+                            </p>
+
+                            <i data-lucide="map-pin" class="icone-pin"></i>
+                            <p class="local">
+                                {{ local.predio.nome }} – 
+                                    {% if local.andar.isdigit %}
+                                        {{ local.andar }}º andar
+                                    {% else %}
+                                        {{ local.andar }}
+                                    {% endif %}
+                            </p>
+                            <a href="{% url 'mapa:mapa' %}" class="btn-marcar-destino">
+                                <span class="texto-marcar-destino"></span>Marcar como destino
+                            </a>
+                        </div>
+                    {% endfor %}
+        {% endif %}
     </div>
   </main>
 
