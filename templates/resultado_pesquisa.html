@@ -74,8 +74,9 @@
                         </div>
                         {% endif %}
                     </div>    
+                {% load l10n %}
                 <div class="div-pesq5">
-                    <a href="{% url 'mapa:mapa' %}" class="marcar-btn">
+                    <a href="{% url 'mapa:mapa' %}?lat={{ predio.coordenadas.0|unlocalize }}&lng={{ predio.coordenadas.1|unlocalize }}" class="marcar-btn">
                         <span data-lucide="map-pinned" class="icones-btns"></span>Marcar como destino
                     </a>
                     <a href="{% url 'available_locations' %}" class="extras-btn">
@@ -170,8 +171,9 @@
                             {% endif %}
                         </div>
                     </div>    
+                    {% load l10n %}
                     <div class="div-pesq5">
-                        <a href="{% url 'mapa:mapa' %}" class="marcar-btn">
+                        <a href="{% url 'mapa:mapa' %}?lat={{ local.predio.coordenadas.0|unlocalize }}&lng={{ local.predio.coordenadas.1|unlocalize }}" class="marcar-btn">
                             <span data-lucide="map-pinned" class="icones-btns"></span>Marcar como destino
                         </a>
                         <a href="{% url 'info_ambientes' local.id %}" class="extras-btn">

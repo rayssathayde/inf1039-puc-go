@@ -21,6 +21,7 @@
         <div class="container-cards-locais-favoritos">
              {# -------- PRÉDIOS FAVORITOS ---------- #}
             {% for fav in favoritos_predios %}
+                {% load l10n %}
                 <div class="card-localfav">
                     <p class="titulo">{{ fav.predio.nome }}</p>
                     <p class="subtitulo">{{ fav.predio.nome }}</p>
@@ -38,7 +39,7 @@
                     <p class="local">
                         {{ fav.predio.nome }}
                     </p>
-                    <a href="{% url 'mapa:mapa' %}" class="btn-marcar-destino">
+                    <a href="{% url 'mapa:mapa' %}?lat={{ fav.predio.coordenadas.0|unlocalize }}&lng={{ fav.predio.coordenadas.1|unlocalize }}" class="btn-marcar-destino">
                         <span class="texto-marcar-destino"></span>Marcar como destino
                     </a>
 
@@ -71,8 +72,9 @@
                                 {{ fav.local.andar }}
                             {% endif %}
                     </p>
+                {% load l10n %}
                 <div class="botoes-card-fav">
-                <a href="{% url 'mapa:mapa' %}" class="btn-marcar-destino">
+                <a href="{% url 'mapa:mapa' %}?lat={{ fav.local.predio.coordenadas.0|unlocalize }}&lng={{ fav.local.predio.coordenadas.1|unlocalize }}" class="btn-marcar-destino">
                     <span class="texto-marcar-destino"></span>Marcar como destino
                 </a>
                     <a href="{% url 'info_ambientes' fav.local.id %}" class="btn-mais-infos">
