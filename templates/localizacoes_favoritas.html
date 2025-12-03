@@ -40,7 +40,7 @@
                         {{ fav.predio.nome }}
                     </p>
                     <div class="botoes-card-predio">
-                        <a href="{% url 'mapa:mapa' %}" class="btn-marcar-destino-predio">
+                        <a href="{% url 'mapa:mapa' %}?lat={{ fav.predio.coordenadas.0|unlocalize }}&lng={{ fav.predio.coordenadas.1|unlocalize }}" class="btn-marcar-destino-predio">
                             <span class="texto-marcar-destino"></span>Marcar como destino
                         </a>
                     </div>
