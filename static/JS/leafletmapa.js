@@ -116,9 +116,10 @@ document.addEventListener("DOMContentLoaded",  async function () {
 
     // calculo da distancia em metros e do tempo em segundos
     const distanciaMetros = data.routes[0].distance;
-    const duracaoSegundos = data.routes[0].duration;
+    // velocidade media a pé 
+    const velocidadeKmH = 4;
     // calculo do tempo em minutos
-    const tempoMinutos = Math.round(duracaoSegundos / 60);
+    const tempoMinutos = Math.round((distanciaMetros / 1000) / velocidadeKmH * 60);
     mostrarNavegacao(distanciaMetros, tempoMinutos);
 
     map.fitBounds(rotaLayer.getBounds(), {padding:[40,40]});
@@ -181,7 +182,7 @@ document.addEventListener("DOMContentLoaded",  async function () {
   }
 
 
-// 
+// preenche dinamicamente o card com infos da rota (distancia e tempo de caminhada)
 }
   function mostrarNavegacao(distancia, tempo) {
   const navCard = document.querySelector('.nav-ativa');
@@ -190,24 +191,40 @@ document.addEventListener("DOMContentLoaded",  async function () {
     return;
   }
 
+  let tempoTexto = "";
+  if (tempo < 60) {
+    tempoTexto = `${tempo} minutos`;
+  }
+  else {
+    const horas = Math.floor(tempo / 60);
+    const minutos = tempo % 60;
+
+    if (minutos === 0) {
+      tempoTexto = `${horas} h`;
+    }
+    else {
+      tempoTexto = `${horas} h e ${minutos} min`;
+    }
+  }
+
   const distanciaTexto = distancia < 1000 
     ? `${Math.round(distancia)} metros` 
     : `${(distancia / 1000).toFixed(2)} km`;
     
-    navCard.querySelector('.dados-rota p:nth-child(2)').textContent = `${tempo} minutos`;
+    navCard.querySelector('.dados-rota p:nth-child(2)').textContent = tempoTexto;
     navCard.querySelector('.dados-rota p:nth-child(4)').textContent = distanciaTexto;
 
     navCard.style.display = 'block';
   }
-  
+  // configura o botao de fechar no card que mostra o tempo de caminhdada
   const btnFecha = document.querySelector('.nav-ativa .btn-texto');
   if (btnFecha) {
     btnFecha.addEventListener('click', function() {
       event.preventDefault();
       event.stopPropagation();
-      document.querySelector('.nav-ativa').style.display = 'none';
+      document.querySelector('.nav-ativa').style.display = 'none'; // esconde o card quando clica no 'X'
       if (rotaLayer){
-        map.removeLayer(rotaLayer);
+        map.removeLayer(rotaLayer); // remove a rota do mapa
       }
     });
   }
