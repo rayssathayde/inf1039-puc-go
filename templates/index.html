@@ -3,7 +3,7 @@
 {% block extra_css %}
 <link rel="stylesheet" href="{% static 'CSS/style_index.css' %}">
 <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
-<link rel="stylesheet" href="{% static 'CSS/style_mapa.css' %}">
+<!-- <link rel="stylesheet" href="{% static 'CSS/style_mapa.css' %}"> -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 {% endblock %}
 
@@ -403,8 +403,10 @@
                                     {{ local.andar }}
                                 {% endif %}
                         </p>
+                        {% load l10n %}
                         <div class="botoes-card-loc">
-                            <a href="{% url 'mapa:mapa' %}" class="btn-marcar-destino">
+                            <a href="{% url 'mapa:mapa' %}?lat={{ local.predio.coordenadas.0|unlocalize }}&lng={{ local.predio.coordenadas.1|unlocalize }}" 
+                            class="btn-marcar-destino">
                                 <span class="texto-marcar-destino"></span>Marcar como destino
                             </a>
                             <a href="{% url 'info_ambientes' local.id %}" class="btn-mais-infos">

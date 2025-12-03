@@ -112,7 +112,15 @@ document.addEventListener("DOMContentLoaded",  async function () {
       map.removeLayer(rotaLayer);
     }
 
-    rotaLayer = L.polyline(latlngs, { weight: 5 }).addTo(map);
+    rotaLayer = L.polyline(latlngs, { color:'red', weight: 5 }).addTo(map);
+
+    // calculo da distancia em metros e do tempo em segundos
+    const distanciaMetros = data.routes[0].distance;
+    const duracaoSegundos = data.routes[0].duration;
+    // calculo do tempo em minutos
+    const tempoMinutos = Math.round(duracaoSegundos / 60);
+    mostrarNavegacao(distanciaMetros, tempoMinutos);
+
     map.fitBounds(rotaLayer.getBounds(), {padding:[40,40]});
     } catch (err) {
         console.error("Erro ao calcular rota:", err);
@@ -171,10 +179,52 @@ document.addEventListener("DOMContentLoaded",  async function () {
   } catch (err) {
     console.error("Erro ao carregar prédios da API:", err);
   }
+
+
+// 
 }
+  function mostrarNavegacao(distancia, tempo) {
+  const navCard = document.querySelector('.nav-ativa');
+  
+  if (!navCard) {
+    return;
+  }
+
+  const distanciaTexto = distancia < 1000 
+    ? `${Math.round(distancia)} metros` 
+    : `${(distancia / 1000).toFixed(2)} km`;
+    
+    navCard.querySelector('.dados-rota p:nth-child(2)').textContent = `${tempo} minutos`;
+    navCard.querySelector('.dados-rota p:nth-child(4)').textContent = distanciaTexto;
+
+    navCard.style.display = 'block';
+  }
+  
+  const btnFecha = document.querySelector('.nav-ativa .btn-texto');
+  if (btnFecha) {
+    btnFecha.addEventListener('click', function() {
+      event.preventDefault();
+      event.stopPropagation();
+      document.querySelector('.nav-ativa').style.display = 'none';
+      if (rotaLayer){
+        map.removeLayer(rotaLayer);
+      }
+    });
+  }
 
  // chama uma vez ao carregar
   localizarUsuario();
   await carregarPredios();
+
+  //
+  const urlParam = new URLSearchParams(window.location.search);
+  const destLat = urlParam.get('lat');
+  const destLng = urlParam.get('lng');
+
+  if (destLat && destLng) {
+    setTimeout(() => {
+      irPara(parseFloat(destLat), parseFloat(destLng));
+    }, 100);
+  }
 });
 

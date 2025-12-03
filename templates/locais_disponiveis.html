@@ -81,9 +81,9 @@
                     <p class="local">
                         {{ predio.nome }} 
                     </p>
-
+                    {% load l10n %}
                     <div class="botoes-card-predio">
-                        <a href="{% url 'mapa:mapa' %}" class="btn-marcar-destino-predio">
+                        <a href="{% url 'mapa:mapa' %}?lat={{ predio.coordenadas.0|unlocalize }}&lng={{ predio.coordenadas.1|unlocalize }}" class="btn-marcar-destino-predio">
                             <span class="texto-marcar-destino"></span>Marcar como destino
                         </a>
                     </div>
@@ -127,8 +127,9 @@
                                         {{ local.andar }}
                                     {% endif %}
                             </p>
+                            {% load l10n %}
                             <div class="botoes-card-loc">
-                                <a href="{% url 'mapa:mapa' %}" class="btn-marcar-destino">
+                                <a href="{% url 'mapa:mapa' %}?lat={{ local.predio.coordenadas.0|unlocalize }}&lng={{ local.predio.coordenadas.1|unlocalize }}" class="btn-marcar-destino">
                                     <span class="texto-marcar-destino"></span>Marcar como destino
                                 </a>
                                 <a href="{% url 'info_ambientes' local.id %}" class="btn-mais-infos">
