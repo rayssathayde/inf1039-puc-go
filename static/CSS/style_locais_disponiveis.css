@@ -229,6 +229,7 @@ font-size: large;
     cursor: pointer;
     text-decoration: none;
     width: 100%;
+    margin-bottom: 10px;
 }
 
 .btn-marcar-destino-predio:hover {

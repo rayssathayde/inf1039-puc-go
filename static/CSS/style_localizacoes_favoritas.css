@@ -187,3 +187,36 @@
     width:12px;
     height:12px;
 }
+
+
+/* ===== BOTÕES PARA CARDS DE PRÉDIOS ===== */
+
+.botoes-card-predio {
+    position: absolute;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-marcar-destino-predio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 10px;
+    font-size: 13px;
+    background-color: #111828;
+    color: #f3f5f6 !important;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.btn-marcar-destino-predio:hover {
+    background-color: #1e293b;
+}
