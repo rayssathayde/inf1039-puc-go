@@ -6,67 +6,118 @@
   padding: 0 24px;
 }
 
+/* Título e subtítulo */
 .registro-container h1 {
   font-size: 28px;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
   color: #111827;
 }
 
 .registro-container h2 {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
-  color: #4b5563;
+  color: #6b7280;
   margin-bottom: 24px;
 }
 
+.registro-container h1::after {
+  content: "";
+  display: block;
+  width: 56px;
+  height: 3px;
+  margin-top: 8px;
+  border-radius: 999px;
+  background: linear-gradient(to right, #111827, #2563eb);
+}
+
+/* texto quando não há registros */
 .registro-vazio {
-  margin-top: 20px;
+  margin-top: 24px;
   font-size: 16px;
   color: #4b5563;
 }
 
-/* lista de cards */
 .lista-registros {
   list-style: none;
   padding: 0;
   margin-top: 24px;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 14px;
 }
 
+/* Card individual do registro */
 .registro-card {
+  position: relative;
   background-color: #ffffff;
-  border-radius: 10px;
-  padding: 14px 18px;
+  border-radius: 12px;
+  padding: 14px 18px 14px 22px;
   border: 1px solid #e5e7eb;
   box-shadow: 0 1px 3px rgba(15, 23, 42, 0.06);
   display: flex;
   flex-direction: column;
   gap: 6px;
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease,
+    border-color 0.15s ease;
 }
 
+/* “barrinha” lateral com cor de destaque */
+.registro-card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 12px;
+  bottom: 12px;
+  width: 4px;
+  border-radius: 999px;
+  background: linear-gradient(to bottom, #111827, #2563eb);
+}
+
+.registro-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(15, 23, 42, 0.12);
+  border-color: #d1d5db;
+}
+
+/* Título do prédio */
 .registro-titulo {
   font-weight: 600;
   color: #111827;
   font-size: 15px;
 }
 
+/* Metadados: data, horário, etc. */
 .registro-meta {
   font-size: 13px;
   color: #6b7280;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 12px;
 }
 
+/* separador leve entre spans */
 .registro-meta span + span {
-  margin-left: 12px;
+  position: relative;
+  padding-left: 10px;
+}
+
+.registro-meta span + span::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #9ca3af;
 }
 
 .registro-coordenadas {
   font-size: 12px;
   color: #9ca3af;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
-/* responsivo */
+/* Responsivo*/
 @media (max-width: 768px) {
   .registro-container {
     margin-top: 24px;
@@ -75,5 +126,9 @@
 
   .registro-container h1 {
     font-size: 22px;
+  }
+
+  .registro-card {
+    padding: 12px 14px 12px 18px;
   }
 }

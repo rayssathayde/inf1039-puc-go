@@ -9,26 +9,32 @@
 
 {% block content %}
 <main class="conteudo-principal">
-    <div class="container-secao-loc-sugeridas">
-        <h2>Registro de rotas</h2>
-    </div>
+    <div class="registro-container">
+        <h1>Registro de rotas</h1>
 
-    {% if registros %}
-        <div class="container-cards-locais">
-            {% for r in registros %}
-                <div class="card-localizacao1">
-                    <i data-lucide="map-pin" class="icone-predio"></i>
-                    <p class="titulo">{{ r.predio.nome }}</p>
-                    <p style="font-size: 0.85rem; color: #6b7280; margin-top: 4px;">
-                        Rota feita em {{ r.criado_em|date:"d/m/Y H:i" }}
-                    </p>
-                </div>
-            {% endfor %}
-        </div>
-    {% else %}
-        <p style="margin-top: 20px; padding: 0 24px;">
-            Você ainda não escolheu nenhuma rota.
-        </p>
-    {% endif %}
+        {% if registros %}
+            <ul class="lista-registros">
+                {% for r in registros %}
+                    <li class="registro-card">
+                        <p class="registro-titulo">
+                            {{ r.predio.nome }}
+                        </p>
+
+                        <p class="registro-meta">
+                            <span>Rota feita em {{ r.criado_em|date:"d/m/Y H:i" }}</span>
+                            {% if r.usuario %}
+                                <span>Usuário: {{ r.usuario.username }}</span>
+                            {% endif %}
+                        </p>
+
+                    </li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p class="registro-vazio">
+                Você ainda não escolheu nenhuma rota.
+            </p>
+        {% endif %}
+    </div>
 </main>
 {% endblock %}
