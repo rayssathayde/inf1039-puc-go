@@ -23,15 +23,20 @@
     <div class="container-principal">
         <!-- HEADER (fixo em todas as páginas) -->
         <header class="navbar">
-            <nav class="side-menu" id="sideMenu">
-                <ul>
-                    <li><a href="{% url 'home' %}">Home</a></li>
-                    <li><a href="{% url 'available_locations' %}">Prédios </a></li>
-                    <li><a href="{% url 'mapa:mapa' %}">Mapa</a></li>
-                    <li><a href="{% url 'favorites' %}">Favoritos</a></li>
-                    <li><a href="{% url 'login' %}">Login/Cadastro</a></li>
-                </ul>
-            </nav>
+        <nav class="side-menu" id="sideMenu">
+            <ul>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'available_locations' %}">Prédios </a></li>
+                <li><a href="{% url 'mapa:mapa' %}">Mapa</a></li>
+                <li><a href="{% url 'favorites' %}">Favoritos</a></li>
+                <li><a href="{% url 'login' %}">Login/Cadastro</a></li>
+
+                {% if user.is_authenticated %}
+                    <li><a href="{% url 'registro_rotas' %}">Registros</a></li>
+                {% endif %}
+            </ul>
+        </nav>
+
 
 
             <div class="nav-content">

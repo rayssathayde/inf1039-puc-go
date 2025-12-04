@@ -1,0 +1,79 @@
+/* ===== Página de Registro de Rotas ===== */
+
+.registro-container {
+  max-width: 1100px;
+  margin: 40px auto 60px auto;
+  padding: 0 24px;
+}
+
+.registro-container h1 {
+  font-size: 28px;
+  margin-bottom: 8px;
+  color: #111827;
+}
+
+.registro-container h2 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #4b5563;
+  margin-bottom: 24px;
+}
+
+.registro-vazio {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #4b5563;
+}
+
+/* lista de cards */
+.lista-registros {
+  list-style: none;
+  padding: 0;
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.registro-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 14px 18px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.registro-titulo {
+  font-weight: 600;
+  color: #111827;
+  font-size: 15px;
+}
+
+.registro-meta {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.registro-meta span + span {
+  margin-left: 12px;
+}
+
+.registro-coordenadas {
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+/* responsivo */
+@media (max-width: 768px) {
+  .registro-container {
+    margin-top: 24px;
+    padding: 0 16px;
+  }
+
+  .registro-container h1 {
+    font-size: 22px;
+  }
+}

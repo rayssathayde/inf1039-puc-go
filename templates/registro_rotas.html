@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'CSS/style_registros.css' %}">
+{% endblock %}
+
+{% block title %}Registro de rotas — PUC-Go{% endblock %}
+
+{% block content %}
+<main class="conteudo-principal">
+    <div class="container-secao-loc-sugeridas">
+        <h2>Registro de rotas</h2>
+    </div>
+
+    {% if registros %}
+        <div class="container-cards-locais">
+            {% for r in registros %}
+                <div class="card-localizacao1">
+                    <i data-lucide="map-pin" class="icone-predio"></i>
+                    <p class="titulo">{{ r.predio.nome }}</p>
+                    <p style="font-size: 0.85rem; color: #6b7280; margin-top: 4px;">
+                        Rota feita em {{ r.criado_em|date:"d/m/Y H:i" }}
+                    </p>
+                </div>
+            {% endfor %}
+        </div>
+    {% else %}
+        <p style="margin-top: 20px; padding: 0 24px;">
+            Você ainda não escolheu nenhuma rota.
+        </p>
+    {% endif %}
+</main>
+{% endblock %}
