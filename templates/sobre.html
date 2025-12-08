@@ -1,0 +1,100 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Sobre Nós — PUC-Go{% endblock %}
+
+{% block content %}
+<main class="sobre-container">
+    <h1>Sobre o PUC-Go</h1>
+    
+    <p>
+        O PUC-Go é uma plataforma interativa desenvolvida para auxiliar alunos, funcionários e visitantes 
+        a se localizarem no campus da PUC-Rio, tornando a experiência acadêmica mais prática e eficaz.
+    </p>
+
+    <h2>Nossa Missão</h2>
+    <p>
+        Facilitar a navegação pelo campus universitário através de uma interface intuitiva e recursos 
+        modernos de mapeamento, proporcionando economia de tempo e melhor aproveitamento das 
+        instalações disponíveis.
+    </p>
+
+    <div class="destaque">
+        <h3>Por que o PUC-Go foi criado?</h3>
+        <p>
+            O campus da PUC-Rio é extenso e possui diversos prédios, laboratórios, salas e espaços. 
+            Para novos alunos e visitantes, encontrar um local específico pode ser desafiador.
+        </p>
+        <p>
+            O PUC-Go nasceu como um projeto da disciplina INF-1039, com o objetivo de resolver 
+            esse problema de forma tecnológica e acessível.
+        </p>
+    </div>
+
+    <h2>Funcionalidades Principais</h2>
+    <ul>
+        <li><strong>Pesquisa de Locais:</strong> Encontre rapidamente salas de aula, laboratórios, restaurantes, banheiros e outros espaços</li>
+        <li><strong>Mapa Interativo:</strong> Visualize o campus com marcadores precisos de cada prédio</li>
+        <li><strong>Rotas:</strong> Trace caminhos do seu ponto atual até o destino desejado</li>
+        <li><strong>Favoritos:</strong> Salve seus locais mais visitados para acesso rápido</li>
+        <li><strong>Filtros Avançados:</strong> Busque por categoria, prédio e características de acessibilidade</li>
+    </ul>
+
+    <h2>Tecnologias Utilizadas</h2>
+    <p>
+        O PUC-Go foi desenvolvido utilizando tecnologias modernas e confiáveis:
+    </p>
+    <ul>
+        <li><strong>Django:</strong> Framework web Python para o backend</li>
+        <li><strong>Leaflet.js:</strong> Biblioteca JavaScript para mapas interativos</li>
+        <li><strong>OpenStreetMap:</strong> Dados cartográficos de código aberto</li>
+        <li><strong>SQLite:</strong> Banco de dados para armazenamento de informações</li>
+    </ul>
+
+    <h2>Nossa Equipe</h2>
+    <p>
+        Este projeto foi desenvolvido por um grupo de estudantes dedicadas da PUC-Rio:
+    </p>
+
+    <div class="equipe-grid">
+        <div class="membro-card">
+            <h4>Sabrina Ribeiro</h4>
+            <p>Desenvolvedora</p>
+        </div>
+        <div class="membro-card">
+            <h4>Maria Eduarda Fonte</h4>
+            <p>Desenvolvedora</p>
+        </div>
+        <div class="membro-card">
+            <h4>Rayssa Athayde</h4>
+            <p>Desenvolvedora</p>
+        </div>
+        <div class="membro-card">
+            <h4>Carina Cavalcante</h4>
+            <p>Desenvolvedora</p>
+        </div>
+        <div class="membro-card">
+            <h4>Rafaela Faria</h4>
+            <p>Desenvolvedora</p>
+        </div>
+        <div class="membro-card">
+            <h4>Thábata Gusmão</h4>
+            <p>Desenvolvedora</p>
+        </div>
+    </div>
+
+    <h2>Contato</h2>
+    <p>
+        Para dúvidas, sugestões ou feedback sobre o PUC-Go, entre em contato conosco:
+    </p>
+    <p>
+        <strong>Email:</strong> puc-go@gmail.com
+    </p>
+
+    <div class="destaque">
+        <p>
+            <strong>Nota:</strong> Este aplicativo não é oficial da PUC-Rio. Trata-se de um projeto 
+            acadêmico desenvolvido na disciplina INF-1039.
+        </p>
+    </div>
+</main>
+{% endblock %}
