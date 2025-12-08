@@ -236,4 +236,49 @@ font-size: large;
     background-color: #1e293b;
 }
 
+/* ==================== RESPONSIVIDADE (CELULAR) ==================== */
+@media (max-width: 768px) {
 
+    /* Container geral */
+    .container-predio {
+        padding: 20px 10px;
+        align-items: center; /* centraliza tudo */
+    }
+
+    /* Título */
+    .predio {
+        padding-left: 0;
+        text-align: center;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    /* Descrição */
+    .descricao {
+        margin-left: 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    /* Abas de filtro */
+    .tabs {
+        margin-left: 0;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* centraliza no mobile */
+        gap: 10px;
+        padding-bottom: 10px;
+    }
+
+    .tabs form {
+        display: inline-block;
+    }
+
+    .tabs button {
+        margin-left: 0;   
+        padding: 6px 10px;
+        font-size: 14px;
+    }
+
+}
