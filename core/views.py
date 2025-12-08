@@ -4,6 +4,12 @@ from django.db.models import Q, F
 
 from mapa.models import Predio, Local, FavoritoLocal, FavoritoPredio
 
+
+#novo
+def sobre(request):
+    return render(request, 'sobre.html')
+
+
 # Create your views here.
 def home(request):
     predios = Predio.objects.all()
