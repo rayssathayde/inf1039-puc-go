@@ -13,68 +13,33 @@
 <div class="main-cont">
     <div class="topo-cont">
         <div class="card-mapa">
-               <div id="map"></div>
+            <div id="map"></div>
 
+            <button type="button" class="btn-minha-localizacao" id="btnMinhaLocalizacao" data-tooltip="Minha localização" title="Ir para minha localização">
+                <i data-lucide="locate-fixed"></i>
+            </button>
 
+            <button type="button" class="btn-rota-entrada" id="btnRotaEntrada" data-tooltip="Traçar rota" title="Traçar rota até a entrada da PUC">
+                <i data-lucide="route"></i>
+            </button>
 
-
-
-                <button type="button" class="btn-minha-localizacao" id="btnMinhaLocalizacao" data-tooltip="Minha localização" title="Ir para minha localização">
-        <i data-lucide="locate-fixed"></i>
-    </button>
-
-    <button type="button" class="btn-rota-entrada" id="btnRotaEntrada" data-tooltip="Traçar rota" title="Traçar rota até a entrada da PUC">
-        <i data-lucide="route"></i>
-    </button>
-    
-    <div class="nav-ativa" style="display: none;">
-
-
-
-
-
-
-    
-    <div class="nav-ativa" style="display: none;">
-        <div class="nav-ativa" style="display: none;">
-            <div class="div-texto1">
-                <p class="titulo-nav">Navegação Ativa</p>
-                <button class="btn-texto"><p>X</p></button>
+            <div class="nav-ativa" style="display: none;">
+                <div class="div-texto1">
+                    <p class="titulo-nav">Navegação Ativa</p>
+                    <button class="btn-texto"><p>X</p></button>
+                </div>
+                <p class="text-loc-atual">⏺ Sua localização Atual</p>
+                <div class="dados-rota">
+                    <p>Tempo de Caminhada:</p>
+                    <p class="text-dador">8 minutos</p>
+                    <p>Distância</p>
+                    <p class="text-dador">350 metros</p>
+                </div>
             </div>
-            <p class="text-loc-atual">⏺ Sua localização Atual</p>
-            <!-- <p>⏺ Biblioteca Central</p> -->
-            <div class="dados-rota">
-                <p>Tempo de Caminhada:</p>
-                <p class="text-dador">8 minutos</p>
-                <p>Distância</p>
-                <p class="text-dador">350 metros</p>
-            </div>
-        </div>
-        <!-- <div class="btns">
-            <button class="btn-texto"><p data-lucide="maximize" class="btns-mapa"></p></button>
-        </div>
-     -->
-    <!-- <div class="final-cont">
-        <div class="icone-local">
-            <p data-lucide="library"></p>
-        </div>
-        <div class="desc-local">
-            <p class="titulo-nav">Biblioteca Central</p>
-            <p>A Biblioteca Central é o principal centro de estudos do campus, oferecendo uma vasta coleção de livros, periódicos e recursos digitais. Com salas de estudo, individual e em grupo, além de computadores para pesquisa acadêmica.</p>
-            <div class="info-adc">
-                <p><span data-lucide="clock" class="icone-texto"></span>Seg-Sex: 7h-22h</p>
-                <p><span data-lucide="phone" class="icone-texto"></span>(21) 9999-9999</p>
-                <p><span data-lucide="star" class="icone-texto"></span>4.8/5.0</p>
-                
-            </div>
-        </div>
-        <div class="btns2">
-            <button class="inic-rota"><span data-lucide="route" class="icone-texto"></span>Iniciar Rota</button>
-            <button class="salvar"><span data-lucide="book-marked" class="icone-texto"></span>Salvar</button>
-        </div>
-    </div> -->
-</div>
-</div>
+        </div> 
+    </div> 
+</div> 
+
 
 {% endblock %}
 
