@@ -124,3 +124,89 @@ if (btnEntendi) {
         fecharTodosModais();
     });
 }
+
+// ============================= NOVOS MODAIS: CONTATO E AJUDA =============================
+
+document.addEventListener('DOMContentLoaded', function() {
+    
+    // MODAL DE CONTATO
+    const modalContato = document.getElementById('modalContato');
+    const btnFecharContato = document.getElementById('btnFecharContato');
+    const formContato = document.getElementById('formContato');
+    const linksContato = document.querySelectorAll('[data-modal="contato"]');
+    
+    // Abrir modal de contato
+    linksContato.forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            if (modalContato) {
+                abrirModal(modalContato);
+            }
+        });
+    });
+    
+    // Fechar modal de contato
+    if (btnFecharContato) {
+        btnFecharContato.addEventListener('click', () => {
+            fecharModal(modalContato);
+        });
+    }
+    
+    // Enviar formulário de contato
+    if (formContato) {
+        formContato.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const nome = document.getElementById('nomeContato').value;
+            alert(`Obrigado, ${nome}! Sua mensagem foi enviada com sucesso. Responderemos em breve.`);
+            formContato.reset();
+            fecharModal(modalContato);
+        });
+    }
+    
+    // MODAL DE AJUDA
+    const modalAjuda = document.getElementById('modalAjuda');
+    const btnFecharAjuda = document.getElementById('btnFecharAjuda');
+    const linksAjuda = document.querySelectorAll('[data-modal="ajuda"]');
+    
+    // Abrir modal de ajuda
+    linksAjuda.forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            if (modalAjuda) {
+                abrirModal(modalAjuda);
+            }
+        });
+    });
+    
+    // Fechar modal de ajuda
+    if (btnFecharAjuda) {
+        btnFecharAjuda.addEventListener('click', () => {
+            fecharModal(modalAjuda);
+        });
+    }
+    
+    // Fechar clicando fora
+    window.addEventListener('click', (e) => {
+        if (modalContato && e.target === modalContato) {
+            fecharModal(modalContato);
+        }
+        if (modalAjuda && e.target === modalAjuda) {
+            fecharModal(modalAjuda);
+        }
+    });
+    
+    // Fechar com ESC
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+            if (modalContato && modalContato.style.display === 'flex') {
+                fecharModal(modalContato);
+            }
+            if (modalAjuda && modalAjuda.style.display === 'flex') {
+                fecharModal(modalAjuda);
+            }
+        }
+    });
+    
+});

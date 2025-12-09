@@ -45,6 +45,7 @@ document.addEventListener("DOMContentLoaded", async function () {
   function localizarUsuario() {
     if (!navigator.geolocation) {
       console.warn("Geolocalização não suportada pelo navegador.");
+      alert("Seu navegador não suporta geolocalização.");
       return;
     }
 
@@ -74,14 +75,45 @@ document.addEventListener("DOMContentLoaded", async function () {
           [-22.981109, -43.233489],
         ]).addTo(map);
 
-        // Se quiser, pode centralizar no usuário:
-        // map.setView([lat, lng], 17);
+        // Centraliza no usuário quando encontra a localização
+        map.setView([lat, lng], 17);
       },
       (err) => {
         console.warn("Erro ao obter localização do usuário:", err);
+        alert("Não foi possível obter sua localização. Verifique as permissões.");
       }
     );
   }
+
+
+
+
+  //BOTÃO PARA CENTRALIZAR NO USUÁRIO                         rafa
+  function centralizarNoUsuario() {
+    if (!userMarker) {
+      alert("Sua localização ainda não foi carregada!");
+      return;
+    }
+
+    const userPos = userMarker.getLatLng();
+    map.setView([userPos.lat, userPos.lng], 18, {
+      animate: true,
+      duration: 0.5
+    });
+  }
+  //rafa
+
+  // FUNÇÃO PARA TRAÇAR ROTA ATÉ A ENTRADA DA PUC
+  function tracarRotaEntradaPUC() {
+    const entradaPUCLat = -22.979279047516552;
+    const entradaPUCLng = -43.23199899901637;
+    
+    irPara(entradaPUCLat, entradaPUCLng);
+  }
+
+
+
+
 
   //FUNÇÃO DE ROTA (OSRM)
   window.irPara = async function (destLat, destLng) {
@@ -303,4 +335,30 @@ document.addEventListener("DOMContentLoaded", async function () {
       irPara(parseFloat(destLat), parseFloat(destLng));
     }, 100);
   }
+
+  // BOTÃO DE CENTRALIZAR LOCALIZAÇÃO
+  const btnMinhaLoc = document.getElementById("btnMinhaLocalizacao");
+  if (btnMinhaLoc) {
+    btnMinhaLoc.addEventListener("click", function(event) {
+      event.preventDefault();
+      event.stopPropagation();
+      centralizarNoUsuario();
+    });
+  } else {
+    console.warn("Botão de localização não encontrado!");
+  }
+
+  // BOTÃO DE TRAÇAR ROTA ATÉ A ENTRADA DA PUC
+  const btnRotaEntrada = document.getElementById("btnRotaEntrada");
+  if (btnRotaEntrada) {
+    btnRotaEntrada.addEventListener("click", function(event) {
+      event.preventDefault();
+      event.stopPropagation();
+      tracarRotaEntradaPUC();
+    });
+  } else {
+    console.warn("Botão de rota para entrada não encontrado!");
+  }
 });
+
+
