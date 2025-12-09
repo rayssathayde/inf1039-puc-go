@@ -486,10 +486,110 @@ main {
     gap:10px;
 }
 
+/* Header do modal */
+.modal-header {
+    position: relative;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.modal-header h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #111827;
+}
+
+/* Botão fechar */
+.modal-close {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: none;
+    border: none;
+    font-size: 32px;
+    color: #999;
+    cursor: pointer;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.2s ease;
+}
+
+.modal-close:hover {
+    color: #111827;
+}
+
 /* Corpo e rodapé do modal */
 .modal-corpo {
     margin-bottom: 20px;
     font-size: 16px;
+    text-align: left;
+}
+
+.modal-corpo h3 {
+    color: #111827;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.modal-corpo p {
+    margin: 10px 0;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Formulário de contato */
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: #111827;
+    font-size: 14px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.btn-enviar {
+    width: 100%;
+    padding: 10px;
+    background-color: #111827;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    margin-top: 10px;
+    transition: background-color 0.2s ease;
+}
+
+.btn-enviar:hover {
+    background-color: #1f2937;
 }
 
 .modal-rodape {
@@ -587,4 +687,178 @@ body.modal-aberto {
     gap: 8px;
     margin-top: 10px;
     font-size: 0.9rem;
+}
+
+/* ============================= MODAL DE CONTATO ============================= */
+
+.modal-contato {
+    width: 550px;
+    max-width: 90%;
+}
+
+.modal-corpo-contato {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-contato {
+    margin-top: 20px;
+}
+
+.form-group-modal {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.form-group-modal label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+}
+
+.form-group-modal input,
+.form-group-modal select,
+.form-group-modal textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    font-family: inherit;
+    outline: none;
+    transition: border-color 0.2s;
+    background-color: #fafafa;
+}
+
+.form-group-modal input:focus,
+.form-group-modal select:focus,
+.form-group-modal textarea:focus {
+    border-color: #999;
+    background-color: #fff;
+}
+
+.form-group-modal textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.info-contato-adicional {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #f3f5f6;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.info-contato-adicional p {
+    margin: 4px 0;
+}
+
+.modal-rodape-contato {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    padding-top: 10px;
+}
+
+/* ============================= MODAL DE AJUDA ============================= */
+
+.modal-ajuda {
+    width: 700px;
+    max-width: 95%;
+    max-height: 85vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-corpo-ajuda {
+    margin-top: 8px;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    max-height: 60vh;
+    overflow-y: auto;
+    text-align: left;
+}
+
+.ajuda-secoes {
+    margin-top: 16px;
+}
+
+.ajuda-secao {
+    margin-bottom: 20px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.ajuda-secao:last-child {
+    border-bottom: none;
+}
+
+.ajuda-titulo {
+    font-size: 16px;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 8px;
+}
+
+.ajuda-texto {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #4b5563;
+    margin: 0;
+}
+
+.ajuda-footer-info {
+    margin-top: 20px;
+    padding: 16px;
+    background-color: #f3f5f6;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.ajuda-footer-info p {
+    margin: 6px 0;
+    font-size: 14px;
+    color: #333;
+}
+
+.modal-rodape-ajuda {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.modal-rodape-ajuda .btn-primario {
+    width: 150px;
+}
+
+/* ============================= RESPONSIVIDADE ============================= */
+
+@media (max-width: 768px) {
+    .modal-contato,
+    .modal-ajuda {
+        width: 95%;
+        max-height: 90vh;
+    }
+    
+    .modal-corpo-ajuda {
+        max-height: 65vh;
+    }
+    
+    .form-group-modal input,
+    .form-group-modal select,
+    .form-group-modal textarea {
+        font-size: 16px; /* Evita zoom no iOS */
+    }
+    
+    .modal-rodape-contato {
+        flex-direction: column-reverse;
+    }
+    
+    .modal-rodape-contato button {
+        width: 100%;
+    }
 }

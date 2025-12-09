@@ -197,3 +197,103 @@
     border-width:1px;
     cursor:pointer;
 }
+
+/*======================== BOTÃO MINHA LOCALIZAÇÃO ========================*/
+.btn-minha-localizacao {
+    position: absolute;
+    bottom: 120px;
+    right: 20px;
+    z-index: 1000;
+    background-color: #ffffff;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    transition: all 0.2s ease;
+}
+
+.btn-minha-localizacao:hover {
+    background-color: #f8f9fa;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+.btn-minha-localizacao:active {
+    transform: translateY(0);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.btn-minha-localizacao i {
+    color: #2563eb;
+    width: 22px;
+    height: 22px;
+}
+
+/*======================== BOTÃO ROTA ENTRADA PUC ========================*/
+.btn-rota-entrada {
+    position: absolute;
+    bottom: 60px;
+    right: 20px;
+    z-index: 1000;
+    background-color: #ffffff;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    transition: all 0.2s ease;
+}
+
+.btn-rota-entrada:hover {
+    background-color: #f8f9fa;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+.btn-rota-entrada:active {
+    transform: translateY(0);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.btn-rota-entrada i {
+    color: #dc2626;
+    width: 22px;
+    height: 22px;
+}
+
+/*======================== TOOLTIP BOTÕES ========================*/
+.btn-minha-localizacao::before,
+.btn-rota-entrada::before {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 55px;
+    right: 0;
+    background-color: #111827;
+    color: #ffffff;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 500;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s ease;
+    z-index: 1001;
+    pointer-events: none;
+}
+
+.btn-minha-localizacao:hover::before,
+.btn-rota-entrada:hover::before {
+    opacity: 1;
+    visibility: visible;
+    bottom: 60px;
+}

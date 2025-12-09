@@ -3,7 +3,7 @@
 {% block extra_css %}
 <link rel="stylesheet" href="{% static 'CSS/style_index.css' %}">
 <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
-<!-- <link rel="stylesheet" href="{% static 'CSS/style_mapa.css' %}"> -->
+<link rel="stylesheet" href="{% static 'CSS/style_mapa.css' %}">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 {% endblock %}
 
@@ -356,8 +356,12 @@
         <div class="container-mapa">
             <div class="card-mapa">
                <div id="map"></div>
-                <button type="button" class="btn-localizacao">
+                <button type="button" class="btn-minha-localizacao" id="btnMinhaLocalizacao" data-tooltip="Minha localização" title="Ir para minha localização">
                     <i data-lucide="locate-fixed"></i>
+                </button>
+
+                <button type="button" class="btn-rota-entrada" id="btnRotaEntrada" data-tooltip="Traçar rota" title="Traçar rota até a entrada da PUC">
+                    <i data-lucide="route"></i>
                 </button>
             </div>
         </div>
@@ -442,6 +446,16 @@ document.addEventListener('DOMContentLoaded', function () {
 {% block extra_js %}
 <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 <script src="{% static 'JS/leafletmapa.js' %}"></script>
+<script>
+  // Reinicializar ícones Lucide após carregamento dos scripts
+  document.addEventListener("DOMContentLoaded", function() {
+    setTimeout(() => {
+      if (typeof lucide !== 'undefined') {
+        lucide.createIcons();
+      }
+    }, 100);
+  });
+</script>
 {% endblock %}
 
     

@@ -14,6 +14,28 @@
     <div class="topo-cont">
         <div class="card-mapa">
                <div id="map"></div>
+
+
+
+
+
+                <button type="button" class="btn-minha-localizacao" id="btnMinhaLocalizacao" data-tooltip="Minha localização" title="Ir para minha localização">
+        <i data-lucide="locate-fixed"></i>
+    </button>
+
+    <button type="button" class="btn-rota-entrada" id="btnRotaEntrada" data-tooltip="Traçar rota" title="Traçar rota até a entrada da PUC">
+        <i data-lucide="route"></i>
+    </button>
+    
+    <div class="nav-ativa" style="display: none;">
+
+
+
+
+
+
+    
+    <div class="nav-ativa" style="display: none;">
         <div class="nav-ativa" style="display: none;">
             <div class="div-texto1">
                 <p class="titulo-nav">Navegação Ativa</p>
@@ -59,4 +81,14 @@
 {% block extra_js %}
 <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 <script src="{% static 'JS/leafletmapa.js' %}"></script>
+<script>
+  // Reinicializar ícones Lucide após carregamento dos scripts
+  document.addEventListener("DOMContentLoaded", function() {
+    setTimeout(() => {
+      if (typeof lucide !== 'undefined') {
+        lucide.createIcons();
+      }
+    }, 100);
+  });
+</script>
 {% endblock %}
