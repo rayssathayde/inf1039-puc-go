@@ -9,4 +9,5 @@ urlpatterns = [
     path('mapas/', views.mapas, name='mapa'),
     path('favoritar_local/<int:local_id>/', views.favoritar_local, name='favoritar_local'),
     path('favoritar_predio/<int:predio_id>/', views.favoritar_predio, name='favoritar_predio'),
+    path('favoritar-login-required/', views.login_required_message, name='favoritar_login_required'),
 ]
