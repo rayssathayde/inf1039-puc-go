@@ -360,5 +360,3 @@ document.addEventListener("DOMContentLoaded", async function () {
     console.warn("Botão de rota para entrada não encontrado!");
   }
 });
-
-

@@ -254,3 +254,96 @@
     fill: none;
     stroke: #111828;
 }
+/* ==================== MOBILE RESPONSIVO ==================== */
+
+@media (max-width: 768px) {
+
+    /* Título e contagem de resultados */
+    .resultados {
+        margin-left: 0;
+        margin-top: 20px;
+        padding: 0 15px;
+    }
+
+    .titulo-res {
+        font-size: 22px;
+        text-align: left;
+    }
+
+    .quant-res {
+        font-size: 14px;
+    }
+
+    /* Container geral do card */
+    .container-pesq {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0;
+        padding: 0 15px;
+    }
+
+    /* Card da imagem */
+    .img-res {
+        width: 100%;
+        margin: 20px 0 0 0;
+        height: auto;
+        padding: 20px;
+        margin-left: 0;
+    }
+
+    .titulo-card {
+        font-size: 16px;
+    }
+
+    .subtit-card {
+        font-size: 14px;
+    }
+
+    /* Card de texto */
+    .res-txt {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+        padding: 15px;
+        border-radius: 0 0 15px 15px;
+    }
+
+    .nome-pesq {
+        font-size: 20px;
+        margin-left: 0;
+    }
+
+    .div-pesq,
+    .div-pesq2,
+    .div-pesq3,
+    .div-pesq4,
+    .div-pesq5 {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+
+    /* Informações adicionais */
+    .div-pesq3 {
+        padding: 10px;
+    }
+
+    .div-pesq4 {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+
+    /* Botões */
+    .marcar-btn,
+    .extras-btn {
+        width: 100%;
+        height: 50px;
+        font-size: 15px;
+    }
+
+    .div-pesq5 {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

@@ -269,6 +269,15 @@ main {
     
 }
 
+@media (max-width: 768px) {
+    .filtro {
+        width: 100%;
+        left: 0;
+        padding: 16px;
+        border-radius: 0 0 12px 12px;
+    }
+}
+
 /* ===== MENU LATERAL ===== */
 .side-menu {
     position: fixed;
