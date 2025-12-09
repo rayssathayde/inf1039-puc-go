@@ -41,9 +41,9 @@
                                 </button>
                             </form>
                         {% else %}
-                        <button class="favorites-btn2" disabled title="Faça login para favoritar">
-                            <i data-lucide="heart" class="icone-coracao-vazio"></i>
-                        </button>
+                                <a href="{% url 'mapa:favoritar_login_required' %}" class="favorites-btn2">
+                                    <i data-lucide="heart" class="icone-coracao-vazio"></i>
+                                </a>
                         {% endif %}
                     
                     </div>

@@ -387,11 +387,9 @@
                                 {% endif %}
                             </a>
                         {% else %}
-                            <button type="button"
-                                        class="favorites-btn2 login-required"
-                                        data-message="Você precisa estar logado para favoritar locais.">
+                                <a href="{% url 'mapa:favoritar_login_required' %}" class="favorites-btn2">
                                     <i data-lucide="heart" class="icone-coracao-vazio"></i>
-                                </button>
+                                </a>
                         {% endif %}
 
                         <p class="descr">
@@ -428,18 +426,6 @@
     </main>
 
 
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-    const btns = document.querySelectorAll('.login-required');
-
-    btns.forEach(function (btn) {
-        btn.addEventListener('click', function () {
-            const msg = btn.dataset.message || 'Você precisa estar logado para fazer isso.';
-            alert(msg);
-        });
-    });
-});
-</script>
 
 {% endblock %}
 

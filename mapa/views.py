@@ -2,6 +2,9 @@ from django.shortcuts import render
 from django.http import JsonResponse
 from django.shortcuts import get_object_or_404, redirect
 from django.contrib.auth.decorators import login_required
+from django.contrib import messages
+from django.urls import reverse
+
 
 from .models import Local, Predio, FavoritoLocal, FavoritoPredio
 
@@ -79,3 +82,14 @@ def favoritar_predio(request, predio_id):
         favorito.delete()  
 
     return redirect(request.META.get('HTTP_REFERER', 'home'))
+
+
+def login_required_message(request):
+    messages.error(request, "Você precisa estar logado para favoritar locais.")
+    referer = request.META.get('HTTP_REFERER')
+    if referer:
+        return redirect(referer)
+    login_url = reverse('login')   # espera que exista name='login'
+    next_path = request.get_full_path() or '/'
+    return redirect(f"{login_url}?next={next_path}")
+
